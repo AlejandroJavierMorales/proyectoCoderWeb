@@ -1,0 +1,251 @@
+/*Instalando una Fuente Local luego de descargarla y copiar la carpeta de la fuente en el proyecto (assets/fonts)*/
+@font-face{
+    font-family: "diaDeFrutas";
+    src:url(../assets/fonts/FruitDays/Fruit\ Days.otf)
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color:#c7b69f;
+    color: #69503c;
+}
+
+#header{
+    z-index:2;
+    width: 100vw;
+}
+/*ajuste de Card de bootstrap en index.html*/
+#card1{
+    padding: 10px;
+}
+#card2{
+    padding: 10px;
+}
+/*trae logo de whastApp al frente*/
+.logoWhatsApp{
+    z-index:2;
+}
+/*ajustes en footer*/
+#logosRedes img{
+    width: 65px;
+}
+#pieTexto{
+    font-size: 1rem;
+    z-index:2;
+}
+#pie{
+    height: 18vh;
+    background-color:#ab9680;
+
+}
+#imgPrincipal{
+    width: 100vw;
+}
+/*ajustes en barra de navegacion*/
+.navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+
+    flex-direction: column;
+}
+.navbar-toggler:hover {
+    text-decoration:none;
+}
+.navbar-toggler{
+    position: relative;
+    top:-15px;
+    background-color:#ab9680;
+}
+.nav-link {
+    padding: 2px;
+    font-size: 0.9rem;
+    font-weight: 5px;
+    color: white;
+    text-decoration:#69503c;
+    background-color:#ab9680;
+    text-decoration-color: #69503c;
+}
+#navbarNav{
+    background-color:#ab9680;
+}
+.navbar-collapse {
+    position: relative;
+    top: -12px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: top;
+}
+.nav-link:hover{
+    font-size: 1rem;
+ 
+}
+.nav{
+    margin-top: 120px;
+    background-color:#ab9680;
+    --bs-nav-link-color: #69503c;
+    --bs-nav-link-hover-color: white;
+}
+.nav-item{
+    padding: 5px;
+}
+/* Personalizacion cabanas.html */
+.card{
+    background-color: #c9beb0;
+}
+.titulo_main{
+    text-align: center;
+    font-family: 'diaDeFrutas', Courier, monospace;
+    animation-name: escalar;
+    animation-duration: 1.5s;
+    
+}
+#titulo_cabanas{
+    position: relative;
+    top: 100px !important;
+}
+#boton_arriba{
+    background-color:#ab9680;
+    color:white;
+    margin-top: 20px;
+}
+#link_arriba{
+    text-decoration: none;
+    color: white;
+}
+#boton_arriba:hover{
+    color:#69503c;
+  }
+/*animacion Logo header*/
+#logo_header{
+
+    animation-name: rotar;
+    animation-duration: 1.5s;
+}
+/*ajustesen ubicacion.html*/
+#card_mapa{
+    position: relative;
+    top: 100px;
+}
+#card_texto{
+    position: relative;
+    top: 100px;
+} 
+#como_llegar{
+    position: relative;
+    top: 100px;
+}
+#pie_ubicacion{
+    position: relative;
+    top: 100px;
+}
+/*ajustes en servicios.html*/
+#titulo_servicios{
+    position: relative;
+    top: 90px !important;
+}
+#row_servicios .card{
+    margin-top: 50px !important;
+}
+#servicios_iconos{
+    margin-top: 125px !important;
+    /*border:#ab9680 1px solid !important;*/
+    background-color: #c9beb0 !important;
+}
+/*ajustes en contacto.html*/
+#formulario{
+    margin-top: 140px !important;
+}
+#formulario_contacto{
+    background-color: #c9beb0 !important;
+}
+.form-control {
+    text-align: center !important;
+    /*width: 90% !important;*/
+    color:#69503c !important;
+    background-color: #fff !important;
+    border:#c9beb0 1px solid !important;
+    
+}
+.btn {
+    background-color:#ab9680;
+    z-index:2;
+    width: 8rem;
+    border-color: #ab9680;
+    
+}
+.btn:active {
+    background-color:#ab9680 !important;
+    z-index:2;
+    width: 8rem;
+    border-color: #ab9680 !important;
+    
+}
+/*keyframes animacione logo_header y titulo principal para tods las paginas .html*/
+@keyframes rotar{
+    0%{
+        transform: scale(2);
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+    100%{
+        transform: scale(1);
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+@keyframes escalar{
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*ajuste breack points*/
+@media(max-width: 475px){
+    #pieTexto{
+        font-size: 0.8rem;
+        z-index:2;
+    }
+    .logoWhatsApp{
+        width: 50px !important;
+    }
+}
+
+@media(min-width: 768px){
+    .nav-item{
+        padding: 15px;
+    }
+   
+}
+
+@media(min-width: 992px){
+    #logo_header{
+        width: 390px !important;
+    }
+    #titulo_servicios{
+        position: relative;
+        top: 50px !important;
+    }
+
+}
+
+@media(max-width: 768px){
+   #rowUbicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   #card_mapa{
+    position: relative;
+    top: 100px;
+    }
+    #card_texto{
+        margin-top: 10px;
+    }   
+
+}
