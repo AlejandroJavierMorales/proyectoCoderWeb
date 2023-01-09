@@ -1,0 +1,101 @@
+/*Ajuste de cards de bootstrap generico*/
+.card{
+    background-color: $card_color;
+    color:$card_font_color;
+    &:hover{
+        background-color:$card_hover_color;
+        color:$card_hover_font_color;
+    }
+}
+/*ajuste de Card de bootstrap en index.html*/
+.cardIndex{
+    padding: 10px;
+}
+
+/*Barra de Navegacion Gral -- Inicio*/
+.navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    flex-direction: column;
+}
+.navbar-toggler{
+    position: relative;
+    top:-15px;
+    background-color:#ab9680;
+    &:hover{
+        text-decoration:none;
+    }
+}
+.nav-link {
+    padding: 2px;
+    font-size: 0.9rem;
+    font-weight: 5px;
+    color: white;
+    text-decoration:#69503c;
+    background-color:#ab9680;
+    text-decoration-color: #69503c;
+    &:hover{
+        font-size: 1rem;
+        color:#69503c;
+    }
+}
+#navbarNav{
+    background-color:#ab9680;
+}
+.navbar-collapse {
+    position: relative;
+    top: -12px;
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: top;
+}
+
+.nav{
+    margin-top: 120px;
+    background-color:#ab9680;
+    --bs-nav-link-color: #69503c;
+    --bs-nav-link-hover-color: white;
+}
+.nav-item{
+    padding: 5px;
+}
+/*Barra de Navegacion Gral -- Fin*/
+/*Boton General*/
+.btn {
+    background-color:#ab9680;
+    z-index:2;
+    width: 8rem;
+    border-color: #ab9680;
+    &:active{
+        background-color:#ab9680 !important;
+        z-index:2;
+        width: 8rem;
+        border-color: #ab9680 !important;
+    }
+    &:hover{
+        color:#69503c;
+    }
+}
+/*.boton_gral{
+    background-color:#ab9680;
+    color:white;
+}*/
+/*ajustes en contacto.html*/
+#formulario{
+    margin-top: 140px !important;
+}
+#formulario_contacto{
+    background-color: #c9beb0 !important;
+}
+.form-control {
+    text-align: center !important;
+    color:#69503c !important;
+    background-color: #fff !important;
+    border:#c9beb0 1px solid !important;
+    
+}
+/*trae logo de whastApp al frente*/
+.logoWhatsApp {
+    z-index: 2;
+    bottom: 150px !important; }
+
+
+

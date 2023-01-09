@@ -1,251 +1,324 @@
-/*Instalando una Fuente Local luego de descargarla y copiar la carpeta de la fuente en el proyecto (assets/fonts)*/
-@font-face{
-    font-family: "diaDeFrutas";
-    src:url(../assets/fonts/FruitDays/Fruit\ Days.otf)
-}
+/*Google Font*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
+/*Partials*/
+/*Variables*/
+/*Reset Gral*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-}
+#header {
+  z-index: 2;
+  width: 100vw; }
 
+body {
+  background-color: #c7b69f;
+  /*aplicando variables*/
+  color: #69503c;
+  /*aplicando variables*/ }
 
-body{
-    background-color:#c7b69f;
-    color: #69503c;
-}
-
-#header{
-    z-index:2;
-    width: 100vw;
-}
-/*ajuste de Card de bootstrap en index.html*/
-#card1{
-    padding: 10px;
-}
-#card2{
-    padding: 10px;
-}
-/*trae logo de whastApp al frente*/
-.logoWhatsApp{
-    z-index:2;
-}
 /*ajustes en footer*/
-#logosRedes img{
-    width: 65px;
-}
-#pieTexto{
-    font-size: 1rem;
-    z-index:2;
-}
-#pie{
-    height: 18vh;
-    background-color:#ab9680;
+footer .logosRedes img {
+  width: 65px; }
 
-}
-#imgPrincipal{
-    width: 100vw;
-}
-/*ajustes en barra de navegacion*/
-.navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+footer .pieTexto {
+  font-size: 1rem;
+  z-index: 2; }
 
-    flex-direction: column;
-}
-.navbar-toggler:hover {
-    text-decoration:none;
-}
-.navbar-toggler{
-    position: relative;
-    top:-15px;
-    background-color:#ab9680;
-}
+footer .pie {
+  height: 18vh;
+  background-color: #ab9680; }
+
+/*Ajuste de cards de bootstrap generico*/
+.card {
+  background-color: #c9beb0;
+  color: #69503c; }
+  .card:hover {
+    background-color: black;
+    color: white; }
+
+/*ajuste de Card de bootstrap en index.html*/
+.cardIndex {
+  padding: 10px; }
+
+/*Barra de Navegacion Gral -- Inicio*/
+.navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
+  flex-direction: column; }
+
+.navbar-toggler {
+  position: relative;
+  top: -15px;
+  background-color: #ab9680; }
+  .navbar-toggler:hover {
+    text-decoration: none; }
+
 .nav-link {
-    padding: 2px;
-    font-size: 0.9rem;
-    font-weight: 5px;
-    color: white;
-    text-decoration:#69503c;
-    background-color:#ab9680;
-    text-decoration-color: #69503c;
-}
-#navbarNav{
-    background-color:#ab9680;
-}
-.navbar-collapse {
-    position: relative;
-    top: -12px;
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: top;
-}
-.nav-link:hover{
+  padding: 2px;
+  font-size: 0.9rem;
+  font-weight: 5px;
+  color: white;
+  text-decoration: #69503c;
+  background-color: #ab9680;
+  text-decoration-color: #69503c; }
+  .nav-link:hover {
     font-size: 1rem;
- 
-}
-.nav{
-    margin-top: 120px;
-    background-color:#ab9680;
-    --bs-nav-link-color: #69503c;
-    --bs-nav-link-hover-color: white;
-}
-.nav-item{
-    padding: 5px;
-}
-/* Personalizacion cabanas.html */
-.card{
-    background-color: #c9beb0;
-}
-.titulo_main{
-    text-align: center;
-    font-family: 'diaDeFrutas', Courier, monospace;
-    animation-name: escalar;
-    animation-duration: 1.5s;
-    
-}
-#titulo_cabanas{
-    position: relative;
-    top: 100px !important;
-}
-#boton_arriba{
+    color: #69503c; }
+
+#navbarNav {
+  background-color: #ab9680; }
+
+.navbar-collapse {
+  position: relative;
+  top: -12px;
+  flex-basis: 100%;
+  flex-grow: 1;
+  align-items: top; }
+
+.nav {
+  margin-top: 120px;
+  background-color: #ab9680;
+  --bs-nav-link-color: #69503c;
+  --bs-nav-link-hover-color: white; }
+
+.nav-item {
+  padding: 5px; }
+
+/*Barra de Navegacion Gral -- Fin*/
+/*Boton General*/
+.btn {
+  background-color: #ab9680;
+  z-index: 2;
+  width: 8rem;
+  border-color: #ab9680; }
+  .btn:active {
+    background-color: #ab9680 !important;
+    z-index: 2;
+    width: 8rem;
+    border-color: #ab9680 !important; }
+  .btn:hover {
+    color: #69503c; }
+
+/*.boton_gral{
     background-color:#ab9680;
     color:white;
-    margin-top: 20px;
-}
-#link_arriba{
-    text-decoration: none;
-    color: white;
-}
-#boton_arriba:hover{
-    color:#69503c;
-  }
-/*animacion Logo header*/
-#logo_header{
-
-    animation-name: rotar;
-    animation-duration: 1.5s;
-}
-/*ajustesen ubicacion.html*/
-#card_mapa{
-    position: relative;
-    top: 100px;
-}
-#card_texto{
-    position: relative;
-    top: 100px;
-} 
-#como_llegar{
-    position: relative;
-    top: 100px;
-}
-#pie_ubicacion{
-    position: relative;
-    top: 100px;
-}
-/*ajustes en servicios.html*/
-#titulo_servicios{
-    position: relative;
-    top: 90px !important;
-}
-#row_servicios .card{
-    margin-top: 50px !important;
-}
-#servicios_iconos{
-    margin-top: 125px !important;
-    /*border:#ab9680 1px solid !important;*/
-    background-color: #c9beb0 !important;
-}
+}*/
 /*ajustes en contacto.html*/
-#formulario{
-    margin-top: 140px !important;
-}
-#formulario_contacto{
-    background-color: #c9beb0 !important;
-}
+#formulario {
+  margin-top: 140px !important; }
+
+#formulario_contacto {
+  background-color: #c9beb0 !important; }
+
 .form-control {
-    text-align: center !important;
-    /*width: 90% !important;*/
-    color:#69503c !important;
-    background-color: #fff !important;
-    border:#c9beb0 1px solid !important;
-    
-}
-.btn {
-    background-color:#ab9680;
-    z-index:2;
-    width: 8rem;
-    border-color: #ab9680;
-    
-}
-.btn:active {
-    background-color:#ab9680 !important;
-    z-index:2;
-    width: 8rem;
-    border-color: #ab9680 !important;
-    
-}
-/*keyframes animacione logo_header y titulo principal para tods las paginas .html*/
-@keyframes rotar{
-    0%{
-        transform: scale(2);
-        transform: rotate3d(1, 1, 1, 180deg);
-    }
-    100%{
-        transform: scale(1);
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
-@keyframes escalar{
-    0%{
-        transform: scale(2);
-    }
-    100%{
-        transform: scale(1);
-    }
-}
+  text-align: center !important;
+  color: #69503c !important;
+  background-color: #fff !important;
+  border: #c9beb0 1px solid !important; }
+
+/*trae logo de whastApp al frente*/
+.logoWhatsApp {
+  z-index: 2;
+  bottom: 150px !important; }
+
+/*keyframes animaciones logo_header y titulo principal para tods las paginas .html*/
+@keyframes rotar {
+  0% {
+    transform: scale(2);
+    transform: rotate3d(1, 1, 1, 180deg); }
+  100% {
+    transform: scale(1);
+    transform: rotate3d(1, 1, 1, 360deg); } }
+
+@keyframes escalar {
+  0% {
+    transform: scale(2); }
+  100% {
+    transform: scale(1); } }
+
+/*animacion Logo header*/
+#logo_header {
+  animation-name: rotar;
+  animation-duration: 1.5s; }
+
+/*Animacion Titulos principales*/
+.titulo_main {
+  animation-name: escalar;
+  animation-duration: 1.5s; }
+
+/*ToolTip para iconos de servicios*/
+.tooltip-one {
+  padding: 10px 32px;
+  background: #fff;
+  position: relative;
+  min-width: 150px;
+  max-width: 180px;
+  border-radius: 5px;
+  text-align: center;
+  filter: drop-shadow(0 3px 5px #ccc);
+  line-height: 1.5; }
+
+.tooltip-one:after {
+  content: "";
+  position: absolute;
+  bottom: -9px;
+  left: 50%;
+  margin-left: -9px;
+  width: 18px;
+  height: 18px;
+  background: white;
+  transform: rotate(45deg); }
+
+.tooltip-container {
+  position: absolute;
+  cursor: pointer; }
+  .tooltip-container .tooltip-one {
+    display: none; }
+
+/*Overlay imagenes index.html*/
+.proyectos-contenedor {
+  padding-top: 60px;
+  margin-bottom: 40px; }
+
+.overlay {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center; }
+
+.overlay p {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 0; }
+
+.img_overlay {
+  position: relative; }
+
+.img_overlay:hover img {
+  opacity: 0.2; }
+
+.img_overlay:hover .overlay {
+  opacity: 1; }
+
+/*Titulos de Pagina - H1*/
+.titulo_main {
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  animation-name: escalar;
+  animation-duration: 1.5s; }
+
+/*Personalizacion index.html*/
+#txt_detalle {
+  font-size: 1rem; }
+
+.card_texto_pres, .card_texto_lista {
+  font-size: 1.3rem;
+  border-style: none;
+  background-color: #c7b69f; }
+  .card_texto_pres:hover, .card_texto_lista:hover {
+    background-color: #c7b69f;
+    color: #69503c; }
+
+.item1, .item2, .item3, .item4, .item5, .item6 {
+  padding: 2px;
+  border-radius: 20px;
+  box-shadow: 5px -9px 3px #69503c; }
+  .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
+    box-shadow: 5px -9px 3px #817d7d; }
+
+/* Personalizacion cabanas.html */
+#titulo_cabanas {
+  position: relative;
+  top: 100px !important; }
+
+#titulo_inicio {
+  padding: 3px;
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #69503c !important;
+  color: #c9beb0; }
+
+#txt_tituloSecundario {
+  padding: 3px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #69503c;
+  color: #c9beb0; }
+
+/*Ajuste cabanas.html*/
+#link_arriba {
+  text-decoration: none;
+  color: white; }
+
+/*ajustes en ubicacion.html*/
+#card_mapa {
+  position: relative;
+  top: 100px; }
+
+#card_texto {
+  position: relative;
+  top: 100px; }
+
+#como_llegar {
+  position: relative;
+  top: 100px; }
+
+#pie_ubicacion {
+  position: relative;
+  top: 100px; }
+
+/*ajustes en servicios.html*/
+#titulo_servicios {
+  position: relative;
+  top: 100px !important; }
+
+#row_servicios .card {
+  margin-top: 50px !important; }
+
+#servicios_iconos {
+  margin-top: 125px !important;
+  background-color: #c9beb0 !important; }
+
+/*Ajuste iconos redes sociales en footer*/
+#logosRedes img {
+  width: 65px; }
 
 /*ajuste breack points*/
-@media(max-width: 475px){
-    #pieTexto{
-        font-size: 0.8rem;
-        z-index:2;
-    }
-    .logoWhatsApp{
-        width: 50px !important;
-    }
-}
+@media (max-width: 475px) {
+  #pieTexto {
+    font-size: 0.8rem;
+    z-index: 2; }
+  .logoWhatsApp {
+    width: 50px !important; } }
 
-@media(min-width: 768px){
-    .nav-item{
-        padding: 15px;
-    }
-   
-}
+@media (min-width: 768px) {
+  .nav-item {
+    padding: 15px; }
+  .titulo_main {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px; }
+  #titulo_servicios {
+    position: relative;
+    top: 100px !important; } }
 
-@media(min-width: 992px){
-    #logo_header{
-        width: 390px !important;
-    }
-    #titulo_servicios{
-        position: relative;
-        top: 50px !important;
-    }
+@media (min-width: 992px) {
+  #logo_header {
+    width: 390px !important; } }
 
-}
-
-@media(max-width: 768px){
-   #rowUbicacion{
+@media (max-width: 768px) {
+  #rowUbicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-   }
-   #card_mapa{
+    justify-content: center; }
+  #card_mapa {
     position: relative;
-    top: 100px;
-    }
-    #card_texto{
-        margin-top: 10px;
-    }   
-
-}
+    top: 100px; }
+  #card_texto {
+    margin-top: 10px; } }

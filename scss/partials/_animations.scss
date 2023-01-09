@@ -1,0 +1,95 @@
+/*keyframes animaciones logo_header y titulo principal para tods las paginas .html*/
+@keyframes rotar{
+    0%{
+        transform: scale(2);
+        transform: rotate3d(1, 1, 1, 180deg);
+    }
+    100%{
+        transform: scale(1);
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+@keyframes escalar{
+    0%{
+        transform: scale(2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/*animacion Logo header*/
+#logo_header{
+    animation-name: rotar;
+    animation-duration: 1.5s;
+}
+/*Animacion Titulos principales*/
+.titulo_main{
+    animation-name: escalar;
+    animation-duration: 1.5s;
+}
+/*ToolTip para iconos de servicios*/
+.tooltip-one {
+    padding: 10px 32px;
+    background: #fff;
+    position: relative;
+    min-width: 150px;
+    max-width: 180px;
+    border-radius: 5px;
+    text-align: center;
+    filter: drop-shadow(0 3px 5px #ccc);
+    line-height: 1.5;
+  }
+  .tooltip-one:after {
+    content: "";
+    position: absolute;
+    bottom: -9px;
+    left: 50%;
+    margin-left: -9px;
+    width: 18px;
+    height: 18px;
+    background: white;
+    transform: rotate(45deg);
+  }
+//contenedor
+.tooltip-container {
+    position:absolute;
+    cursor: pointer;
+    //ocultar el tooltip
+    .tooltip-one {
+        display: none;
+    }
+  }
+  /*Overlay imagenes index.html*/
+  .proyectos-contenedor {
+    padding-top: 60px;
+    margin-bottom: 40px;
+  }
+  
+  .overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .overlay p {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  .img_overlay {
+    position: relative;
+  }
+  
+  .img_overlay:hover img {
+    opacity: 0.2;
+  }
+  
+  .img_overlay:hover .overlay {
+    opacity: 1;
+  }

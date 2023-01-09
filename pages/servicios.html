@@ -5,8 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Servicios - Cabañas Ecos del Valle</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/estilos.css"/>
+   <!--Fonts de Google-->
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+   <!--Bootstrap 5.2.3 link-->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+   <!--Lik ToolTip-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+   <!--Hoja de Estilo Link-->
+   <link rel="stylesheet" href="../css/estilos.css"/>
 </head>
 <body>
     <header id="cabecera_servicios" class="container-fluid" >
@@ -51,44 +59,67 @@
     <main class="container-fluid contenedor_servicios">
         <h1 class="titulo_main" id="titulo_servicios">Servicios</h1>
         <div id="servicios_iconos" class="row p2 d-flex flex-row justify-content-between align-items-center rounded">
-              <div class="col">
-                <img class="" src="../assets/images/icons/wifi.png" style="width:3rem;" alt="wifi">
+              <div class="col ">
+                <div data-toggle="tooltip" title="Internet wifi">
+                  <img  src="../assets/images/icons/wifi.png" style="width:3rem;" alt="wifi"> 
+                </div> 
               </div>
               <div class="col">
-                <img class="" src="../assets/images/icons/tv.png" style="width:3rem;" alt="wifi">
+                <div data-toggle="tooltip" title="TV Led - DirecTV">  
+                  <img class="" src="../assets/images/icons/tv.png" style="width:3rem;" alt="wifi">
+                </div>
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/toalla.png" style="width:3rem;" alt="wifi">
+                <div data-toggle="tooltip" title="Servicio de Blancos">
+                  <img class=" " src="../assets/images/icons/toalla.png" style="width:3rem;" alt="wifi">
+              </div>
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/aire-acondicionado.png" style="width:3rem;" alt="wifi">
+                <div data-toggle="tooltip" title="Aire Acondicionado">
+                  <img class=" " src="../assets/images/icons/aire-acondicionado.png" style="width:3rem;" alt="wifi">
+                </div>
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/calefaccion.png" style="width:3rem;" alt ="wifi">
+                <div data-toggle="tooltip" title="Calefacción">
+                  <img class=" " src="../assets/images/icons/calefaccion.png" style="width:3rem;" alt ="wifi">
+                </div>
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/garaje.png" style="width:3rem;" alt="wifi">
+                <div data-toggle="tooltip" title="Cochera Techada">
+                  <img class=" " src="../assets/images/icons/garaje.png" style="width:3rem;" alt="wifi">
+                </div>  
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/parrilla.png" style="width:3rem;" alt="wifi">
+                <div data-toggle="tooltip" title="Asador">
+                  <img class=" " src="../assets/images/icons/parrilla.png" style="width:3rem;" alt="wifi">
+                </div>
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/nadador.png" style="width:3rem;" alt="wifi">
+                <div data-toggle="tooltip" title="Piscina Descubierta">
+                  <img class=" " src="../assets/images/icons/nadador.png" style="width:3rem;" alt="wifi">
+                </div>
+                </div>
+              <div class="col">
+                <div data-toggle="tooltip" title="Mesa de PinPong">
+                  <img class=" " src="../assets/images/icons/ping-pong.png" style="width:3rem;" alt="wifi">
+                </div>
+                </div>
+              <div class="col">
+                <div data-toggle="tooltip" title="Metegol">
+                  <img class=" " src="../assets/images/icons/metegol.png" style="width:3rem;" alt ="wifi">
+                </div>
               </div>
               <div class="col">
-                <img class=" " src="../assets/images/icons/ping-pong.png" style="width:3rem;" alt="wifi">
-              </div>
-              <div class="col">
-                <img class=" " src="../assets/images/icons/metegol.png" style="width:3rem;" alt ="wifi">
-              </div>
-              <div class="col">
-                <img class=" " src="../assets/images/icons/volley.png" style="width:3rem;" alt ="wifi">
+                <div data-toggle="tooltip" title="Cancha de Voley">
+                  <img class=" " src="../assets/images/icons/volley.png" style="width:3rem;" alt ="wifi">
+                </div>
               </div>
             </div>  
-        <div id="row_servicios" class="row p-2 d-flex flex-row justify-content-center align-items-center">
-            <div class="card p-2 " style="width: 20rem;">
+        <div id="row_servicios" class="row p-2 d-flex flex-row justify-content-evenly align-items-center">
+            <div class="card p-2 col-sm-6 col-lg-3" >
                 <img src="../assets/images/servicios/servicios4.jpg" class="card-img-top" alt="servicios_2">
                 <div class="card-body">
+                  <h6>EN LA CABAÑA</h6>
                   <p class="card-text">Cocina con horno, Vajilla completa, Heladera, Horno microondas,
                     equipo de luz de emergencia, Ventilador de pie/techo, Aire Acondicionado,
                     Calefactores de Tiro Balanceado, Termotanque, TV Led, DirecTV,
@@ -98,9 +129,10 @@
                     Sillas de Exterior.</p>
                 </div>
               </div>
-              <div class="card p-2 " style="width: 20rem;">
+              <div class="card p-2 col-sm-6 col-lg-3" >
                 <img src="../assets/images/servicios/servicios3.jpg" class="card-img-top" alt="servicios_2">
                 <div class="card-body">
+                  <h6>LA PISCINA</h6>
                   <p class="card-text">Cocina con horno, Vajilla completa, Heladera, Horno microondas,
                     equipo de luz de emergencia, Ventilador de pie/techo, Aire Acondicionado,
                     Calefactores de Tiro Balanceado, Termotanque, TV Led, DirecTV,
@@ -110,9 +142,10 @@
                     Sillas de Exterior.</p>
                 </div>
               </div>
-              <div class="card p-2 " style="width: 20rem;">
+              <div class="card p-2 col-sm-6 col-lg-3">
                 <img src="../assets/images/servicios/servicios4.jpg" class="card-img-top" alt="servicios_2">
                 <div class="card-body">
+                  <h6>CLUB HOUSE - PARQUE</h6>
                   <p class="card-text">Cocina con horno, Vajilla completa, Heladera, Horno microondas,
                     equipo de luz de emergencia, Ventilador de pie/techo, Aire Acondicionado,
                     Calefactores de Tiro Balanceado, Termotanque, TV Led, DirecTV,
@@ -122,9 +155,10 @@
                     Sillas de Exterior.</p>
                 </div>
               </div>
-              <div class="card p-2 " style="width: 20rem;">
+              <div class="card p-2 col-sm-6 col-lg-3" >
                 <img src="../assets/images/servicios/servicios3.jpg" class="card-img-top" alt="servicios_2">
                 <div class="card-body">
+                  <h6>EL COMPLEJO</h6>
                   <p class="card-text">Cocina con horno, Vajilla completa, Heladera, Horno microondas,
                     equipo de luz de emergencia, Ventilador de pie/techo, Aire Acondicionado,
                     Calefactores de Tiro Balanceado, Termotanque, TV Led, DirecTV,
@@ -139,18 +173,18 @@
 
     </main>
     <footer class="container-fluid">
-        <div class="row mt-2 h-100 d-flex flex-row justify-content-between align-items-center" id="pie">
+        <div class="row mt-2 h-100 d-flex flex-row justify-content-between align-items-center pie">
             <!--Logo de WhatsApp-->
             <div class="row">
                 <div class="col">
                     <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp-6860919__340.png" alt="logoDeWhatsApp">
                 </div>
             </div>
-            <div class="col-8 text-center mt-1 h-100" id="pieTexto">
+            <div class="col-8 text-center mt-1 h-100 pieTexto">
               <div><p>Cabañas Ecos del Valle - 3546520243<br>
                 info@cabanasecosdelvalle.com.ar</p></div>  
             </div> 
-            <div class="col-4 h-100 d-flex flex-row justify-content-center align-items-center" id="logosRedes">
+            <div class="col-4 h-100 d-flex flex-row justify-content-center align-items-center logosRedes">
                 <div class="logoInst">
                     <a href="https://www.instagram.com/ecos_del_valle/?hl=es-la" target="_blank"><img class="img-fluid"  id="img1" src="../assets/images/logo_instagram.png" alt="logo_instagram"></a>
                 </div>

@@ -1,0 +1,32 @@
+/*Reset Gral*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+#header{
+    z-index:2;
+    width: 100vw;
+}
+
+body{
+    background-color: $body_color; /*aplicando variables*/
+    color: $body_font_color; /*aplicando variables*/
+}
+/*ajustes en footer*/
+footer{
+    .logosRedes img{
+        width: 65px;
+    }
+    .pieTexto{
+        font-size: 1rem;
+        z-index:2;
+    }
+    .pie{
+        height: 18vh;
+        background-color:$footer_color;
+    }
+}
+
+

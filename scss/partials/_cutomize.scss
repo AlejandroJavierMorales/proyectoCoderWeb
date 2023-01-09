@@ -1,0 +1,88 @@
+/*Titulos de Pagina - H1*/
+.titulo_main{
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    animation-name: escalar;
+    animation-duration: 1.5s;
+    
+}
+/*Personalizacion index.html*/
+#txt_detalle{
+    font-size: 1rem;
+}
+.card_texto_pres, .card_texto_lista{
+    font-size: 1.3rem;
+    border-style: none;
+    background-color: $body_color;
+    &:hover{
+        background-color: $body_color;
+        color:$card_font_color;
+    }
+}
+.item1, .item2, .item3, .item4, .item5, .item6{
+    padding:2px;
+    border-radius: 20px;
+    box-shadow: 5px -9px 3px #69503c;;
+    &:hover{
+        box-shadow: 5px -9px 3px rgb(129, 125, 125);
+    }    
+}
+/* Personalizacion cabanas.html */
+#titulo_cabanas{
+    position: relative;
+    top: 100px !important;
+}
+#titulo_inicio{
+    padding: 3px;
+    font-size: 1.3rem;
+    width: 100%; 
+    background-color:$body_font_color !important;
+    color:$card_color;
+}
+#txt_tituloSecundario{
+    padding: 3px;
+    font-size: 1rem;
+    width: 100%; 
+    background-color:$body_font_color;
+    color:$card_color;
+}
+/*Ajuste cabanas.html*/
+#link_arriba{
+    text-decoration: none;
+    color: white;
+}
+/*ajustes en ubicacion.html*/
+#card_mapa{
+    position: relative;
+    top: 100px;
+}
+#card_texto{
+    position: relative;
+    top: 100px;
+} 
+#como_llegar{
+    position: relative;
+    top: 100px;
+}
+#pie_ubicacion{
+    position: relative;
+    top: 100px;
+}
+/*ajustes en servicios.html*/
+#titulo_servicios{
+    position: relative;
+    top: 100px !important;
+}
+#row_servicios .card{
+    margin-top: 50px !important;
+}
+#servicios_iconos{
+    margin-top: 125px !important;
+    background-color: #c9beb0 !important;
+}
+/*Ajuste iconos redes sociales en footer*/
+#logosRedes img{
+    width: 65px;
+}

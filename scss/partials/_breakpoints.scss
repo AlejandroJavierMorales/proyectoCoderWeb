@@ -1,0 +1,47 @@
+
+/*ajuste breack points*/
+@media(max-width: 475px){
+    #pieTexto{
+        font-size: 0.8rem;
+        z-index:2;
+    }
+    .logoWhatsApp{
+        width: 50px !important;
+    }
+}
+
+@media(min-width: 768px){
+    .nav-item{
+        padding: 15px;
+    }
+    .titulo_main{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 24px;
+    }
+    #titulo_servicios{
+        position: relative;
+        top: 100px !important;
+    }
+}
+@media(min-width: 992px){
+    #logo_header{
+        width: 390px !important;
+    }
+}
+@media(max-width: 768px){
+   #rowUbicacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   }
+   #card_mapa{
+    position: relative;
+    top: 100px;
+    }
+    #card_texto{
+        margin-top: 10px;
+    }   
+
+}
