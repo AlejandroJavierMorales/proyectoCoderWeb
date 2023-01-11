@@ -2,17 +2,14 @@
 .titulo_main{
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1.3rem;
     font-weight: 700;
-    animation-name: escalar;
-    animation-duration: 1.5s;
-    
 }
 /*Personalizacion index.html*/
 #txt_detalle{
     font-size: 1rem;
 }
-.card_texto_pres, .card_texto_lista{
+.card_texto_pres{
     font-size: 1.3rem;
     border-style: none;
     background-color: $body_color;
@@ -21,7 +18,13 @@
         color:$card_font_color;
     }
 }
-.item1, .item2, .item3, .item4, .item5, .item6{
+.card_texto_lista{
+    @extend .card_texto_pres;
+}
+
+/*Usando @extend i sentencia For para definir estilos y comportamiento de 
+las 6 imagenes de index.html*/
+.item1{
     padding:2px;
     border-radius: 20px;
     box-shadow: 5px -9px 3px #69503c;;
@@ -29,14 +32,32 @@
         box-shadow: 5px -9px 3px rgb(129, 125, 125);
     }    
 }
+@for $i from 2 through 6{
+    $a:($i)-1;  
+    .item#{$i}{
+        @extend .item#{$a};
+    }
+}
+/*
+.item2, .item3, .item4, .item5, .item6{
+    @extend .item1;
+}
+*/
+
 /* Personalizacion cabanas.html */
 #titulo_cabanas{
+    @extend .titulo_main;
     position: relative;
     top: 100px !important;
 }
+#link_arriba{
+    text-decoration: none;
+    color: white;
+}
+/*Personalizacion Titulos en index.html*/
 #titulo_inicio{
+    @extend .titulo_main;
     padding: 3px;
-    font-size: 1.3rem;
     width: 100%; 
     background-color:$body_font_color !important;
     color:$card_color;
@@ -48,10 +69,8 @@
     background-color:$body_font_color;
     color:$card_color;
 }
-/*Ajuste cabanas.html*/
-#link_arriba{
-    text-decoration: none;
-    color: white;
+.rectangulo_fondo{
+    background-color: #69503c;
 }
 /*ajustes en ubicacion.html*/
 #card_mapa{

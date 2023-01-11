@@ -43,27 +43,27 @@ footer .pie {
   padding: 10px; }
 
 /*Barra de Navegacion Gral -- Inicio*/
+.nav {
+  margin-top: 120px;
+  background-color: #ab9680;
+  --bs-nav-link-color: #69503c;
+  --bs-nav-link-hover-color: white; }
+  .nav-item {
+    padding: 5px; }
+  .nav-link {
+    padding: 2px;
+    font-size: 0.9rem;
+    font-weight: 5px;
+    color: white;
+    text-decoration: #69503c;
+    background-color: #ab9680;
+    text-decoration-color: #69503c; }
+    .nav-link:hover {
+      font-size: 1rem;
+      color: #69503c; }
+
 .navbar > .container-fluid, .navbar > .container-lg, .navbar > .container-md, .navbar > .container-sm, .navbar > .container-xl, .navbar > .container-xxl {
   flex-direction: column; }
-
-.navbar-toggler {
-  position: relative;
-  top: -15px;
-  background-color: #ab9680; }
-  .navbar-toggler:hover {
-    text-decoration: none; }
-
-.nav-link {
-  padding: 2px;
-  font-size: 0.9rem;
-  font-weight: 5px;
-  color: white;
-  text-decoration: #69503c;
-  background-color: #ab9680;
-  text-decoration-color: #69503c; }
-  .nav-link:hover {
-    font-size: 1rem;
-    color: #69503c; }
 
 #navbarNav {
   background-color: #ab9680; }
@@ -75,14 +75,12 @@ footer .pie {
   flex-grow: 1;
   align-items: top; }
 
-.nav {
-  margin-top: 120px;
-  background-color: #ab9680;
-  --bs-nav-link-color: #69503c;
-  --bs-nav-link-hover-color: white; }
-
-.nav-item {
-  padding: 5px; }
+.navbar-toggler {
+  position: relative;
+  top: -15px;
+  background-color: #ab9680; }
+  .navbar-toggler:hover {
+    text-decoration: none; }
 
 /*Barra de Navegacion Gral -- Fin*/
 /*Boton General*/
@@ -142,7 +140,7 @@ footer .pie {
   animation-duration: 1.5s; }
 
 /*Animacion Titulos principales*/
-.titulo_main {
+.titulo_main, #titulo_cabanas, #titulo_inicio {
   animation-name: escalar;
   animation-duration: 1.5s; }
 
@@ -204,13 +202,11 @@ footer .pie {
   opacity: 1; }
 
 /*Titulos de Pagina - H1*/
-.titulo_main {
+.titulo_main, #titulo_cabanas, #titulo_inicio {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  font-weight: 700;
-  animation-name: escalar;
-  animation-duration: 1.5s; }
+  font-size: 1.3rem;
+  font-weight: 700; }
 
 /*Personalizacion index.html*/
 #txt_detalle {
@@ -224,6 +220,8 @@ footer .pie {
     background-color: #c7b69f;
     color: #69503c; }
 
+/*Usando @extend i sentencia For para definir estilos y comportamiento de 
+las 6 imagenes de index.html*/
 .item1, .item2, .item3, .item4, .item5, .item6 {
   padding: 2px;
   border-radius: 20px;
@@ -231,14 +229,23 @@ footer .pie {
   .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
     box-shadow: 5px -9px 3px #817d7d; }
 
+/*
+.item2, .item3, .item4, .item5, .item6{
+    @extend .item1;
+}
+*/
 /* Personalizacion cabanas.html */
 #titulo_cabanas {
   position: relative;
   top: 100px !important; }
 
+#link_arriba {
+  text-decoration: none;
+  color: white; }
+
+/*Personalizacion Titulos en index.html*/
 #titulo_inicio {
   padding: 3px;
-  font-size: 1.3rem;
   width: 100%;
   background-color: #69503c !important;
   color: #c9beb0; }
@@ -250,10 +257,8 @@ footer .pie {
   background-color: #69503c;
   color: #c9beb0; }
 
-/*Ajuste cabanas.html*/
-#link_arriba {
-  text-decoration: none;
-  color: white; }
+.rectangulo_fondo {
+  background-color: #69503c; }
 
 /*ajustes en ubicacion.html*/
 #card_mapa {
@@ -299,7 +304,7 @@ footer .pie {
 @media (min-width: 768px) {
   .nav-item {
     padding: 15px; }
-  .titulo_main {
+  .titulo_main, #titulo_cabanas, #titulo_inicio {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px; }

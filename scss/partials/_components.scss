@@ -13,49 +13,50 @@
 }
 
 /*Barra de Navegacion Gral -- Inicio*/
-.navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
-    flex-direction: column;
-}
-.navbar-toggler{
-    position: relative;
-    top:-15px;
-    background-color:#ab9680;
-    &:hover{
-        text-decoration:none;
-    }
-}
-.nav-link {
-    padding: 2px;
-    font-size: 0.9rem;
-    font-weight: 5px;
-    color: white;
-    text-decoration:#69503c;
-    background-color:#ab9680;
-    text-decoration-color: #69503c;
-    &:hover{
-        font-size: 1rem;
-        color:#69503c;
-    }
-}
-#navbarNav{
-    background-color:#ab9680;
-}
-.navbar-collapse {
-    position: relative;
-    top: -12px;
-    flex-basis: 100%;
-    flex-grow: 1;
-    align-items: top;
-}
-
 .nav{
     margin-top: 120px;
     background-color:#ab9680;
     --bs-nav-link-color: #69503c;
     --bs-nav-link-hover-color: white;
+    &-item{
+        padding: 5px;
+    }
+    &-link {
+        padding: 2px;
+        font-size: 0.9rem;
+        font-weight: 5px;
+        color: white;
+        text-decoration:#69503c;
+        background-color:#ab9680;
+        text-decoration-color: #69503c;
+        &:hover{
+            font-size: 1rem;
+            color:#69503c;
+        }
+    }
 }
-.nav-item{
-    padding: 5px;
+.navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+    flex-direction: column;
+}
+#navbarNav{
+    background-color:#ab9680;
+}
+.navbar{
+    &-collapse {
+        position: relative;
+        top: -12px;
+        flex-basis: 100%;
+        flex-grow: 1;
+        align-items: top;
+    }
+    &-toggler{
+        position: relative;
+        top:-15px;
+        background-color:#ab9680;
+        &:hover{
+            text-decoration:none;
+        }
+    }
 }
 /*Barra de Navegacion Gral -- Fin*/
 /*Boton General*/
