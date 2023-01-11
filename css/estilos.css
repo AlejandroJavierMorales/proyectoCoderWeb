@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*Google Font*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*Partials*/
@@ -8,7 +9,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-#header {
+header #header {
   z-index: 2;
   width: 100vw; }
 
@@ -39,7 +40,7 @@ footer .pie {
     color: white; }
 
 /*ajuste de Card de bootstrap en index.html*/
-.cardIndex {
+section .cardIndex {
   padding: 10px; }
 
 /*Barra de Navegacion Gral -- Inicio*/
@@ -82,7 +83,6 @@ footer .pie {
   .navbar-toggler:hover {
     text-decoration: none; }
 
-/*Barra de Navegacion Gral -- Fin*/
 /*Boton General*/
 .btn {
   background-color: #ab9680;
@@ -97,25 +97,19 @@ footer .pie {
   .btn:hover {
     color: #69503c; }
 
-/*.boton_gral{
-    background-color:#ab9680;
-    color:white;
-}*/
 /*ajustes en contacto.html*/
-#formulario {
-  margin-top: 140px !important; }
-
-#formulario_contacto {
+main #formulario_contacto {
   background-color: #c9beb0 !important; }
-
-.form-control {
-  text-align: center !important;
-  color: #69503c !important;
-  background-color: #fff !important;
-  border: #c9beb0 1px solid !important; }
+  main #formulario_contacto #formulario {
+    margin-top: 140px !important; }
+    main #formulario_contacto #formulario .form-control {
+      text-align: center !important;
+      color: #69503c !important;
+      background-color: #fff !important;
+      border: #c9beb0 1px solid !important; }
 
 /*trae logo de whastApp al frente*/
-.logoWhatsApp {
+a .logoWhatsApp {
   z-index: 2;
   bottom: 150px !important; }
 
@@ -135,195 +129,216 @@ footer .pie {
     transform: scale(1); } }
 
 /*animacion Logo header*/
-#logo_header {
+header #logo_header {
   animation-name: rotar;
   animation-duration: 1.5s; }
 
-/*Animacion Titulos principales*/
-.titulo_main, #titulo_cabanas, #titulo_inicio {
+/*Animacion Titulos principales de cada pagina*/
+main .titulo_main, main #titulo_cabanas, main #titulo_inicio {
   animation-name: escalar;
   animation-duration: 1.5s; }
 
 /*ToolTip para iconos de servicios*/
-.tooltip-one {
-  padding: 10px 32px;
-  background: #fff;
-  position: relative;
-  min-width: 150px;
-  max-width: 180px;
-  border-radius: 5px;
-  text-align: center;
-  filter: drop-shadow(0 3px 5px #ccc);
-  line-height: 1.5; }
-
-.tooltip-one:after {
-  content: "";
-  position: absolute;
-  bottom: -9px;
-  left: 50%;
-  margin-left: -9px;
-  width: 18px;
-  height: 18px;
-  background: white;
-  transform: rotate(45deg); }
-
-.tooltip-container {
+main .servicios_iconos .tooltip-container {
   position: absolute;
   cursor: pointer; }
-  .tooltip-container .tooltip-one {
+  main .servicios_iconos .tooltip-container .tooltip-one {
     display: none; }
+  main .servicios_iconos .tooltip-container-one {
+    padding: 10px 32px;
+    background: #fff;
+    position: relative;
+    min-width: 150px;
+    max-width: 180px;
+    border-radius: 5px;
+    text-align: center;
+    filter: drop-shadow(0 3px 5px #ccc);
+    line-height: 1.5; }
+    main .servicios_iconos .tooltip-container-one:after {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 50%;
+      margin-left: -9px;
+      width: 18px;
+      height: 18px;
+      background: white;
+      transform: rotate(45deg); }
 
 /*Overlay imagenes index.html*/
-.proyectos-contenedor {
-  padding-top: 60px;
-  margin-bottom: 40px; }
-
-.overlay {
-  transition: all 0.2s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center; }
-
-.overlay p {
-  font-size: 25px;
-  font-weight: bold;
-  margin-bottom: 0; }
-
-.img_overlay {
+.card_texto_lista .img_overlay {
   position: relative; }
-
-.img_overlay:hover img {
-  opacity: 0.2; }
-
-.img_overlay:hover .overlay {
-  opacity: 1; }
+  .card_texto_lista .img_overlay:hover img {
+    opacity: 0.2; }
+  .card_texto_lista .img_overlay:hover .overlay {
+    opacity: 1; }
+  .card_texto_lista .img_overlay .overlay {
+    transition: all 0.2s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+    .card_texto_lista .img_overlay .overlay p {
+      font-size: 22px;
+      font-weight: bold;
+      margin-bottom: 0; }
 
 /*Titulos de Pagina - H1*/
-.titulo_main, #titulo_cabanas, #titulo_inicio {
+main .titulo_main, main #titulo_cabanas, main #titulo_inicio {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   font-weight: 700; }
 
 /*Personalizacion index.html*/
-#txt_detalle {
-  font-size: 1rem; }
+main {
+  /*Usando @extend y sentencia @for para definir estilos y comportamiento de 
+    las 6 imagenes de index.html*/ }
+  main .card_texto_pres, main .card_texto_lista {
+    font-size: 1.3rem;
+    border-style: none;
+    background-color: #c7b69f; }
+    main .card_texto_pres:hover, main .card_texto_lista:hover {
+      background-color: #c7b69f;
+      color: #69503c; }
+    main .card_texto_pres #txt_detalle, main .card_texto_lista #txt_detalle {
+      font-size: 1rem; }
+  main .card_texto_lista .item1, main .card_texto_lista .item2, main .card_texto_lista .item3, main .card_texto_lista .item4, main .card_texto_lista .item5, main .card_texto_lista .item6 {
+    padding: 2px;
+    border-radius: 20px;
+    box-shadow: 5px -9px 3px #69503c; }
+    main .card_texto_lista .item1:hover, main .card_texto_lista .item2:hover, main .card_texto_lista .item3:hover, main .card_texto_lista .item4:hover, main .card_texto_lista .item5:hover, main .card_texto_lista .item6:hover {
+      box-shadow: 5px -9px 3px #817d7d; }
 
-.card_texto_pres, .card_texto_lista {
-  font-size: 1.3rem;
-  border-style: none;
-  background-color: #c7b69f; }
-  .card_texto_pres:hover, .card_texto_lista:hover {
-    background-color: #c7b69f;
-    color: #69503c; }
-
-/*Usando @extend i sentencia For para definir estilos y comportamiento de 
-las 6 imagenes de index.html*/
-.item1, .item2, .item3, .item4, .item5, .item6 {
-  padding: 2px;
-  border-radius: 20px;
-  box-shadow: 5px -9px 3px #69503c; }
-  .item1:hover, .item2:hover, .item3:hover, .item4:hover, .item5:hover, .item6:hover {
-    box-shadow: 5px -9px 3px #817d7d; }
-
-/*
-.item2, .item3, .item4, .item5, .item6{
-    @extend .item1;
-}
-*/
 /* Personalizacion cabanas.html */
-#titulo_cabanas {
+main #titulo_cabanas {
   position: relative;
   top: 100px !important; }
 
-#link_arriba {
+.row_boton_arriba #link_arriba {
   text-decoration: none;
   color: white; }
 
 /*Personalizacion Titulos en index.html*/
-#titulo_inicio {
+main #titulo_inicio {
   padding: 3px;
   width: 100%;
   background-color: #69503c !important;
   color: #c9beb0; }
 
-#txt_tituloSecundario {
+main #txt_tituloSecundario {
   padding: 3px;
   font-size: 1rem;
   width: 100%;
   background-color: #69503c;
   color: #c9beb0; }
 
-.rectangulo_fondo {
-  background-color: #69503c; }
-
 /*ajustes en ubicacion.html*/
-#card_mapa {
+main #card_mapa {
   position: relative;
   top: 100px; }
 
-#card_texto {
+main #card_texto {
   position: relative;
   top: 100px; }
 
-#como_llegar {
+main #como_llegar {
   position: relative;
   top: 100px; }
 
-#pie_ubicacion {
+footer #pie_ubicacion {
   position: relative;
   top: 100px; }
 
 /*ajustes en servicios.html*/
-#titulo_servicios {
+main #titulo_servicios {
   position: relative;
   top: 100px !important; }
 
-#row_servicios .card {
-  margin-top: 50px !important; }
-
-#servicios_iconos {
+main #servicios_iconos {
   margin-top: 125px !important;
   background-color: #c9beb0 !important; }
 
+main #row_servicios .card {
+  margin-top: 50px !important; }
+
 /*Ajuste iconos redes sociales en footer*/
-#logosRedes img {
+footer #logosRedes img {
   width: 65px; }
 
 /*ajuste breack points*/
 @media (max-width: 475px) {
-  #pieTexto {
+  footer .pieTexto {
     font-size: 0.8rem;
     z-index: 2; }
-  .logoWhatsApp {
+  /*reduce el tamaño del logo de whatsapp en dispositivos pequeños*/
+  a .logoWhatsApp {
     width: 50px !important; } }
 
 @media (min-width: 768px) {
-  .nav-item {
+  nav .nav-item {
     padding: 15px; }
-  .titulo_main, #titulo_cabanas, #titulo_inicio {
+  h1 .titulo_main, h1 main #titulo_cabanas, main h1 #titulo_cabanas, h1 main #titulo_inicio, main h1 #titulo_inicio {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px; }
-  #titulo_servicios {
+  h1 #titulo_servicios {
     position: relative;
     top: 100px !important; } }
 
 @media (min-width: 992px) {
-  #logo_header {
+  /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
+  header #logo_header {
     width: 390px !important; } }
 
+@media (min-width: 888px) {
+  /*juste de cards en cabanas.hml*/
+  .contenedor_card {
+    margin-top: 10px;
+    border-radius: 5px !important; }
+    .contenedor_card .foto_cab1 {
+      justify-content: end !important; }
+    .contenedor_card .texto_cab1 {
+      justify-content: start !important; }
+    .contenedor_card .foto_cab2 {
+      justify-content: start !important; }
+    .contenedor_card .texto_cab2 {
+      justify-content: end !important; }
+    .contenedor_card .foto_cab3 {
+      justify-content: end !important; }
+    .contenedor_card .texto_cab3 {
+      justify-content: start !important; }
+    .contenedor_card .foto_cab4 {
+      justify-content: start !important; }
+    .contenedor_card .texto_cab4 {
+      justify-content: end !important; }
+    .contenedor_card .foto_cab5 {
+      justify-content: end !important; }
+    .contenedor_card .texto_cab5 {
+      justify-content: start !important; }
+    .contenedor_card .foto_cab6 {
+      justify-content: start !important; }
+    .contenedor_card .texto_cab6 {
+      justify-content: end !important; } }
+
 @media (max-width: 768px) {
-  #rowUbicacion {
+  /*Ajustes en ubicacion.html*/
+  section #rowUbicacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; }
-  #card_mapa {
-    position: relative;
-    top: 100px; }
-  #card_texto {
-    margin-top: 10px; } }
+    section #rowUbicacion #card_mapa {
+      position: relative;
+      top: 100px; }
+    section #rowUbicacion #card_texto {
+      margin-top: 10px; } }
+
+@media (min-width: 576px) and (max-width: 997px) {
+  /*Overlay imagenes index.html*/
+  .card_texto_lista .img_overlay .overlay p {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 0; } }

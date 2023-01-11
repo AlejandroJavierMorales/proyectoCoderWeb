@@ -21,10 +21,12 @@
 </head>
 <body>
     <header class="container-fluid" >
+      <!--Logo de Pagina-->
         <div class="row position-fixed" id="header">
             <div class="col-8 col-lg-4 h-100 header" id="col1">
                 <img id="logo_header" class="img-fluid " src="./assets/images/logo.png"/>
-            </div>                
+            </div>   
+            <!--Barra de Navegacion-->             
             <nav class="col-4 col-lg-8 navbar navbar-expand-lg h-100">
                 <div class="container-fluid" >
                   <a class="navbar-brand" href="#"></a>
@@ -63,6 +65,7 @@
     <main>
        <section class="container-fluid text-center">
             <div class="row">
+              <!--Imagen Principal de Top de Pagina-->
                 <div class="col mx-auto ">
                     <img id="imgPrincipal" class="img-fluid" src="./assets/images/piscina.jpg"/>
                 </div>
@@ -74,55 +77,52 @@
                 </div>
                 
                 <!--Card Texto Presentacion-->
-                <div class="card card_texto_pres col-sm-12 " >
+                <div class="card card_texto_pres col-sm-11 " >
                   <div class="container card-body text-center d-flex flex-column justify-content-center align-items-center">
                     <p id="txt_detalle" class="card-text">El Complejo de Cabañas Ecos del Valle nace gracias a la convicción de haber encontrado Nuestro Lugar en el Mundo...Los Reartes...haciendo realidad el sueño de vivir en un entorno sumamente natural, respirando ese aire puro y esa tranquilidad que cualquiera de los que hemos nacido y crecido en las grandes ciudades, anhelamos encontrar algún día para hacer nuestros días más serenos, saludables y placenteros.</p>
                     
-                    <!--Card Texto Lista-->
+                    <!--Card Texto Lista -- imagenes con Overlay de texto al pasar el moude por arriba-->
                     <div class="card card_texto_lista col-12  m-4" >
                       <div class="card-body d-flex flex-row justify-content-evenly" >
                         <div class="container-fluid text-center">
-                          <div class="row ">
-                            <div class="img_overlay col-11 col-sm-6 col-md-4">
+                          <div class="row">
+                            <div class="img_overlay col-12 col-sm-6 col-md-4">
                               <img class="item1 img-fluid" src="./assets/images/cabanas/cabana2_1.jpg" alt="cab1_">
                               <div class="overlay">
                                 <p class="txt1">a 400m del Río</p>
                               </div>
                             </div>
-                            <div class="img_overlay col-11 col-sm-6 col-md-4">
+                            <div class="img_overlay col-12 col-sm-6 col-md-4">
                               <img class="item2 img-fluid" src="./assets/images/cabanas/cabana2_1.jpg" alt="cab1_">
                               <div class="overlay">
                                 <p class="txt2">a 5min del Lago Los Molinos</p>
                               </div> 
                             </div>
-                            <div class="img_overlay col-11 col-sm-6 col-md-4">
+                            <div class="img_overlay col-12 col-sm-6 col-md-4">
                               <img class="item3 img-fluid" src="./assets/images/cabanas/cabana2_1.jpg" alt="cab1_">
                               <div class="overlay">
                                 <p class="txt3">a 8km de Villa Gral Belgrano</p>
                               </div>
                             </div>
-                          <!--</div>
-                          <div class="row">-->  
-                            <div class="img_overlay col-11 col-sm-6 col-md-4">
+                            <div class="img_overlay col-12 col-sm-6 col-md-4">
                               <img class="item4 img-fluid" src="./assets/images/cabanas/cabana2_1.jpg" alt="cab1_">
                               <div class="overlay">
                                 <p class="txt4">a 1000m del Centro</p>
                               </div>
                             </div>
-                            <div class="img_overlay col-11 col-sm-6 col-md-4">
+                            <div class="img_overlay col-12 col-sm-6 col-md-4">
                               <img class="item5 img-fluid" src="./assets/images/cabanas/cabana2_1.jpg" alt="cab1_">
                               <div class="overlay">
                                 <p class="txt5">a 30km de Cumbrecita</p>
                               </div>
                             </div>
-                            <div class="img_overlay col-11 col-sm-6 col-md-4">
+                            <div class="img_overlay col-12 col-sm-6 col-md-4">
                               <img class="item6 img-fluid" src="./assets/images/cabanas/cabana2_1.jpg" alt="cab1_">
                               <div class="overlay">
                                 <p class="txt6">a 3 cuadras de la Ruta S271</p>
                               </div>
                             </div>  
                           </div>
-
                         </div>
                       </div>
                     </div>
@@ -146,6 +146,7 @@
        </section>
        <section class="container text-center" >
             <div class="row ">
+                <!--Card Nuestro Rio-->
                 <div class="card cardIndex col-6 mx-auto mt-3" style="width: 22rem;">
                         <img src="./assets/images/rio1.jpg" class="card-img-top shadow" alt="el rio">
                         <div class="card-body">
@@ -158,6 +159,7 @@
                             en bicicleta. </p>
                         </div>
                 </div>
+                <!--Card Paseos-->
                 <div class="card cardIndex col-6 mx-auto mt-3" style="width: 22rem;">
                         <img src="./assets/images/paseos1.jpg" class="card-img-top shadow" alt="paseos">
                         <div class="card-body">
@@ -173,10 +175,11 @@
             
        </section>
     </main>
+        <!--Pie de Pagina-->
         <footer class="container-fluid">
             <div class="row mt-2 h-100 d-flex flex-row justify-content-between align-items-center pie">
-                <div class="col-8 text-center mt-1 h-100 pieTexto" >
-                  <div><p>Cabañas Ecos del Valle - 3546520243<br>
+                <div class="col-8 text-center mt-1 h-100 " >
+                  <div class="pieTexto"><p>Cabañas Ecos del Valle - 3546520243<br>
                     info@cabanasecosdelvalle.com.ar</p></div>  
                 </div> 
                 <div class="col-4 h-100 d-flex flex-row justify-content-center align-items-center logosRedes">

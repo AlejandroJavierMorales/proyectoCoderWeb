@@ -1,47 +1,141 @@
 
 /*ajuste breack points*/
 @media(max-width: 475px){
-    #pieTexto{
-        font-size: 0.8rem;
-        z-index:2;
+    footer{
+        & .pieTexto{
+             font-size: 0.8rem;
+             z-index:2;
+         } 
+     }
+    /*reduce el tamaño del logo de whatsapp en dispositivos pequeños*/
+    a{
+       & .logoWhatsApp{
+            width: 50px !important;
+       }
     }
-    .logoWhatsApp{
-        width: 50px !important;
-    }
+    
 }
 
 @media(min-width: 768px){
-    .nav-item{
-        padding: 15px;
+    nav{ 
+       & .nav{
+            &-item{
+            padding: 15px;
+        }
     }
-    .titulo_main{
-        text-align: center;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 24px;
+}
+    h1{
+       & .titulo_main{
+            text-align: center;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 24px;
+        }
+        & #titulo_servicios{
+            position: relative;
+            top: 100px !important;
+        }
     }
-    #titulo_servicios{
-        position: relative;
-        top: 100px !important;
-    }
+    
+    
 }
 @media(min-width: 992px){
-    #logo_header{
-        width: 390px !important;
+    /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
+    header{
+        & #logo_header{
+            width: 390px !important;
+        }
     }
+    
+}
+@media(min-width: 888px){
+    /*juste de cards en cabanas.hml*/
+    .contenedor_card{
+        margin-top: 10px;
+        border-radius: 5px !important;
+        @for $i from 1 through 6{   
+            @if $i==1{    
+                & .foto_cab#{$i}{
+                justify-content: end !important;
+                }
+                & .texto_cab#{$i}{
+                justify-content: start !important;
+                } 
+            }    
+            @if $i==2{    
+                & .foto_cab#{$i}{
+                justify-content: start !important;
+                }
+                & .texto_cab#{$i}{
+                justify-content: end !important;
+                } 
+            } 
+            @if $i==3{    
+                & .foto_cab#{$i}{
+                justify-content: end !important;
+                }
+                & .texto_cab#{$i}{
+                justify-content: start !important;
+                } 
+            }    
+            @if $i==4{    
+                & .foto_cab#{$i}{
+                justify-content: start !important;
+                }
+                & .texto_cab#{$i}{
+                justify-content: end !important;
+                } 
+            } 
+            @if $i==5{    
+                & .foto_cab#{$i}{
+                justify-content: end !important;
+                }
+                & .texto_cab#{$i}{
+                justify-content: start !important;
+                } 
+            }    
+            @if $i==6{    
+                & .foto_cab#{$i}{
+                justify-content: start !important;
+                }
+                & .texto_cab#{$i}{
+                justify-content: end !important;
+                } 
+            }          
+        }
+        
+    }
+  
 }
 @media(max-width: 768px){
-   #rowUbicacion{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   }
-   #card_mapa{
-    position: relative;
-    top: 100px;
-    }
-    #card_texto{
-        margin-top: 10px;
-    }   
-
+    /*Ajustes en ubicacion.html*/
+   section{
+        & #rowUbicacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & #card_mapa{
+                position: relative;
+                top: 100px;
+            }
+            & #card_texto{
+                margin-top: 10px;
+             }   
+        }
+   } 
 }
+@media(min-width: 576px) and (max-width:997px){
+    /*Overlay imagenes index.html*/
+  .card_texto_lista{
+    & .img_overlay {
+      & .overlay {
+        & p {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}
+    

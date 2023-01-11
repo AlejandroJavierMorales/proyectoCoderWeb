@@ -16,9 +16,11 @@
 <body>
     <header class="container-fluid" >
         <div class="row position-fixed d-flex flex-row justify-content-between" id="header">
+          <!--Logo de Pagina-->
             <div class="col-8 col-lg-4 h-100" id="col1">
                 <img id="logo_header" class="img-fluid" src="../assets/images/logo.png"/>
-            </div>                
+            </div>        
+            <!--Barra de Navegacion-->        
             <nav id="menuNav" class="col-4 col-lg-8 navbar navbar-expand-lg h-100">
                 <div class="container-fluid" >
                   <a class="navbar-brand" href="#"></a>
@@ -54,6 +56,7 @@
         </div>   
     </header>
     <main class="container">
+      <!--Formulario del Contacto-->
       <h1 class="titulo_main" id="titulo_cabanas">Formulario de Contacto</h1>
         <form id="formulario_contacto" class="row g-3 p-2 ">
             <div id="formulario" class = "form-group">
@@ -87,7 +90,7 @@
               </div>   
             </div>
           </form>
-                
+            <!--Contenedor de Detalles de Contacto-->
             <aside class="row seccionContacto_texto">
                 
                 <article id="textoContacto" class="col text-center">
@@ -113,12 +116,15 @@
                   </article> 
             </aside>
     </main>
+    <!--Pie de Pagina-->
     <footer class="container-fluid">
         <div class="row mt-2 h-100 d-flex flex-row justify-content-between align-items-center pie">
             <!--Logo de WhatsApp-->
             <div class="row">
                 <div class="col">
-                <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp-6860919__340.png" alt="logoDeWhatsApp">
+                  <a href="https://api.whatsapp.com/send?phone=543546520243&text=Consulta desde la Web: Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20Alojamiento%20." class="float" target="_blank">
+                    <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp-6860919__340.png" alt="logoDeWhatsApp">
+                  </a>
                 </div>
            </div>
             <div class="col-8 text-center mt-1 h-100 pieTexto">

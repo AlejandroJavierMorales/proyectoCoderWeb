@@ -8,9 +8,12 @@
     }
 }
 /*ajuste de Card de bootstrap en index.html*/
-.cardIndex{
-    padding: 10px;
+section{
+   & .cardIndex{
+        padding: 10px;
+    }
 }
+
 
 /*Barra de Navegacion Gral -- Inicio*/
 .nav{
@@ -58,7 +61,6 @@
         }
     }
 }
-/*Barra de Navegacion Gral -- Fin*/
 /*Boton General*/
 .btn {
     background-color:#ab9680;
@@ -75,28 +77,30 @@
         color:#69503c;
     }
 }
-/*.boton_gral{
-    background-color:#ab9680;
-    color:white;
-}*/
 /*ajustes en contacto.html*/
-#formulario{
-    margin-top: 140px !important;
-}
-#formulario_contacto{
+main{
+    & #formulario_contacto{
     background-color: #c9beb0 !important;
+    & #formulario{
+        margin-top: 140px !important;
+        & .form-control {
+            text-align: center !important;
+            color:#69503c !important;
+            background-color: #fff !important;
+            border:#c9beb0 1px solid !important;   
+        }
+    }
 }
-.form-control {
-    text-align: center !important;
-    color:#69503c !important;
-    background-color: #fff !important;
-    border:#c9beb0 1px solid !important;
-    
 }
+
+
 /*trae logo de whastApp al frente*/
-.logoWhatsApp {
-    z-index: 2;
-    bottom: 150px !important; }
+a{
+    & .logoWhatsApp {
+        z-index: 2;
+        bottom: 150px !important; 
+    }
+}
 
 
 

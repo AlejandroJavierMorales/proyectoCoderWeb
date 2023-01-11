@@ -1,107 +1,123 @@
 /*Titulos de Pagina - H1*/
-.titulo_main{
-    text-align: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.3rem;
-    font-weight: 700;
+main{
+    & .titulo_main{
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
 }
+
 /*Personalizacion index.html*/
-#txt_detalle{
-    font-size: 1rem;
-}
-.card_texto_pres{
-    font-size: 1.3rem;
-    border-style: none;
-    background-color: $body_color;
-    &:hover{
+main {
+    & .card_texto_pres{
+        font-size: 1.3rem;
+        border-style: none;
         background-color: $body_color;
-        color:$card_font_color;
+        &:hover{
+            background-color: $body_color;
+            color:$card_font_color;
+        }
+        & #txt_detalle{
+            font-size: 1rem;
+        }
+        
     }
+    /*Usando @extend y sentencia @for para definir estilos y comportamiento de 
+    las 6 imagenes de index.html*/
+    & .card_texto_lista{
+            @extend .card_texto_pres;
+            .item1{
+                padding:2px;
+                border-radius: 20px;
+                box-shadow: 5px -9px 3px #69503c;;
+                &:hover{
+                    box-shadow: 5px -9px 3px rgb(129, 125, 125);
+                }  
+            }
+            @for $i from 2 through 6{
+                $a:($i)-1;  
+                .item#{$i}{
+                    @extend .item#{$a};
+                }
+            }
+    }   
 }
-.card_texto_lista{
-    @extend .card_texto_pres;
-}
-
-/*Usando @extend i sentencia For para definir estilos y comportamiento de 
-las 6 imagenes de index.html*/
-.item1{
-    padding:2px;
-    border-radius: 20px;
-    box-shadow: 5px -9px 3px #69503c;;
-    &:hover{
-        box-shadow: 5px -9px 3px rgb(129, 125, 125);
-    }    
-}
-@for $i from 2 through 6{
-    $a:($i)-1;  
-    .item#{$i}{
-        @extend .item#{$a};
-    }
-}
-/*
-.item2, .item3, .item4, .item5, .item6{
-    @extend .item1;
-}
-*/
-
 /* Personalizacion cabanas.html */
-#titulo_cabanas{
-    @extend .titulo_main;
-    position: relative;
-    top: 100px !important;
+main{
+    & #titulo_cabanas{
+        @extend .titulo_main;
+        position: relative;
+        top: 100px !important;
+    }
 }
-#link_arriba{
-    text-decoration: none;
-    color: white;
+.row_boton_arriba{
+    & #link_arriba{
+        text-decoration: none;
+        color: white;   
+    }
 }
+
 /*Personalizacion Titulos en index.html*/
-#titulo_inicio{
-    @extend .titulo_main;
-    padding: 3px;
-    width: 100%; 
-    background-color:$body_font_color !important;
-    color:$card_color;
+main{
+    & #titulo_inicio{
+        @extend .titulo_main;
+        padding: 3px;
+        width: 100%; 
+        background-color:$body_font_color !important;
+        color:$card_color;
+    }
+    & #txt_tituloSecundario{
+        padding: 3px;
+        font-size: 1rem;
+        width: 100%; 
+        background-color:$body_font_color;
+        color:$card_color;
+    }
 }
-#txt_tituloSecundario{
-    padding: 3px;
-    font-size: 1rem;
-    width: 100%; 
-    background-color:$body_font_color;
-    color:$card_color;
-}
-.rectangulo_fondo{
-    background-color: #69503c;
-}
+
 /*ajustes en ubicacion.html*/
-#card_mapa{
-    position: relative;
-    top: 100px;
+main{
+    
+    & #card_mapa{
+        position: relative;
+        top: 100px;
+    }
+    & #card_texto{
+        position: relative;
+        top: 100px;
+    } 
+    & #como_llegar{
+        position: relative;
+        top: 100px;
+    }
 }
-#card_texto{
-    position: relative;
-    top: 100px;
-} 
-#como_llegar{
-    position: relative;
-    top: 100px;
+footer{
+    & #pie_ubicacion{
+        position: relative;
+        top: 100px;
+    }
 }
-#pie_ubicacion{
-    position: relative;
-    top: 100px;
-}
+
+
 /*ajustes en servicios.html*/
-#titulo_servicios{
-    position: relative;
-    top: 100px !important;
+main{
+    & #titulo_servicios{
+        position: relative;
+        top: 100px !important;
+    }
+    & #servicios_iconos{
+        margin-top: 125px !important;
+        background-color: #c9beb0 !important;
+    }
+    & #row_servicios .card{
+        margin-top: 50px !important;
+    }
 }
-#row_servicios .card{
-    margin-top: 50px !important;
-}
-#servicios_iconos{
-    margin-top: 125px !important;
-    background-color: #c9beb0 !important;
-}
+
 /*Ajuste iconos redes sociales en footer*/
-#logosRedes img{
-    width: 65px;
+footer{
+    & #logosRedes img{
+        width: 65px;
+    }
 }

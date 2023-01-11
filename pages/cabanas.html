@@ -16,9 +16,11 @@
 <body >
     <header class="container-fluid" >
         <div class="row position-fixed d-flex flex-row justify-content-between " id="header">
+          <!--Logo de Pagina-->
             <div class="col-8 col-lg-4 h-100" id="col1">
                 <img id="logo_header" class="img-fluid" src="../assets/images/logo.png"/>
-            </div>                
+            </div>  
+            <!--Barra de Navegacion-->              
             <nav id="menuNav" class="col-4 col-lg-8 navbar navbar-expand-lg h-100">
                 <div class="container-fluid" >
                   <a class="navbar-brand" href="#"></a>
@@ -54,11 +56,12 @@
         </div>   
     </header>
     <main class="container-fluid">
+      <!--Cuerpo Principal / Titulo-->
       <h1 class="titulo_main" id="titulo_cabanas">Las Cabañas
       </h1>
         <section class="container ">
             <div class="row d-flex flex-row">
-              
+               <!--Barra de navegacion secundaria - Interna-->
                <ul class="col nav rounded d-flex flex-row justify-content-center">
                 <div>
                   <li class="nav-item">
@@ -103,11 +106,10 @@
             </div>
             
           </section>
-        <section class="container-fluid">
-            
-            <div class="row p-2 " id="cabania1">
+        <section class="container-fluid"> 
+            <div class="row p-2 contenedor_card"  id="cabania1">
                 <!--Carrousel-Card Cabaña nro1-->
-                <section class="col d-flex flex-row justify-content-end align-items-center" id="cabania1_Fotos">
+                <section class="col foto_cab1 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
                     <div id="carouselCabania1" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -142,8 +144,9 @@
                           <span class="visually-hidden">Siguiente</span>
                         </button>
                       </div>
-                </section> 
-                <section class="col d-flex flex-row justify-content-start" id="cabania1_texto">
+                </section>
+                <!--Card Descripcion Cabaña1--> 
+                <section class="col texto_cab1 d-flex flex-row justify-content-center" id="cabania1_texto">
                     <div class="card rounded" style="width: 25rem;">
                         <div class="card-body">
                           <h5 id="tit1_cab" class="card-title">CABAÑA Nro1</h5>
@@ -156,8 +159,9 @@
                 </section>
             </div>
             <!--Card-Carrousel Cabaña nro2-->
-            <div class="row p-2" id="cabania2">
-                <section class="col d-flex flex-row justify-content-end " id="cabania2_texto">
+            <div class="row p-2 contenedor_card" id="cabania2">
+                <section class="col texto_cab2 d-flex flex-row justify-content-center " id="cabania2_texto">
+                    <!--Card Descripcion Cabaña2--> 
                     <div class="card rounded" style="width: 25rem;">
                         <div class="card-body">
                           <h5 id="tit2_cab" class="card-title">CABAÑA Nro2</h5>
@@ -168,7 +172,7 @@
                         </div>
                       </div>        
                 </section>
-                <section class="col d-flex flex-row justify-content-start align-items-center" id="cabania2_Fotos">
+                <section class="col foto_cab2 d-flex flex-row justify-content-center align-items-center" id="cabania2_Fotos">
                     <div id="carouselCabania2" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                         <div class="carousel-indicators">
                           <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -206,8 +210,8 @@
                 </section>     
             </div>
         <!--Carrousel-Card Cabaña nro3-->
-          <div class="row p-2" id="cabania3">
-              <section class="col d-flex flex-row justify-content-end align-items-center" id="cabania1_Fotos">
+          <div class="row p-2 contenedor_card" id="cabania3">
+              <section class="col foto_cab3 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
                   <div id="carouselCabania3" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                       <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -243,7 +247,8 @@
                       </button>
                     </div>
               </section>  
-              <section class="col d-flex flex-row justify-content-start" id="cabania3_texto">
+              <!--Card Descripcion Cabaña3--> 
+              <section class="col texto_cab3 d-flex flex-row justify-content-center" id="cabania3_texto">
                   <div class="card rounded" style="width: 25rem;">
                       <div class="card-body">
                         <h5 id="tit3_cab" class="card-title">CABAÑA Nro3</h5>
@@ -256,8 +261,9 @@
               </section>
           </div> 
         <!--Card-Carrousel Cabaña nro4-->
-        <div class="row p-2" id="cabania4">
-          <section class="col d-flex flex-row justify-content-end " id="cabania4_texto">
+        <div class="row p-2 contenedor_card" id="cabania4">
+          <section class="col texto_cab4 d-flex flex-row justify-content-center" id="cabania4_texto">
+              <!--Card Descripcion Cabaña4--> 
               <div class="card rounded" style="width: 25rem;">
                   <div class="card-body">
                     <h5 id="tit4_cab" class="card-title">CABAÑA Nro4</h5>
@@ -268,7 +274,7 @@
                   </div>
                 </div>        
           </section>
-          <section class="col d-flex flex-row justify-content-start align-items-center" id="cabania2_Fotos">
+          <section class="col foto_cab4 d-flex flex-row justify-content-center align-items-center" id="cabania2_Fotos">
               <div id="carouselCabania4" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                   <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -306,8 +312,8 @@
           </section>     
         </div>
         <!--Carrousel-Card Cabaña nro5-->
-        <div class="row p-2" id="cabania5">
-            <section class="col d-flex flex-row justify-content-end align-items-center" id="cabania1_Fotos">
+        <div class="row p-2 contenedor_card" id="cabania5">
+            <section class="col foto_cab5 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
                 <div id="carouselCabania5" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                     <div class="carousel-indicators">
                       <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -343,7 +349,8 @@
                     </button>
                 </div>
               </section>
-              <section class="col d-flex flex-row justify-content-start" id="cabania5_texto">
+              <!--Card Descripcion Cabaña5--> 
+              <section class="col texto_cab5 d-flex flex-row justify-content-center" id="cabania5_texto">
                 <div class="card rounded" style="width: 25rem;">
                     <div class="card-body">
                       <h5 id="tit5_cab" class="card-title">CABAÑA Nro5</h5>
@@ -356,8 +363,9 @@
               </section>
         </div>
         <!--Card-Carrousel Cabaña nro6-->
-        <div class="row p-2" id="cabania6">
-          <section class="col d-flex flex-row justify-content-end " id="cabania6_texto">
+        <div class="row p-2 contenedor_card" id="cabania6">
+          <section class="col texto_cab6 d-flex flex-row justify-content-center " id="cabania6_texto">
+            <!--Card Descripcion Cabaña6-->
             <div class="card rounded" style="width: 25rem;">
                 <div class="card-body">
                   <h5 id="tit6_cab" class="card-title">CABAÑA Nro6</h5>
@@ -368,7 +376,7 @@
                 </div>
               </div>        
           </section>
-          <section class="col d-flex flex-row justify-content-start align-items-center" id="cabania6_Fotos">
+          <section class="col foto_cab6 d-flex flex-row justify-content-center align-items-center" id="cabania6_Fotos">
             <div id="carouselCabania6" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -408,11 +416,13 @@
         <!--Logo de WhatsApp-->
         <div class="row">
           <div class="col">
-            <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp-6860919__340.png" alt="logoDeWhatsApp">
+            <a href="https://api.whatsapp.com/send?phone=543546520243&text=Consulta desde la Web: Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20Alojamiento%20." class="float" target="_blank">
+              <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp-6860919__340.png" alt="logoDeWhatsApp">
+            </a>
           </div>
          </div>
         <!-- Boton de Volver Arriba - enlace interno-->   
-        <div class="row p-2 d-flex justify-content-center align-items-center">
+        <div class="row row_boton_arriba p-2 d-flex justify-content-center align-items-center">
           <div  class="col-3 rounded ">
             <a id="link_arriba" href="#titulo_cabanas"><button type="button" class="btn boton_arriba"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-index" viewBox="0 0 16 16">
               <path d="M6.75 1a.75.75 0 0 1 .75.75V8a.5.5 0 0 0 1 0V5.467l.086-.004c.317-.012.637-.008.816.027.134.027.294.096.448.182.077.042.15.147.15.314V8a.5.5 0 1 0 1 0V6.435a4.9 4.9 0 0 1 .106-.01c.316-.024.584-.01.708.04.118.046.3.207.486.43.081.096.15.19.2.259V8.5a.5.5 0 0 0 1 0v-1h.342a1 1 0 0 1 .995 1.1l-.271 2.715a2.5 2.5 0 0 1-.317.991l-1.395 2.442a.5.5 0 0 1-.434.252H6.035a.5.5 0 0 1-.416-.223l-1.433-2.15a1.5 1.5 0 0 1-.243-.666l-.345-3.105a.5.5 0 0 1 .399-.546L5 8.11V9a.5.5 0 0 0 1 0V1.75A.75.75 0 0 1 6.75 1zM8.5 4.466V1.75a1.75 1.75 0 1 0-3.5 0v5.34l-1.2.24a1.5 1.5 0 0 0-1.196 1.636l.345 3.106a2.5 2.5 0 0 0 .405 1.11l1.433 2.15A1.5 1.5 0 0 0 6.035 16h6.385a1.5 1.5 0 0 0 1.302-.756l1.395-2.441a3.5 3.5 0 0 0 .444-1.389l.271-2.715a2 2 0 0 0-1.99-2.199h-.581a5.114 5.114 0 0 0-.195-.248c-.191-.229-.51-.568-.88-.716-.364-.146-.846-.132-1.158-.108l-.132.012a1.26 1.26 0 0 0-.56-.642 2.632 2.632 0 0 0-.738-.288c-.31-.062-.739-.058-1.05-.046l-.048.002zm2.094 2.025z"/>
@@ -420,7 +430,7 @@
           </div>
         </div>
     </main>
-        
+    <!--Pie de Pagina-->
     <footer class="container-fluid">
         <div class="row mt-2 h-100 d-flex flex-row justify-content-between align-items-center pie">
             <div class="col-8 text-center mt-1 h-100 pieTexto">

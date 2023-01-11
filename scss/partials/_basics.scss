@@ -4,11 +4,13 @@
     padding:0;
     box-sizing: border-box;
 }
-
-#header{
-    z-index:2;
-    width: 100vw;
+header{
+    & #header{
+        z-index:2;
+        width: 100vw;
+    }
 }
+
 
 body{
     background-color: $body_color; /*aplicando variables*/
@@ -16,14 +18,14 @@ body{
 }
 /*ajustes en footer*/
 footer{
-    .logosRedes img{
+    & .logosRedes img{
         width: 65px;
     }
-    .pieTexto{
+    & .pieTexto{
         font-size: 1rem;
         z-index:2;
     }
-    .pie{
+    & .pie{
         height: 18vh;
         background-color:$footer_color;
     }
