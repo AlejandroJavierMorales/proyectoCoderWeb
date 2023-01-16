@@ -61,40 +61,63 @@
         </div>   
     </header>
     <main >
+        <!--Titulo de Pagina-->
+        <h1 class="titulo_main" id="titulo_ubicacion">Ubicación</h1>
         <section  class="container-fluid">
             <!--row de Ubicacion: 2 cards 1 con mapa y2 con texto descriptivo-->
-            <div id="rowUbicacion" class="row p-2 ">
-                <div id="card_mapa" class="card col" style="width: 30rem;">
+            <div id="rowUbicacion" class="row p-2 d-flex justify-content-evenly ">
+                <div id="card_mapa" class="card col " style="width: 30rem;">
                     <!--Google map-->
-                    <div id="map-container-google-2" class="ratio ratio-16x9 z-depth-1-half map-container" style="height: 500px">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.042893203196!2d-64.57806208514248!3d-31.90543192726822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539107408d1d%3A0x2e9e3ab367ff939b!2sCaba%C3%B1as%20Ecos%20del%20Valle!5e0!3m2!1ses-419!2sar!4v1673217346143!5m2!1ses-419!2sar" width="600" height="450" style="border:0; padding:5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div id="map-container-google-2" class="ratio ratio-16x9 z-depth-1-half map-container " style="height: 500px">
+                        <iframe class="d-flex align-items-center" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3387.042893203196!2d-64.57806208514248!3d-31.90543192726822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b6539107408d1d%3A0x2e9e3ab367ff939b!2sCaba%C3%B1as%20Ecos%20del%20Valle!5e0!3m2!1ses-419!2sar!4v1673217346143!5m2!1ses-419!2sar" width="600" height="450" style="border:0; padding:5px" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
+                    <p >
+                        DESDE VILLA GENERAL BELGRANO
+                    </p>
+                    <p style="text-align:left; font-size:0.9rem;">
+                        De la Terminal pueden tomas un bus urbano de a empresa Lep (WhatsApp:351 246-6600) o Pajaro Blanco (tel:3546-461709), con los que llegarán por Av San Martín a 2 cuadras del complejo.
+                        O bién, toma la empresa Sierras Cordobesas (opcion por Potrero de Garay) que los dejará sobre ruta S271 a 3 cuadras del complejo.
+                    </p>
                 </div>
                 <!--card con texto descriptivo-->
                 <div id="card_texto" class="card col" style="width: 30rem;">
                     <div class="card-body">
                     <p class="card-text">
-                        <h1 id="titulo">UBICACION</h1>
-                        <p>
-                            El Complejo de Cabañas Ecos del Valle nace gracias a la convicción de haber encontrado Nuestro Lugar en el Mundo...Los Reartes...haciendo realidad el sueño de vivir en un entorno sumamente natural, respirando ese aire puro y esa tranquilidad que cualquiera de los que hemos nacido y crecido en las grandes ciudades, anhelamos encontrar algún día para hacer nuestros días más serenos, saludables y placenteros.
-                            Queremos brindarles a nuestros huéspedes todas las comodidades necesarias para que puedan sentir la misma paz, alegría y satisfacción que sentimos nosotros de poder disfrutar, en Los Reartes, día a día de este lugar.
-                            El Complejo consta de Cabañas totalmente equipadas para 2 hasta 5 personas, parque con Juegos para Niños, Piscina de 4x8m con Solarium, Reposeras y Sombrillas, Cancha de Voley y de Futbol Tenis - Minitenis. Iluminación nocturna en ingreso, en galerias de cada cabaña, en el perímetro de la piscina y en el parque...
-                            Ubicados a 400m del Rio Los Reartes y a 300m de la ruta que los lleva hacia la izquierda a Villa Gral Belgrano y a la derecha al Lago Los Molinos en 5'.
+                        <h3 id="titulo">Cómo Llegar...</h3>
+                        <p style="text-align:center">Los Reartes, se encuentra situado en el Valle de Calamuchita de la provincia de Córdoba a 85km de la Capital Provincial.</p>
+                        <p style="text-align:left; font-size:0.9rem;">
+                            EN AUTO: quienes lleguen por el Norte del Valle desde Buenos Aires o Santa Fe, pueden llegar por Autopista Rosario Cordoba,
+                            bajando de la misma a la altuta de Rio II y tomando ruta C45 hasta Alta Gracia y tomar ruta 5 hasta Ciudad America.
+                            En la rotonda de esa localidad tomar ruta S271 hasta el kilometro 67,5.
+                            Quienes lleguen por el Sur del Valle llegaran por ruta 5 hasta Villa Genral Belgrano, ingresan por cualquiera desus 3 accesos y continuando la 
+                            calle princial Av. Roca que luego es San Martín y Ruta S271 hasta el km 67,5 alli bajar 3 cuadras por calle Alvarez Thomas hasta Alberdi...
+                        </p>
+                        <p style="text-align:left; font-size:0.9rem;">
+                           EN BUS: Desde Buenos Aires, micros que llegan a la localidad de Villa General Belgrano.
+                           <ul style="list-style: none; font-size:0.9rem;">
+                                <li>Sierras Cordobesas: 011-43149488</li>
+                                <li>Buses Lep: (llega hasta Los Reartes) 011-43145264</li>
+                                <li>San Juan - Mar del Plata: 011-43158002</li>
+                                <li>Chevallier: 011-40005255</li>
+                                <li></li>
+                           </ul>
+                                                
+                           <p style="text-align:left; font-size:0.9rem;">Desde el resto de país, llegan a la terminal de Córdoba y desde alli, pueden tomar la empresa Sierras
+                           de Calamuchita (0351-4226080) opción por Potrero de Garay.  Bajando en Ruta S271 Km67,5 a 3 cuadras del complejo. 
+                           </p> 
+                           <p style="text-align:left; font-size:0.9rem;">
+                            EN AVION:
+                            Se arriba al Aeropuerto Internacional Ingeniero Ambrosio Taravella (Pajas Blancas), ubicado a 11,5Km de la ciudad de Córdoba.
+                            Allí hay dos servicios que viajan hacia la terminal: taxis y colectivos Aerobús. 
+                            Ena vez en la terminal de Córdoba tomar la empresa Sierras de Calamuchita (0351-4226080) opción por Potrero de Garay que llega a Los Reartes.
+                            </p> 
+
                         </p> 
                     </p>
                     </div>
                 </div>
             </div>
         </section>
-        <!--contenedor de detalle de como llegar-->
-        <section class="container-fluid">
-            <div class="row p-2">
-                <div id="como_llegar" class="col ">
-                    <h3>Como Llegar...</h3>
-                    <p>Las confirmaciones de Reservas se realizarán exclusivamente por Email, en el cual debe constar el detalle de servicios ofrecidos. Ante cualquier duda consultenos por cualquiera de nuestras vias de contacto.</p>
-                </div>
-            </div>
-        </section>      
     </main>
     <!--Pie de Pagina-->
     <footer id="pie_ubicacion" class="container-fluid">

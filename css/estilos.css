@@ -241,6 +241,10 @@ main #txt_tituloSecundario {
   color: #c9beb0; }
 
 /*ajustes en ubicacion.html*/
+main #titulo_ubicacion {
+  position: relative;
+  top: 100px !important; }
+
 main section div #card_mapa {
   position: relative;
   top: 120px; }
