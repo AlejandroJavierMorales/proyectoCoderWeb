@@ -1,0 +1,6 @@
+/*Cambiar colores de fondo y texto de un componento o elemento*/
+@mixin invertir_colores_cards{
+    background-color:$color_fondo;
+    color: $color_fuente;
+    
+}

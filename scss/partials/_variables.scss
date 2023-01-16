@@ -4,5 +4,6 @@ $body_font_color: #69503c;
 $footer_color: #ab9680;
 $card_color:#c9beb0;
 $card_font_color:#69503c;
-$card_hover_color:black;
-$card_hover_font_color:white;
+/*colores de fondo y fuente - ver mixins.scss*/
+$color_fondo: rgb(65, 62, 62);
+$color_fuente: rgb(250, 241, 241) ;

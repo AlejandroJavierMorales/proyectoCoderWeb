@@ -1,6 +1,13 @@
 
 /*ajuste breack points*/
 @media(max-width: 475px){
+    main{
+        & .titulo_main{
+            & .h1_titulo_inicio{
+                font-size: 1rem;
+            }
+        }
+    }
     footer{
         & .pieTexto{
              font-size: 0.8rem;
@@ -14,6 +21,13 @@
        }
     }
     
+}
+@media(max-width:767px){
+    .actividades{
+        &__icons{
+            width: 100%;
+        }
+    }
 }
 
 @media(min-width: 768px){
@@ -35,8 +49,11 @@
             top: 100px !important;
         }
     }
-    
-    
+    .actividades{
+        &__icons{
+            width: 85%;
+        }
+    }
 }
 @media(min-width: 992px){
     /*aumenta e tamaño del logo a partir de los 992px de pantalla*/

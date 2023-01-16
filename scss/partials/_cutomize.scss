@@ -6,25 +6,35 @@ main{
         font-size: 1.3rem;
         font-weight: 700;
     }
+
 }
 
 /*Personalizacion index.html*/
 main {
+    & .titulo_main{
+        &  .h1_titulo_inicio{
+            @extend .titulo_main;
+
+        }
+        &  .h2_titulo_inicio{
+                @extend .titulo_main;
+                font-size: 0.7rem;
+                color: $color_fuente;
+                font-weight: 500;
+        }
+    } 
     & .card_texto_pres{
         font-size: 1.3rem;
         border-style: none;
         background-color: $body_color;
         &:hover{
             background-color: $body_color;
-            color:$card_font_color;
+            color:$body_font_color;
         }
         & #txt_detalle{
             font-size: 1rem;
-        }
-        
+        } 
     }
-    /*Usando @extend y sentencia @for para definir estilos y comportamiento de 
-    las 6 imagenes de index.html*/
     & .card_texto_lista{
             @extend .card_texto_pres;
             .item1{
@@ -68,6 +78,7 @@ main{
         color:$card_color;
     }
     & #txt_tituloSecundario{
+        @extend .titulo_main;
         padding: 3px;
         font-size: 1rem;
         width: 100%; 
@@ -78,26 +89,28 @@ main{
 
 /*ajustes en ubicacion.html*/
 main{
-    
-    & #card_mapa{
-        position: relative;
-        top: 100px;
-    }
-    & #card_texto{
-        position: relative;
-        top: 100px;
-    } 
-    & #como_llegar{
-        position: relative;
-        top: 100px;
-    }
+    & section{
+        & div{
+            & #card_mapa{
+                position: relative;
+                top: 120px;
+            } 
+        }
+        & #card_texto{
+            position: relative;
+            top: 120px;
+        } 
+        & #como_llegar{
+            position: relative ;
+            top: 120px ;
+        }
+    }  
 }
-footer{
-    & #pie_ubicacion{
-        position: relative;
-        top: 100px;
-    }
+#pie_ubicacion{
+        position: relative ;
+        top: 150px ;
 }
+
 
 
 /*ajustes en servicios.html*/
@@ -110,13 +123,16 @@ main{
         margin-top: 125px !important;
         background-color: #c9beb0 !important;
     }
-    & #row_servicios .card{
-        margin-top: 50px !important;
+    & #row_servicios{ 
+        & .card{
+           margin-top: 50px !important;
+           height: 700px !important;
     }
+}
 }
 
 /*Ajuste iconos redes sociales en footer*/
-footer{
+footer, article{
     & #logosRedes img{
         width: 65px;
     }

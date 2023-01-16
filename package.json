@@ -1,18 +1,18 @@
 {
-  "name": "pre-entrega2_alejandromorales",
+  "name": "proyecto_coder_alejandro_morales",
   "version": "1.0.0",
-  "description": "",
+  "description": "Desarrollo de Web Site de complejo de cabañas Ecos del Valle, en Los Rartes, Pcia. de Córdoba",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/main.scss css/estilos.css",
-    "watch-css": "nodemon -e scss -x  \"npm run build-css\"" 
+    "watch-css": "nodemon -e scss -x  \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AlejandroJMorales2022/proyectoCoderWeb.git"
   },
-  "author": "",
+  "author": "Morales Alejandro Javier",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/AlejandroJMorales2022/proyectoCoderWeb/issues"

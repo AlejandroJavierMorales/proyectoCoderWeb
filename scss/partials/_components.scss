@@ -3,8 +3,7 @@
     background-color: $card_color;
     color:$card_font_color;
     &:hover{
-        background-color:$card_hover_color;
-        color:$card_hover_font_color;
+        @include invertir_colores_cards;
     }
 }
 /*ajuste de Card de bootstrap en index.html*/

@@ -3,6 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*Partials*/
 /*Variables*/
+/*colores de fondo y fuente - ver mixins.scss*/
+/*Cambiar colores de fondo y texto de un componento o elemento*/
 /*Reset Gral*/
 * {
   margin: 0;
@@ -36,8 +38,8 @@ footer .pie {
   background-color: #c9beb0;
   color: #69503c; }
   .card:hover {
-    background-color: black;
-    color: white; }
+    background-color: #413e3e;
+    color: #faf1f1; }
 
 /*ajuste de Card de bootstrap en index.html*/
 section .cardIndex {
@@ -134,7 +136,7 @@ header #logo_header {
   animation-duration: 1.5s; }
 
 /*Animacion Titulos principales de cada pagina*/
-main .titulo_main, main #titulo_cabanas, main #titulo_inicio {
+main .titulo_main, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas, main #titulo_inicio, main #txt_tituloSecundario {
   animation-name: escalar;
   animation-duration: 1.5s; }
 
@@ -186,31 +188,34 @@ main .servicios_iconos .tooltip-container {
       margin-bottom: 0; }
 
 /*Titulos de Pagina - H1*/
-main .titulo_main, main #titulo_cabanas, main #titulo_inicio {
+main .titulo_main, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas, main #titulo_inicio, main #txt_tituloSecundario {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   font-weight: 700; }
 
 /*Personalizacion index.html*/
-main {
-  /*Usando @extend y sentencia @for para definir estilos y comportamiento de 
-    las 6 imagenes de index.html*/ }
-  main .card_texto_pres, main .card_texto_lista {
-    font-size: 1.3rem;
-    border-style: none;
-    background-color: #c7b69f; }
-    main .card_texto_pres:hover, main .card_texto_lista:hover {
-      background-color: #c7b69f;
-      color: #69503c; }
-    main .card_texto_pres #txt_detalle, main .card_texto_lista #txt_detalle {
-      font-size: 1rem; }
-  main .card_texto_lista .item1, main .card_texto_lista .item2, main .card_texto_lista .item3, main .card_texto_lista .item4, main .card_texto_lista .item5, main .card_texto_lista .item6 {
-    padding: 2px;
-    border-radius: 20px;
-    box-shadow: 5px -9px 3px #69503c; }
-    main .card_texto_lista .item1:hover, main .card_texto_lista .item2:hover, main .card_texto_lista .item3:hover, main .card_texto_lista .item4:hover, main .card_texto_lista .item5:hover, main .card_texto_lista .item6:hover {
-      box-shadow: 5px -9px 3px #817d7d; }
+main .titulo_main .h2_titulo_inicio, main #titulo_cabanas .h2_titulo_inicio, main #titulo_inicio .h2_titulo_inicio, main #txt_tituloSecundario .h2_titulo_inicio {
+  font-size: 0.7rem;
+  color: #faf1f1;
+  font-weight: 500; }
+
+main .card_texto_pres, main .card_texto_lista {
+  font-size: 1.3rem;
+  border-style: none;
+  background-color: #c7b69f; }
+  main .card_texto_pres:hover, main .card_texto_lista:hover {
+    background-color: #c7b69f;
+    color: #69503c; }
+  main .card_texto_pres #txt_detalle, main .card_texto_lista #txt_detalle {
+    font-size: 1rem; }
+
+main .card_texto_lista .item1, main .card_texto_lista .item2, main .card_texto_lista .item3, main .card_texto_lista .item4, main .card_texto_lista .item5, main .card_texto_lista .item6 {
+  padding: 2px;
+  border-radius: 20px;
+  box-shadow: 5px -9px 3px #69503c; }
+  main .card_texto_lista .item1:hover, main .card_texto_lista .item2:hover, main .card_texto_lista .item3:hover, main .card_texto_lista .item4:hover, main .card_texto_lista .item5:hover, main .card_texto_lista .item6:hover {
+    box-shadow: 5px -9px 3px #817d7d; }
 
 /* Personalizacion cabanas.html */
 main #titulo_cabanas {
@@ -236,21 +241,21 @@ main #txt_tituloSecundario {
   color: #c9beb0; }
 
 /*ajustes en ubicacion.html*/
-main #card_mapa {
+main section div #card_mapa {
   position: relative;
-  top: 100px; }
+  top: 120px; }
 
-main #card_texto {
+main section #card_texto {
   position: relative;
-  top: 100px; }
+  top: 120px; }
 
-main #como_llegar {
+main section #como_llegar {
   position: relative;
-  top: 100px; }
+  top: 120px; }
 
-footer #pie_ubicacion {
+#pie_ubicacion {
   position: relative;
-  top: 100px; }
+  top: 150px; }
 
 /*ajustes en servicios.html*/
 main #titulo_servicios {
@@ -262,14 +267,17 @@ main #servicios_iconos {
   background-color: #c9beb0 !important; }
 
 main #row_servicios .card {
-  margin-top: 50px !important; }
+  margin-top: 50px !important;
+  height: 700px !important; }
 
 /*Ajuste iconos redes sociales en footer*/
-footer #logosRedes img {
+footer #logosRedes img, article #logosRedes img {
   width: 65px; }
 
 /*ajuste breack points*/
 @media (max-width: 475px) {
+  main .titulo_main .h1_titulo_inicio, main #titulo_cabanas .h1_titulo_inicio, main #titulo_inicio .h1_titulo_inicio, main #txt_tituloSecundario .h1_titulo_inicio {
+    font-size: 1rem; }
   footer .pieTexto {
     font-size: 0.8rem;
     z-index: 2; }
@@ -277,16 +285,22 @@ footer #logosRedes img {
   a .logoWhatsApp {
     width: 50px !important; } }
 
+@media (max-width: 767px) {
+  .actividades__icons {
+    width: 100%; } }
+
 @media (min-width: 768px) {
   nav .nav-item {
     padding: 15px; }
-  h1 .titulo_main, h1 main #titulo_cabanas, main h1 #titulo_cabanas, h1 main #titulo_inicio, main h1 #titulo_inicio {
+  h1 .titulo_main, h1 main .titulo_main .h1_titulo_inicio, main .titulo_main h1 .h1_titulo_inicio, h1 main .titulo_main .h2_titulo_inicio, main .titulo_main h1 .h2_titulo_inicio, h1 main #titulo_cabanas, main h1 #titulo_cabanas, h1 main #titulo_inicio, main h1 #titulo_inicio, h1 main #txt_tituloSecundario, main h1 #txt_tituloSecundario {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px; }
   h1 #titulo_servicios {
     position: relative;
-    top: 100px !important; } }
+    top: 100px !important; }
+  .actividades__icons {
+    width: 85%; } }
 
 @media (min-width: 992px) {
   /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
