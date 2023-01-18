@@ -136,7 +136,7 @@ header #logo_header {
   animation-duration: 1.5s; }
 
 /*Animacion Titulos principales de cada pagina*/
-main .titulo_main, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas, main #titulo_inicio, main #txt_tituloSecundario {
+main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas {
   animation-name: escalar;
   animation-duration: 1.5s; }
 
@@ -178,27 +178,43 @@ main .servicios_iconos .tooltip-container {
     transition: all 0.2s ease;
     opacity: 0;
     position: absolute;
-    top: 50%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center; }
     .card_texto_lista .img_overlay .overlay p {
-      font-size: 22px;
-      font-weight: bold;
+      font-size: 10px;
+      font-weight: 500;
       margin-bottom: 0; }
+  .card_texto_lista .img_overlay .overlay_detalle {
+    font-size: 12px;
+    font-weight: 600; }
 
 /*Titulos de Pagina - H1*/
-main .titulo_main, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas, main #titulo_inicio, main #txt_tituloSecundario {
+main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   font-size: 1.3rem;
   font-weight: 700; }
 
 /*Personalizacion index.html*/
-main .titulo_main .h2_titulo_inicio, main #titulo_cabanas .h2_titulo_inicio, main #titulo_inicio .h2_titulo_inicio, main #txt_tituloSecundario .h2_titulo_inicio {
+main #titulo_inicio {
+  padding: 3px;
+  width: 100%;
+  background-color: #69503c !important;
+  color: #c9beb0; }
+
+main #txt_tituloSecundario {
+  padding: 3px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #69503c;
+  color: #c9beb0; }
+
+main .titulo_main .h2_titulo_inicio, main #titulo_inicio .h2_titulo_inicio, main #txt_tituloSecundario .h2_titulo_inicio, main #titulo_cabanas .h2_titulo_inicio {
   font-size: 0.7rem;
-  color: #faf1f1;
-  font-weight: 500; }
+  color: #c9beb0;
+  font-weight: 600; }
 
 main .card_texto_pres, main .card_texto_lista {
   font-size: 1.3rem;
@@ -225,20 +241,6 @@ main #titulo_cabanas {
 .row_boton_arriba #link_arriba {
   text-decoration: none;
   color: white; }
-
-/*Personalizacion Titulos en index.html*/
-main #titulo_inicio {
-  padding: 3px;
-  width: 100%;
-  background-color: #69503c !important;
-  color: #c9beb0; }
-
-main #txt_tituloSecundario {
-  padding: 3px;
-  font-size: 1rem;
-  width: 100%;
-  background-color: #69503c;
-  color: #c9beb0; }
 
 /*ajustes en ubicacion.html*/
 main #titulo_ubicacion {
@@ -279,8 +281,27 @@ footer #logosRedes img, article #logosRedes img {
   width: 65px; }
 
 /*ajuste breack points*/
+@media (max-width: 319px) {
+  .card_texto_lista .img_overlay {
+    position: relative; }
+    .card_texto_lista .img_overlay:hover img {
+      opacity: 1; }
+    .card_texto_lista .img_overlay:hover .overlay {
+      opacity: 0; } }
+
+@media (max-width: 375px) {
+  /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+  .card_texto_lista .img_overlay .overlay {
+    top: 40%; }
+    .card_texto_lista .img_overlay .overlay p {
+      font-size: 9px;
+      font-weight: 600;
+      margin-bottom: 0; }
+  .card_texto_lista .overlay_detalle {
+    font-size: 10px; } }
+
 @media (max-width: 475px) {
-  main .titulo_main .h1_titulo_inicio, main #titulo_cabanas .h1_titulo_inicio, main #titulo_inicio .h1_titulo_inicio, main #txt_tituloSecundario .h1_titulo_inicio {
+  main .titulo_main .h1_titulo_inicio, main #titulo_inicio .h1_titulo_inicio, main #txt_tituloSecundario .h1_titulo_inicio, main #titulo_cabanas .h1_titulo_inicio {
     font-size: 1rem; }
   footer .pieTexto {
     font-size: 0.8rem;
@@ -296,7 +317,7 @@ footer #logosRedes img, article #logosRedes img {
 @media (min-width: 768px) {
   nav .nav-item {
     padding: 15px; }
-  h1 .titulo_main, h1 main .titulo_main .h1_titulo_inicio, main .titulo_main h1 .h1_titulo_inicio, h1 main .titulo_main .h2_titulo_inicio, main .titulo_main h1 .h2_titulo_inicio, h1 main #titulo_cabanas, main h1 #titulo_cabanas, h1 main #titulo_inicio, main h1 #titulo_inicio, h1 main #txt_tituloSecundario, main h1 #txt_tituloSecundario {
+  h1 .titulo_main, h1 main #titulo_inicio, main h1 #titulo_inicio, h1 main #txt_tituloSecundario, main h1 #txt_tituloSecundario, h1 main .titulo_main .h1_titulo_inicio, main .titulo_main h1 .h1_titulo_inicio, h1 main .titulo_main .h2_titulo_inicio, main .titulo_main h1 .h2_titulo_inicio, h1 main #titulo_cabanas, main h1 #titulo_cabanas {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 24px; }
@@ -306,12 +327,12 @@ footer #logosRedes img, article #logosRedes img {
   .actividades__icons {
     width: 85%; } }
 
-@media (min-width: 992px) {
-  /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
-  header #logo_header {
-    width: 390px !important; } }
-
 @media (min-width: 888px) {
+  /*Barra de Navegacion Gral -- Ajuste de Tamaño de Fuente*/
+  .nav-link {
+    font-size: 1rem; }
+    .nav-link:hover {
+      font-size: 1.1rem; }
   /*juste de cards en cabanas.hml*/
   .contenedor_card {
     margin-top: 10px;
@@ -341,6 +362,20 @@ footer #logosRedes img, article #logosRedes img {
     .contenedor_card .texto_cab6 {
       justify-content: end !important; } }
 
+@media (min-width: 992px) {
+  /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
+  header #logo_header {
+    width: 390px !important; }
+  /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+  .card_texto_lista .img_overlay .overlay {
+    top: 40%; }
+    .card_texto_lista .img_overlay .overlay p {
+      font-size: 10px;
+      font-weight: 600;
+      margin-bottom: 0; }
+  .card_texto_lista .overlay_detalle {
+    font-size: 12px; } }
+
 @media (max-width: 768px) {
   /*Ajustes en ubicacion.html*/
   section #rowUbicacion {
@@ -355,8 +390,12 @@ footer #logosRedes img, article #logosRedes img {
       margin-top: 10px; } }
 
 @media (min-width: 576px) and (max-width: 997px) {
-  /*Overlay imagenes index.html*/
-  .card_texto_lista .img_overlay .overlay p {
-    font-size: 16px;
-    font-weight: bold;
-    margin-bottom: 0; } }
+  /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+  .card_texto_lista .img_overlay .overlay {
+    top: 40%; }
+    .card_texto_lista .img_overlay .overlay p {
+      font-size: 8px;
+      font-weight: 600;
+      margin-bottom: 0; }
+  .card_texto_lista .overlay_detalle {
+    font-size: 11px; } }

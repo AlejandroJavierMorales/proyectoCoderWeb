@@ -8,19 +8,33 @@ main{
     }
 
 }
-
 /*Personalizacion index.html*/
 main {
+    & #titulo_inicio{
+        @extend .titulo_main;
+        padding: 3px;
+        width: 100%; 
+        background-color:$body_font_color !important;
+        color:$card_color;
+    }
+    & #txt_tituloSecundario{
+        @extend .titulo_main;
+        padding: 3px;
+        font-size: 1rem;
+        width: 100%; 
+        background-color:$body_font_color;
+        color:$card_color;
+    }
     & .titulo_main{
+        
         &  .h1_titulo_inicio{
             @extend .titulo_main;
-
         }
         &  .h2_titulo_inicio{
                 @extend .titulo_main;
                 font-size: 0.7rem;
-                color: $color_fuente;
-                font-weight: 500;
+                color: $card_color;
+                font-weight: 600;
         }
     } 
     & .card_texto_pres{
@@ -40,7 +54,8 @@ main {
             .item1{
                 padding:2px;
                 border-radius: 20px;
-                box-shadow: 5px -9px 3px #69503c;;
+                box-shadow: 5px -9px 3px #69503c;
+                
                 &:hover{
                     box-shadow: 5px -9px 3px rgb(129, 125, 125);
                 }  
@@ -51,7 +66,7 @@ main {
                     @extend .item#{$a};
                 }
             }
-    }   
+    }
 }
 /* Personalizacion cabanas.html */
 main{
@@ -66,26 +81,10 @@ main{
         text-decoration: none;
         color: white;   
     }
+    
 }
 
-/*Personalizacion Titulos en index.html*/
-main{
-    & #titulo_inicio{
-        @extend .titulo_main;
-        padding: 3px;
-        width: 100%; 
-        background-color:$body_font_color !important;
-        color:$card_color;
-    }
-    & #txt_tituloSecundario{
-        @extend .titulo_main;
-        padding: 3px;
-        font-size: 1rem;
-        width: 100%; 
-        background-color:$body_font_color;
-        color:$card_color;
-    }
-}
+
 
 /*ajustes en ubicacion.html*/
 main{

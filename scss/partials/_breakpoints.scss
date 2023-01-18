@@ -1,5 +1,38 @@
 
 /*ajuste breack points*/
+
+@media(max-width: 319px){
+    .card_texto_lista{
+        & .img_overlay {
+          position: relative;
+          &:hover img {
+            opacity: 1;
+          }
+          &:hover .overlay {
+            opacity: 0;
+          }
+        }
+    }
+}
+@media(max-width: 375px){
+/*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+.card_texto_lista{
+    & .img_overlay {
+      & .overlay {
+        top: 40%;
+        & p {
+          font-size: 9px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+      }
+    }
+    & .overlay_detalle{
+        font-size: 10px;
+    }
+  }
+}
+
 @media(max-width: 475px){
     main{
         & .titulo_main{
@@ -55,16 +88,16 @@
         }
     }
 }
-@media(min-width: 992px){
-    /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
-    header{
-        & #logo_header{
-            width: 390px !important;
+@media(min-width: 888px){
+    /*Barra de Navegacion Gral -- Ajuste de Tamaño de Fuente*/
+    .nav{
+        &-link {
+            font-size: 1rem;
+            &:hover{
+                font-size: 1.1rem;
+            }
         }
     }
-    
-}
-@media(min-width: 888px){
     /*juste de cards en cabanas.hml*/
     .contenedor_card{
         margin-top: 10px;
@@ -123,6 +156,32 @@
     }
   
 }
+@media(min-width: 992px){
+    /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
+    header{
+        & #logo_header{
+            width: 390px !important;
+        }
+    }
+    /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+.card_texto_lista{
+    & .img_overlay {
+      & .overlay {
+        top: 40%;
+        & p {
+          font-size: 10px;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+      }
+    }
+    & .overlay_detalle{
+        font-size: 12px;
+    }
+  }
+    
+}
+
 @media(max-width: 768px){
     /*Ajustes en ubicacion.html*/
    section{
@@ -142,16 +201,20 @@
    } 
 }
 @media(min-width: 576px) and (max-width:997px){
-    /*Overlay imagenes index.html*/
+   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
   .card_texto_lista{
     & .img_overlay {
       & .overlay {
+        top: 40%;
         & p {
-          font-size: 16px;
-          font-weight: bold;
+          font-size: 8px;
+          font-weight: 600;
           margin-bottom: 0;
         }
       }
+    }
+    & .overlay_detalle{
+        font-size: 11px;
     }
   }
 }
