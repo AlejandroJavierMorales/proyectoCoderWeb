@@ -102,4 +102,25 @@ main{
       }
     }
   }
+/*Animación Iconos Barra Cabanas.html*/
+  .menu_cabanias{
+    & .icon_cabania{
+      &:hover{
+        width: 38px !important;
+      }
+        
+    }
+        
+    }
+  /*Animación Logo de Whatsapp Hover*/
+  main{
+    & .logoWhatsApp{
+      &:hover{
+        width: 70px !important;
+        background-image: "./assets/images/whatsapp_.png";
+      }
+    }
+
+  }
+  
   

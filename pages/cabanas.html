@@ -67,218 +67,238 @@
         <section class="container ">
             <div class="row d-flex flex-row">
                <!--Barra de navegacion secundaria - Interna-->
-               <ul class="col nav rounded d-flex flex-row justify-content-center">
-                <div>
-                  <li class="nav-item">
-                      <a class="nav-link linkColor" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-door" viewBox="0 0 16 16">
-                        <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"/>
-                      </svg></a>
-                  </li>
-                </div>
+               <ul class="col nav rounded d-flex flex-row justify-content-center menu_cabanias">
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link linkColor" href="#tit1_cab">Cabaña1</a>
+                        <a class="nav-link linkColor" href="#tit1_cab"><img class="icon_cabania" src="../assets/images/icons/ico_cab1.png" alt="icono cabaña1"></a>
                     </li>
                 </div>
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tit2_cab">Cabaña2</a>
+                        <a class="nav-link" href="#tit2_cab"><img class="icon_cabania" src="../assets/images/icons/ico_cab2.png" alt="icono cabaña2"></a>
                     </li>
                 </div>
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link" href="#tit3_cab">Cabaña3</a>
+                        <a class="nav-link" href="#tit3_cab"><img class="icon_cabania" src="../assets/images/icons/ico_cab3.png" alt="icono cabaña3"></a>
                     </li>
                 </div>
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link "  href="#tit4_cab">Cabaña4</a>
+                        <a class="nav-link "  href="#tit4_cab"><img class="icon_cabania" src="../assets/images/icons/ico_cab4.png" alt="icono cabaña4"></a>
                     </li>
                 </div>
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link "  href="#tit5_cab">Cabaña5</a>
+                        <a class="nav-link "  href="#tit5_cab"><img class="icon_cabania" src="../assets/images/icons/ico_cab5.png" alt="icono cabaña5"></a>
                     </li>
                 </div>
                 <div>
                     <li class="nav-item">
-                        <a class="nav-link "  href="#tit6_cab">Cabaña6</a>
+                        <a class="nav-link "  href="#tit6_cab"><img class="icon_cabania" src="../assets/images/icons/ico_cab6.png" alt="icono cabaña6"></a>
                     </li>  
                 </div>
-                
               </ul> 
-              
+            </div>    
+        </section>
+        <!--Inicio Tarjetas de las 6 Cabañas-->
+        <section class="container-fluid contenedor_cabanias">
+          <div class="row d-flex justify-content-center">
+            <!--Card Carrousel Cabaña1-->
+            <div id="tit1_cab" class="card col-12 col-sm-6 col-lg-4 p-2">
+             <!--Carrousel Cabaña1-->
+             <section class="col foto_cab1 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
+              <div id="carouselCabania1" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="../assets/images/cabanas/cabana1_1.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/cabanas/cabana1_2.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - Estar y Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/cabanas/cabana1_3.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - Estar ">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/cabanas/cabana1_4.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - Dormitorio">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="../assets/images/cabanas/cabana1_5.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - cochera">
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Siguiente</span>
+                  </button>
+                </div>
+              </section>
+              <!--Body Card Cabaña1-->
+              <div class="card-body">
+                  <h5  class="card-title text-center">CABAÑA Nro1</h5>
+                  <p class="card-text text-center">Con capacidad para 4 personas, La cabaña está desarrollada en planta baja, cuenta con 
+                    cocina/comedor totalmente equipada y estar en el que se encuentran 2 camas
+                    de 1 plaza (no son sillones ni divanes), baño completo y 1 dormitorio con cama de 2 
+                    plazas. Cochera/Galeria cubierta con Asador, mobiliario de exterior y Hamaca paraguaya.
+                    Cuenta con Aire Acondicionado  Inverter Frio/Calor, Calefactor de Tiro Balanceado en Dormitorio y ventilador.
+                    Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV, Wifi. 
+                  </p>
+              </div>
             </div>
-            
-          </section>
-        <section class="container-fluid"> 
-            <div class="row p-2 contenedor_card"  id="cabania1">
-                <!--Carrousel-Card Cabaña nro1-->
-                <section class="col foto_cab1 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
-                    <div id="carouselCabania1" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#carouselCabania1" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../assets/images/cabanas/cabana1_1.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana1_2.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - Estar y Comedor">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana1_3.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - Estar ">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana1_4.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - Dormitorio">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana1_5.jpg" class="d-block w-100 rounded shadow" alt="cabaña nro1 - cochera">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania1" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania1" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Siguiente</span>
-                        </button>
+            <!--Card Carrousel Cabaña2-->
+            <div id="tit2_cab" class="card col-12 col-sm-6 col-lg-4 p-2">
+              <!--Carrousel Cabaña2-->
+              <section class="col foto_cab2 d-flex flex-row justify-content-center align-items-center" id="cabania2_Fotos">
+                <div id="carouselCabania2" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/images/cabanas/cabana2_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2">
                       </div>
-                </section>
-                <!--Card Descripcion Cabaña1--> 
-                <section class="col texto_cab1 d-flex flex-row justify-content-center" id="cabania1_texto">
-                    <div class="card rounded" style="width: 25rem;">
-                        <div class="card-body">
-                          <h5 id="tit1_cab" class="card-title">CABAÑA Nro1</h5>
-                          <p class="card-text text-center">Con capacidad para 4 personas, La cabaña está desarrollada en planta baja, cuenta con 
-                            cocina/comedor totalmente equipada y estar en el que se encuentran 2 camas
-                            de 1 plaza (no son sillones ni divanes), baño completo y 1 dormitorio con cama de 2 
-                            plazas. Cochera/Galeria cubierta con Asador, mobiliario de exterior y Hamaca paraguaya.
-                          Cuenta con Aire Acondicionado  Inverter Frio/Calor, Calefactor de Tiro Balanceado en Dormitorio y ventilador.
-                        Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV, Wifi. </p>
-                        </div>
-                      </div>        
-                </section>
-            </div>
-            <!--Card-Carrousel Cabaña nro2-->
-            <div class="row p-2 contenedor_card" id="cabania2">
-                <section class="col texto_cab2 d-flex flex-row justify-content-center " id="cabania2_texto">
-                    <!--Card Descripcion Cabaña2--> 
-                    <div class="card rounded" style="width: 25rem;">
-                        <div class="card-body">
-                          <h5 id="tit2_cab" class="card-title">CABAÑA Nro2</h5>
-                          <p class="card-text text-center">Con capacidad para 4 personas, La cabaña está desarrollada en planta baja, cuenta con 
-                            cocina/comedor totalmente equipada y estar en el que se encuentran 2 camas
-                            de 1 plaza (no son sillones ni divanes), baño completo y 1 dormitorio con cama de 2 
-                            plazas. Cochera/Galeria cubierta con Asador, Hamaca paraguaya y mobiliario de exterior.
-                          Cuenta con Aire Acondicionado  Inverter Frio/Calor, Calefactor de Tiro Balanceado en Dormitorio y ventilador.
-                        Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi.  </p>
-                        </div>
-                      </div>        
-                </section>
-                <section class="col foto_cab2 d-flex flex-row justify-content-center align-items-center" id="cabania2_Fotos">
-                    <div id="carouselCabania2" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
-                        <div class="carousel-indicators">
-                          <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                          <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                          <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                          <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                          <button type="button" data-bs-target="#carouselCabania2" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                        </div>
-                        <div class="carousel-inner">
-                          <div class="carousel-item active">
-                            <img src="../assets/images/cabanas/cabana2_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana2_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Interior">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana2_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Estar y comedor">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana2_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Dormitorio">
-                          </div>
-                          <div class="carousel-item">
-                            <img src="../assets/images/cabanas/cabana2_5.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Cochera">
-                          </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania2" data-bs-slide="prev">
-                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Anterior</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania2" data-bs-slide="next">
-                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="visually-hidden">Siguiente</span>
-                        </button>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana2_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Interior">
                       </div>
-                </section>     
-            </div>
-        <!--Carrousel-Card Cabaña nro3-->
-          <div class="row p-2 contenedor_card" id="cabania3">
-              <section class="col foto_cab3 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana2_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Estar y comedor">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana2_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Dormitorio">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana2_5.jpg" class="d-block w-100 rounded shadow" alt="Cabaña nro2 - Cochera">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania2" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania2" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+               </section>    
+               <!--Body Card Cabaña2-->
+               <div class="card-body">
+                    <h5  class="card-title text-center">CABAÑA Nro2</h5>
+                    <p class="card-text text-center">Con capacidad para 4 personas, La cabaña está desarrollada en planta baja, cuenta con 
+                      cocina/comedor totalmente equipada y estar en el que se encuentran 2 camas
+                      de 1 plaza (no son sillones ni divanes), baño completo y 1 dormitorio con cama de 2 
+                      plazas. Cochera/Galeria cubierta con Asador, Hamaca paraguaya y mobiliario de exterior.
+                      Cuenta con Aire Acondicionado  Inverter Frio/Calor, Calefactor de Tiro Balanceado en Dormitorio y ventilador.
+                      Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi.  
+                    </p>
+               </div>
+             </div>
+             <!--Card Carrousel Cabaña3-->
+             <div id="tit3_cab" class="card col-12 col-sm-6 col-lg-4 p-2">
+               <!--Carrousel Cabaña3-->
+               <section class="col foto_cab3 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
                   <div id="carouselCabania3" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                    </div>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../assets/images/cabanas/cabana3_1.jpg" class="d-block w-100 rounded shadow" alt="cabana3_1">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana3_2.jpg" class="d-block w-100 rounded shadow" alt="cabana3_2">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana3_3.jpg" class="d-block w-100 rounded shadow" alt="cabana3_3">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana3_4.jpg" class="d-block w-100 rounded shadow" alt="cabana3_4">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../assets/images/cabanas/cabana3_5.jpg" class="d-block w-100 rounded shadow" alt="cabana3_5">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania3" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania3" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Siguiente</span>
+                    </button>
+                  </div>
+               </section>     
+               <!--Body Card Cabaña3-->
+               <div class="card-body">
+                  <h5  class="card-title text-center">CABAÑA Nro3</h5>
+                  <p class="card-text text-center">Con capacidad hasta 5 personas, La cabaña está desarrollada en 2 plantas. En Planta Baja cuenta con 
+                    cocina/comedor totalmente equipada, estar y baño completo. En la Planta Alta, en Entrepiso, 
+                    cuenta con dormitorio con cama de 2 plazas, y fuera del mismo 3 camas de 1 plaza.
+                    Aire Acondicionado Inverter Frio/Calor, Calefactor de Tiro Balanceado y ventilador.
+                    Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi
+                    Cochera/Galeria cubierta con Asador y Hamaca paraguaya y mobiliario de exterior.
+                  </p>
+               </div>
+             </div>
+             <!--Card Carrousel Cabaña4-->
+             <div id="tit4_cab" class="card col-12 col-sm-6 col-lg-4 p-2">
+                <!--Carrousel Cabaña4-->
+                <section class="col foto_cab4 d-flex flex-row justify-content-center align-items-center" id="cabania2_Fotos">
+                  <div id="carouselCabania4" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
                       <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                        <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                        <button type="button" data-bs-target="#carouselCabania3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                        <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="4" aria-label="Slide 5"></button>
                       </div>
                       <div class="carousel-inner">
                         <div class="carousel-item active">
-                          <img src="../assets/images/cabanas/cabana3_1.jpg" class="d-block w-100 rounded shadow" alt="cabana3_1">
+                          <img src="../assets/images/cabanas/cabana4_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4">
                         </div>
                         <div class="carousel-item">
-                          <img src="../assets/images/cabanas/cabana3_2.jpg" class="d-block w-100 rounded shadow" alt="cabana3_2">
+                          <img src="../assets/images/cabanas/cabana4_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Interior Cocina">
+                        </div> 
+                        <div class="carousel-item">
+                          <img src="../assets/images/cabanas/cabana4_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Interior Estar">
                         </div>
                         <div class="carousel-item">
-                          <img src="../assets/images/cabanas/cabana3_3.jpg" class="d-block w-100 rounded shadow" alt="cabana3_3">
+                          <img src="../assets/images/cabanas/cabana4_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Dormitorio Asador">
                         </div>
                         <div class="carousel-item">
-                          <img src="../assets/images/cabanas/cabana3_4.jpg" class="d-block w-100 rounded shadow" alt="cabana3_4">
-                        </div>
-                        <div class="carousel-item">
-                          <img src="../assets/images/cabanas/cabana3_5.jpg" class="d-block w-100 rounded shadow" alt="cabana3_5">
+                          <img src="../assets/images/cabanas/cabana4_5.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Baño">
                         </div>
                       </div>
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania3" data-bs-slide="prev">
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania4" data-bs-slide="prev">
                         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Anterior</span>
                       </button>
-                      <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania3" data-bs-slide="next">
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania4" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Siguiente</span>
                       </button>
                     </div>
-              </section>  
-              <!--Card Descripcion Cabaña3--> 
-              <section class="col texto_cab3 d-flex flex-row justify-content-center" id="cabania3_texto">
-                  <div class="card rounded" style="width: 25rem;">
-                      <div class="card-body">
-                        <h5 id="tit3_cab" class="card-title">CABAÑA Nro3</h5>
-                        <p class="card-text text-center">Con capacidad hasta 5 personas, La cabaña está desarrollada en 2 plantas. En Planta Baja cuenta con 
-                          cocina/comedor totalmente equipada, estar y baño completo. En la Planta Alta, en Entrepiso, 
-                          cuenta con dormitorio con cama de 2 plazas, y fuera del mismo 3 camas de 1 plaza.
-                          Aire Acondicionado Inverter Frio/Calor, Calefactor de Tiro Balanceado y ventilador.
-                          Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi
-                          Cochera/Galeria cubierta con Asador y Hamaca paraguaya y mobiliario de exterior.
-                        </p>
-                      </div>
-                    </div>        
-              </section>
-          </div> 
-        <!--Card-Carrousel Cabaña nro4-->
-        <div class="row p-2 contenedor_card" id="cabania4">
-          <section class="col texto_cab4 d-flex flex-row justify-content-center" id="cabania4_texto">
-              <!--Card Descripcion Cabaña4--> 
-              <div class="card rounded" style="width: 25rem;">
-                  <div class="card-body">
-                    <h5 id="tit4_cab" class="card-title">CABAÑA Nro4</h5>
+                </section>     
+                <!--Body Card Cabaña4-->
+                <div class="card-body">
+                  <h5  class="card-title text-center">CABAÑA Nro4</h5>
                     <p class="card-text text-center">Con capacidad hasta 4 personas, La cabaña está desarrollada en planta baja, cuenta con 
                       estar/comedor en el que se encuentran 2 camas
                       de 1 plaza, cocina completa, ante-baño y baño completo. Dormitorio con cama de 2 
@@ -287,89 +307,49 @@
                       Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi.
                       Cochera/Galeria cubierta con Asador, Hamaca paraguaya y mobiliario de exterior.
                     </p>
-                  </div>
-                </div>        
-          </section>
-          <section class="col foto_cab4 d-flex flex-row justify-content-center align-items-center" id="cabania2_Fotos">
-              <div id="carouselCabania4" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselCabania4" data-bs-slide-to="4" aria-label="Slide 5"></button>
-                  </div>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <img src="../assets/images/cabanas/cabana4_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/cabanas/cabana4_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Interior Cocina">
-                    </div> 
-                    <div class="carousel-item">
-                      <img src="../assets/images/cabanas/cabana4_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Interior Estar">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/cabanas/cabana4_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Dormitorio Asador">
-                    </div>
-                    <div class="carousel-item">
-                      <img src="../assets/images/cabanas/cabana4_5.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro4 - Baño">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania4" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania4" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                  </button>
                 </div>
-          </section>     
-        </div>
-        <!--Carrousel-Card Cabaña nro5-->
-        <div class="row p-2 contenedor_card" id="cabania5">
-            <section class="col foto_cab5 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
-                <div id="carouselCabania5" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
-                    <div class="carousel-indicators">
-                      <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                      <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                      <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                      <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                      <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              </div>
+              <div id="tit5_cab" class="card col-12 col-sm-6 col-lg-4 p-2">
+                  <!--Carrousel Cabaña5-->
+                  <section class="col foto_cab5 d-flex flex-row justify-content-center align-items-center" id="cabania1_Fotos">
+                    <div id="carouselCabania5" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselCabania5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../assets/images/cabanas/cabana5_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana5_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 -Estar Dormitorio">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana5_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 - Interior Cocina">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana5_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 - Baño">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana5_5.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 - Cochera">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania5" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania5" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
                     </div>
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                        <img src="../assets/images/cabanas/cabana5_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/images/cabanas/cabana5_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 -Estar Dormitorio">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/images/cabanas/cabana5_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 - Interior Cocina">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/images/cabanas/cabana5_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 - Baño">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="../assets/images/cabanas/cabana5_5.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro5 - Cochera">
-                      </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania5" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Anterior</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania5" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                      <span class="visually-hidden">Siguiente</span>
-                    </button>
-                </div>
-              </section>
-              <!--Card Descripcion Cabaña5--> 
-              <section class="col texto_cab5 d-flex flex-row justify-content-center" id="cabania5_texto">
-                <div class="card rounded" style="width: 25rem;">
-                    <div class="card-body">
-                      <h5 id="tit5_cab" class="card-title">CABAÑA Nro5</h5>
+                  </section>
+                  <!--Body Card Cabaña5-->
+                  <div class="card-body">
+                      <h5 class="card-title text-center">CABAÑA Nro5</h5>
                       <p class="card-text text-center">Con Capacidad para 3 personas, La cabaña está desarrollada en planta baja en modalidad Loft, cuenta con 
                         cocina/comedor, estar y dormitorio integrados, en el que se encuentran 1 cama de 2 plazas y una cama de 1 plaza.
                         Baño completo. 
@@ -377,17 +357,49 @@
                         Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi.
                         Cochera/Galeria cubierta con Asador, Hamaca paraguaya y mobiliario de exterior.
                       </p>
-                    </div>
-                  </div>        
-              </section>
-        </div>
-        <!--Card-Carrousel Cabaña nro6-->
-        <div class="row p-2 contenedor_card" id="cabania6">
-          <section class="col texto_cab6 d-flex flex-row justify-content-center " id="cabania6_texto">
-            <!--Card Descripcion Cabaña6-->
-            <div class="card rounded" style="width: 25rem;">
+                  </div>
+              </div>
+              <div id="tit6_cab" class="card col-12 col-sm-6 col-lg-4 p-2">
+                  <!--Carrousel Cabaña6-->
+                  <section class="col foto_cab6 d-flex flex-row justify-content-center align-items-center" id="cabania6_Fotos">
+                    <div id="carouselCabania6" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
+                        <div class="carousel-indicators">
+                          <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                          <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                          <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                          <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                          <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                        </div>
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <img src="../assets/images/cabanas/cabana6_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana6_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6 - Interior Estar">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana6_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6 - Interior Cocina">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana6_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6 - Cochera">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/images/cabanas/cabana6_5.jpg" class="d-block w-100 rounded shadow" alt="Cbaña Nro6 - Baño y Cocina">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania6" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Anterior</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania6" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Siguiente</span>
+                        </button>
+                      </div>
+                  </section>
+                <!--Body Card Cabaña6-->
                 <div class="card-body">
-                  <h5 id="tit6_cab" class="card-title">CABAÑA Nro6</h5>
+                  <h5  class="card-title text-center">CABAÑA Nro6</h5>
                   <p class="card-text text-center">Con Capacidad para 3 personas, La cabaña está desarrollada en planta baja en modalidad Loft, cuenta con 
                     cocina con Barra Desayunador, comedor-estar y dormitorio integrados, en el que se encuentran 1 cama sommier de 2 plazas y una cama de 1 plaza.
                     Baño completo. 
@@ -395,50 +407,15 @@
                     Cocina 4 hornallas con Horno, Microondas, vajilla completa. TV Led, DirecTV y Wifi.
                     Cochera/Galeria cubierta con Asador, Hamaca paraguaya y mobiliario de exterior.</p>
                 </div>
-              </div>        
-          </section>
-          <section class="col foto_cab6 d-flex flex-row justify-content-center align-items-center" id="cabania6_Fotos">
-            <div id="carouselCabania6" class="carousel slide mt-100" data-bs-ride="true" style="width: 25rem; ">
-                <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="3" aria-label="Slide 4"></button>
-                  <button type="button" data-bs-target="#carouselCabania6" data-bs-slide-to="4" aria-label="Slide 5"></button>
                 </div>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img src="../assets/images/cabanas/cabana6_1.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../assets/images/cabanas/cabana6_2.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6 - Interior Estar">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../assets/images/cabanas/cabana6_3.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6 - Interior Cocina">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../assets/images/cabanas/cabana6_4.jpg" class="d-block w-100 rounded shadow" alt="Cabaña Nro6 - Cochera">
-                  </div>
-                  <div class="carousel-item">
-                    <img src="../assets/images/cabanas/cabana6_5.jpg" class="d-block w-100 rounded shadow" alt="Cbaña Nro6 - Baño y Cocina">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselCabania6" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselCabania6" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Siguiente</span>
-                </button>
-              </div>
-          </section>
-        </div>  
+            </div>
+        <!--Fin Row Contenedor Tarjetas-->
+        </div> 
         <!--Logo de WhatsApp-->
         <div class="row">
           <div class="col">
             <a href="https://api.whatsapp.com/send?phone=543546520243&text=Consulta desde la Web: Hola%21%20Quisiera%20informaci%C3%B3n%20sobre%20Alojamiento%20." class="float" target="_blank">
-              <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp-6860919__340.png" alt="logoDeWhatsApp">
+              <img class="img-fluid position-fixed end-0 bottom-50 logoWhatsApp" style="width: 4rem;" src="../assets/images/whatsapp_tf.png" alt="logoDeWhatsApp">
             </a>
           </div>
          </div>

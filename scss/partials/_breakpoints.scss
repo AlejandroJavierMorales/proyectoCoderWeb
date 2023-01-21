@@ -2,6 +2,7 @@
 /*ajuste breack points*/
 
 @media(max-width: 319px){
+    /* Index.html - No visualiza texto en Overlay para dispositivos de menos de 320px*/
     .card_texto_lista{
         & .img_overlay {
           position: relative;
@@ -31,15 +32,33 @@
         font-size: 10px;
     }
   }
+  /*Ajuste en servicios.html - tamaño de iconos*/
+  .servicios_iconos{
+    &__img{
+        width: 29px !important;
+        padding: 2px;
+        }
+    }
+    
 }
 
 @media(max-width: 475px){
+    
     main{
         & .titulo_main{
             & .h1_titulo_inicio{
                 font-size: 1rem;
             }
         }
+        & .actividades__icons{
+                &__txt{
+                    font-size: 0.6rem !important;
+                }
+                & img{
+                    width: 40px !important; 
+                }
+        }
+
     }
     footer{
         & .pieTexto{
@@ -53,12 +72,51 @@
             width: 50px !important;
        }
     }
+    .card__title{
+        &__txt{
+            font-size: 0.8rem !important;
+        }
+    }
     
 }
-@media(max-width:767px){
-    .actividades{
-        &__icons{
-            width: 100%;
+@media(max-width:575px){
+    .menu_cabanias{
+        & .icon_cabania{
+            display:block;
+            width: 35px !important;
+        }
+            
+    }
+}
+@media(min-width:576px){
+    .menu_cabanias{
+        background-color:$body_color ;
+        & .icon_cabania{
+            display:none;
+        }
+            
+    }
+}
+@media(max-width: 768px){
+    /*Ajustes en ubicacion.html*/
+   section{
+        & #rowUbicacion{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            & #card_mapa{
+                position: relative;
+                top: 100px;
+            }
+            & #card_texto{
+                margin-top: 10px;
+             }   
+        }
+   } 
+   .cardIndex{
+    & img{
+        width: 100% !important;
         }
     }
 }
@@ -164,42 +222,31 @@
         }
     }
     /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
-.card_texto_lista{
-    & .img_overlay {
-      & .overlay {
-        top: 40%;
-        & p {
-          font-size: 10px;
-          font-weight: 600;
-          margin-bottom: 0;
+    .card_texto_lista{
+        & .img_overlay {
+        & .overlay {
+            top: 40%;
+            & p {
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 0;
+            }
         }
-      }
+        }
+        & .overlay_detalle{
+            font-size: 12px;
+        }
     }
-    & .overlay_detalle{
-        font-size: 12px;
-    }
-  }
-    
+    /*Ajuste en servicios.html - tamaño de iconos*/
+    .servicios_iconos{
+        &__img{
+            width: 50px !important;
+            padding: 5px;
+            }
+        }
 }
 
-@media(max-width: 768px){
-    /*Ajustes en ubicacion.html*/
-   section{
-        & #rowUbicacion{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            & #card_mapa{
-                position: relative;
-                top: 100px;
-            }
-            & #card_texto{
-                margin-top: 10px;
-             }   
-        }
-   } 
-}
+
 @media(min-width: 576px) and (max-width:997px){
    /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
   .card_texto_lista{
@@ -217,5 +264,20 @@
         font-size: 11px;
     }
   }
+   /*Ajuste en servicios.html - tamaño de iconos*/
+   .servicios_iconos{
+    &__img{
+        width:45px;
+        padding: 5px;
+    }
 }
-    
+}
+@media(min-width: 475px) and (max-width:575px){
+     /*Ajuste en servicios.html - tamaño de iconos*/
+     .servicios_iconos{
+        &__img{
+            width: 45px !important;
+            padding: 5px;
+        }
+    }
+}

@@ -45,19 +45,19 @@ footer .pie {
 section .cardIndex {
   padding: 10px; }
 
-/*Barra de Navegacion Gral -- Inicio*/
+/*Barra de Navegacion Gral *** Ver Mixin ****/
 .nav {
   margin-top: 120px;
   background-color: #ab9680;
-  --bs-nav-link-color: #69503c;
-  --bs-nav-link-hover-color: white; }
+  --bs-nav-link-color: $body_font_color;
+  --bs-nav-link-hover-color: $color_fuente; }
   .nav-item {
     padding: 5px; }
   .nav-link {
     padding: 2px;
     font-size: 0.9rem;
     font-weight: 5px;
-    color: white;
+    color: #faf1f1;
     text-decoration: #69503c;
     background-color: #ab9680;
     text-decoration-color: #69503c; }
@@ -107,7 +107,7 @@ main #formulario_contacto {
     main #formulario_contacto #formulario .form-control {
       text-align: center !important;
       color: #69503c !important;
-      background-color: #fff !important;
+      background-color: #faf1f1 !important;
       border: #c9beb0 1px solid !important; }
 
 /*trae logo de whastApp al frente*/
@@ -189,6 +189,15 @@ main .servicios_iconos .tooltip-container {
   .card_texto_lista .img_overlay .overlay_detalle {
     font-size: 12px;
     font-weight: 600; }
+
+/*Animación Iconos Barra Cabanas.html*/
+.menu_cabanias .icon_cabania:hover {
+  width: 38px !important; }
+
+/*Animación Logo de Whatsapp Hover*/
+main .logoWhatsApp:hover {
+  width: 70px !important;
+  background-image: "./assets/images/whatsapp_.png"; }
 
 /*Titulos de Pagina - H1*/
 main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas {
@@ -276,12 +285,18 @@ main #row_servicios .card {
   margin-top: 50px !important;
   height: 700px !important; }
 
+/*Ajuste en servicios.html - tamaño de iconos*/
+.servicios_iconos__img {
+  width: 37px;
+  padding: 1px; }
+
 /*Ajuste iconos redes sociales en footer*/
 footer #logosRedes img, article #logosRedes img {
   width: 65px; }
 
 /*ajuste breack points*/
 @media (max-width: 319px) {
+  /* Index.html - No visualiza texto en Overlay para dispositivos de menos de 320px*/
   .card_texto_lista .img_overlay {
     position: relative; }
     .card_texto_lista .img_overlay:hover img {
@@ -298,21 +313,53 @@ footer #logosRedes img, article #logosRedes img {
       font-weight: 600;
       margin-bottom: 0; }
   .card_texto_lista .overlay_detalle {
-    font-size: 10px; } }
+    font-size: 10px; }
+  /*Ajuste en servicios.html - tamaño de iconos*/
+  .servicios_iconos__img {
+    width: 29px !important;
+    padding: 2px; } }
 
 @media (max-width: 475px) {
   main .titulo_main .h1_titulo_inicio, main #titulo_inicio .h1_titulo_inicio, main #txt_tituloSecundario .h1_titulo_inicio, main #titulo_cabanas .h1_titulo_inicio {
     font-size: 1rem; }
+  main .actividades__icons__txt {
+    font-size: 0.6rem !important; }
+  main .actividades__icons img {
+    width: 40px !important; }
   footer .pieTexto {
     font-size: 0.8rem;
     z-index: 2; }
   /*reduce el tamaño del logo de whatsapp en dispositivos pequeños*/
   a .logoWhatsApp {
-    width: 50px !important; } }
+    width: 50px !important; }
+  .card__title__txt {
+    font-size: 0.8rem !important; } }
 
-@media (max-width: 767px) {
-  .actividades__icons {
-    width: 100%; } }
+@media (max-width: 575px) {
+  .menu_cabanias .icon_cabania {
+    display: block;
+    width: 35px !important; } }
+
+@media (min-width: 576px) {
+  .menu_cabanias {
+    background-color: #c7b69f; }
+    .menu_cabanias .icon_cabania {
+      display: none; } }
+
+@media (max-width: 768px) {
+  /*Ajustes en ubicacion.html*/
+  section #rowUbicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    section #rowUbicacion #card_mapa {
+      position: relative;
+      top: 100px; }
+    section #rowUbicacion #card_texto {
+      margin-top: 10px; }
+  .cardIndex img {
+    width: 100% !important; } }
 
 @media (min-width: 768px) {
   nav .nav-item {
@@ -370,24 +417,15 @@ footer #logosRedes img, article #logosRedes img {
   .card_texto_lista .img_overlay .overlay {
     top: 40%; }
     .card_texto_lista .img_overlay .overlay p {
-      font-size: 10px;
+      font-size: 13px;
       font-weight: 600;
       margin-bottom: 0; }
   .card_texto_lista .overlay_detalle {
-    font-size: 12px; } }
-
-@media (max-width: 768px) {
-  /*Ajustes en ubicacion.html*/
-  section #rowUbicacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    section #rowUbicacion #card_mapa {
-      position: relative;
-      top: 100px; }
-    section #rowUbicacion #card_texto {
-      margin-top: 10px; } }
+    font-size: 12px; }
+  /*Ajuste en servicios.html - tamaño de iconos*/
+  .servicios_iconos__img {
+    width: 50px !important;
+    padding: 5px; } }
 
 @media (min-width: 576px) and (max-width: 997px) {
   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
@@ -398,4 +436,14 @@ footer #logosRedes img, article #logosRedes img {
       font-weight: 600;
       margin-bottom: 0; }
   .card_texto_lista .overlay_detalle {
-    font-size: 11px; } }
+    font-size: 11px; }
+  /*Ajuste en servicios.html - tamaño de iconos*/
+  .servicios_iconos__img {
+    width: 45px;
+    padding: 5px; } }
+
+@media (min-width: 475px) and (max-width: 575px) {
+  /*Ajuste en servicios.html - tamaño de iconos*/
+  .servicios_iconos__img {
+    width: 45px !important;
+    padding: 5px; } }

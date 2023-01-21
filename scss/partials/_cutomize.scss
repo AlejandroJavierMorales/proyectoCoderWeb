@@ -80,9 +80,10 @@ main{
     & #link_arriba{
         text-decoration: none;
         color: white;   
-    }
-    
+    }  
 }
+
+
 
 
 
@@ -107,8 +108,9 @@ main{
             position: relative ;
             top: 120px ;
         }
-    }  
+    }
 }
+
 #pie_ubicacion{
         position: relative ;
         top: 150px ;
@@ -130,9 +132,17 @@ main{
         & .card{
            margin-top: 50px !important;
            height: 700px !important;
+        }
     }
+
 }
-}
+/*Ajuste en servicios.html - tamaño de iconos*/
+.servicios_iconos{
+    &__img{
+        width:37px;
+        padding: 1px;
+    }
+}  
 
 /*Ajuste iconos redes sociales en footer*/
 footer, article{

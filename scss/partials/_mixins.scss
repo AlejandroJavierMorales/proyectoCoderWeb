@@ -4,3 +4,42 @@
     color: $color_fuente;
     
 }
+@mixin barra_de_navegacion{
+        margin-top: 120px;
+        background-color:$footer_color;
+        --bs-nav-link-color: $body_font_color;
+        --bs-nav-link-hover-color: $color_fuente;
+        &-item{
+            padding: 5px;
+        }
+        &-link {
+            padding: 2px;
+            font-size: 0.9rem;
+            font-weight: 5px;
+            color: $color_fuente;
+            text-decoration:$body_font_color;
+            background-color:$footer_color;
+            text-decoration-color:$body_font_color;
+            &:hover{
+                font-size: 1rem;
+                color:$body_font_color;
+            }
+        }
+    }
+    @mixin boton_gral{
+            background-color:$footer_color;
+            z-index:2;
+            width: 8rem;
+            border-color: $footer_color;
+            &:active{
+                background-color:$footer_color !important;
+                z-index:2;
+                width: 8rem;
+                border-color: $footer_color !important;
+            }
+            &:hover{
+                color:$body_font_color;
+            }
+
+    }
+
