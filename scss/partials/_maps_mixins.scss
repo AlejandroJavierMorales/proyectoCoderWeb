@@ -1,7 +1,29 @@
+/*Maps*/
+/*Reset Gral - Ver basics.scss*/
+$reset:(
+    marg:0,
+    padd:0,
+    box-s: border-box
+);
+
+/*Map que Define la Paleta de Colores del Proyecto - Ver basics.scss*/
+$paleta_colores:(
+    color_cuerpo: $body_color,
+    color_fuente_cuerpo: $body_font_color,
+    color_pie:  $footer_color,
+    color_tarjeta: $card_color,
+    color_fuente_tarjeta: $card_font_color,
+    color_fondo_invertido: $color_fondo,
+    color_fuente_invertido:  $color_fuente
+    );
+
+
+
+/*Mixins*/
 /*Cambiar colores de fondo y texto de un componento o elemento*/
 @mixin invertir_colores_cards{
-    background-color:$color_fondo;
-    color: $color_fuente;
+    background-color:map-get($paleta_colores, color_fondo_invertido );
+    color: map-get($paleta_colores, color_fuente_invertido);
     
 }
 @mixin barra_de_navegacion{
@@ -43,3 +65,4 @@
 
     }
 
+    

@@ -122,5 +122,25 @@ main{
     }
 
   }
+  /*Animacion de Logos de Redes Sociales*/
+  .logoInst{
+    & a{
+      & img{
+        &:hover{
+            width: 55px !important;
+        }
+
+      }
+    }
+  }
+  .logoFace{
+    & a{
+      & img{
+        &:hover{
+          width: 55px !important;
+        }
+      }
+    }
+  }
   
   

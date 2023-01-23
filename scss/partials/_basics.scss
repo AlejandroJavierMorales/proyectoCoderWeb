@@ -1,8 +1,9 @@
 /*Reset Gral*/
 *{
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+    /*Map Sass - Ver Map_Mixins.scss*/
+    margin:map-get($reset, marg);
+    padding:map-get($reset, padd);
+    box-sizing: map-get($reset, box-s);
 }
 header{
     & #header{
@@ -13,8 +14,8 @@ header{
 
 
 body{
-    background-color: $body_color; /*aplicando variables*/
-    color: $body_font_color; /*aplicando variables*/
+    background-color: map-get($paleta_colores, color_cuerpo ); /*aplicando variables*/
+    color:map-get($paleta_colores, color_fuente_cuerpo ) ; /*aplicando variables*/
 }
 /*ajustes en footer*/
 footer{
@@ -27,7 +28,7 @@ footer{
     }
     & .pie{
         height: 18vh;
-        background-color:$footer_color;
+        background-color:map-get($paleta_colores, color_pie );
     }
 }
 

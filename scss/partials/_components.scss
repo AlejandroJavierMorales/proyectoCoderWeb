@@ -48,9 +48,10 @@ section{
 /*ajustes en contacto.html*/
 main{
     & #formulario_contacto{
-    background-color: $card_color !important;
+        background-color: $card_color !important;
+        margin-top: 97px !important;
     & #formulario{
-        margin-top: 140px !important;
+        margin-top: 50px !important;
         & .form-control {
             text-align: center !important;
             color:$body_font_color !important;

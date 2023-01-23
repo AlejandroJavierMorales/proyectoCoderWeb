@@ -80,6 +80,7 @@
     
 }
 @media(max-width:575px){
+    /*en cabanas.html Visualiza Barra de Navegacion para dispositivos pequeños*/
     .menu_cabanias{
         & .icon_cabania{
             display:block;
@@ -89,6 +90,7 @@
     }
 }
 @media(min-width:576px){
+     /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
     .menu_cabanias{
         background-color:$body_color ;
         & .icon_cabania{

@@ -4,9 +4,14 @@
 /*Partials*/
 /*Variables*/
 /*colores de fondo y fuente - ver mixins.scss*/
+/*Maps*/
+/*Reset Gral - Ver basics.scss*/
+/*Map que Define la Paleta de Colores del Proyecto - Ver basics.scss*/
+/*Mixins*/
 /*Cambiar colores de fondo y texto de un componento o elemento*/
 /*Reset Gral*/
 * {
+  /*Map Sass - Ver Map_Mixins.scss*/
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
@@ -101,9 +106,10 @@ section .cardIndex {
 
 /*ajustes en contacto.html*/
 main #formulario_contacto {
-  background-color: #c9beb0 !important; }
+  background-color: #c9beb0 !important;
+  margin-top: 97px !important; }
   main #formulario_contacto #formulario {
-    margin-top: 140px !important; }
+    margin-top: 50px !important; }
     main #formulario_contacto #formulario .form-control {
       text-align: center !important;
       color: #69503c !important;
@@ -199,6 +205,13 @@ main .logoWhatsApp:hover {
   width: 70px !important;
   background-image: "./assets/images/whatsapp_.png"; }
 
+/*Animacion de Logos de Redes Sociales*/
+.logoInst a img:hover {
+  width: 55px !important; }
+
+.logoFace a img:hover {
+  width: 55px !important; }
+
 /*Titulos de Pagina - H1*/
 main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas {
   text-align: center;
@@ -245,7 +258,12 @@ main .card_texto_lista .item1, main .card_texto_lista .item2, main .card_texto_l
 /* Personalizacion cabanas.html */
 main #titulo_cabanas {
   position: relative;
-  top: 100px !important; }
+  top: 128px !important;
+  padding: 5px;
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #69503c;
+  color: #c9beb0; }
 
 .row_boton_arriba #link_arriba {
   text-decoration: none;
@@ -254,7 +272,12 @@ main #titulo_cabanas {
 /*ajustes en ubicacion.html*/
 main #titulo_ubicacion {
   position: relative;
-  top: 100px !important; }
+  top: 128px !important;
+  padding: 5px;
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #69503c;
+  color: #c9beb0; }
 
 main section div #card_mapa {
   position: relative;
@@ -275,11 +298,16 @@ main section #como_llegar {
 /*ajustes en servicios.html*/
 main #titulo_servicios {
   position: relative;
-  top: 100px !important; }
+  top: 128px !important;
+  padding: 5px;
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #69503c;
+  color: #c9beb0; }
 
 main #servicios_iconos {
   margin-top: 125px !important;
-  background-color: #c9beb0 !important; }
+  background-color: #c9beb0; }
 
 main #row_servicios .card {
   margin-top: 50px !important;
@@ -293,6 +321,20 @@ main #row_servicios .card {
 /*Ajuste iconos redes sociales en footer*/
 footer #logosRedes img, article #logosRedes img {
   width: 65px; }
+
+.carousel-control-next, .carousel-control-prev {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5%;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  background: 0 0; }
 
 /*ajuste breack points*/
 @media (max-width: 319px) {
@@ -336,11 +378,13 @@ footer #logosRedes img, article #logosRedes img {
     font-size: 0.8rem !important; } }
 
 @media (max-width: 575px) {
+  /*en cabanas.html Visualiza Barra de Navegacion para dispositivos pequeños*/
   .menu_cabanias .icon_cabania {
     display: block;
     width: 35px !important; } }
 
 @media (min-width: 576px) {
+  /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
   .menu_cabanias {
     background-color: #c7b69f; }
     .menu_cabanias .icon_cabania {

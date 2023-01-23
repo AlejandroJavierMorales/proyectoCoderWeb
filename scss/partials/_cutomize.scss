@@ -42,7 +42,7 @@ main {
         border-style: none;
         background-color: $body_color;
         &:hover{
-            background-color: $body_color;
+            background-color:$body_color;
             color:$body_font_color;
         }
         & #txt_detalle{
@@ -70,10 +70,16 @@ main {
 }
 /* Personalizacion cabanas.html */
 main{
+    
     & #titulo_cabanas{
         @extend .titulo_main;
         position: relative;
-        top: 100px !important;
+        top: 128px !important;
+        padding: 5px;
+        font-size: 1.3rem;
+        width: 100%; 
+        background-color:$body_font_color;
+        color:$card_color;
     }
 }
 .row_boton_arriba{
@@ -83,15 +89,16 @@ main{
     }  
 }
 
-
-
-
-
 /*ajustes en ubicacion.html*/
 main{
     & #titulo_ubicacion{
         position: relative;
-        top: 100px !important;
+        top: 128px !important;
+        padding: 5px;
+        font-size: 1.3rem;
+        width: 100%; 
+        background-color:$body_font_color;
+        color:$card_color;
     }
     & section{
         & div{
@@ -122,11 +129,16 @@ main{
 main{
     & #titulo_servicios{
         position: relative;
-        top: 100px !important;
+        top: 128px !important;
+        padding: 5px;
+        font-size: 1.3rem;
+        width: 100%; 
+        background-color:$body_font_color;
+        color:$card_color;
     }
     & #servicios_iconos{
         margin-top: 125px !important;
-        background-color: #c9beb0 !important;
+        background-color:$card_color;
     }
     & #row_servicios{ 
         & .card{
@@ -149,4 +161,19 @@ footer, article{
     & #logosRedes img{
         width: 65px;
     }
+}
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: 0 0;
 }
