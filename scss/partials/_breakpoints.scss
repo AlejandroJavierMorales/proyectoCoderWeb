@@ -14,51 +14,67 @@
           }
         }
     }
+    /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
+    .menu_cabanias{
+        background-color:map-get($paleta_colores, color_cuerpo) ;
+        & .icon_cabania{
+            display:none !important;
+        }
+        & li{
+            background-color: map-get($paleta_colores, color_cuerpo);
+            & .nav-link{
+                background-color: map-get($paleta_colores, color_cuerpo);
+                color:map-get($paleta_colores, color_cuerpo);
+            }
+        }
+
+    }
 }
+
 @media(max-width: 375px){
-/*Overlay imagenes index.html - ajuste de tamaño de fuente*/
-.card_texto_lista{
-    & .img_overlay {
-      & .overlay {
-        top: 40%;
-        & p {
-          font-size: 9px;
-          font-weight: 600;
-          margin-bottom: 0;
+    /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+    .card_texto_lista{
+        & .img_overlay {
+          & .overlay {
+            top: 40%;
+            & p {
+              font-size: 9px;
+              font-weight: 600;
+              margin-bottom: 0;
+            }
+          }
+        }
+        & .overlay_detalle{
+            font-size: 10px;
         }
       }
+      /*Ajuste en servicios.html - tamaño de iconos*/
+      .servicios_iconos{
+        &__img{
+            width: 26px !important;
+            padding: 2px;
+            }
+        }
+        
     }
-    & .overlay_detalle{
-        font-size: 10px;
-    }
-  }
-  /*Ajuste en servicios.html - tamaño de iconos*/
-  .servicios_iconos{
+
+@media(min-width: 376px) and (max-width:575px){
+/*Ajuste en servicios.html - tamaño de iconos*/
+.servicios_iconos{
     &__img{
-        width: 29px !important;
+        width: 30px !important;
         padding: 2px;
         }
     }
-    
 }
 
-@media(max-width: 475px){
-    
+@media(max-width: 475px){ 
     main{
         & .titulo_main{
             & .h1_titulo_inicio{
                 font-size: 1rem;
             }
         }
-        & .actividades__icons{
-                &__txt{
-                    font-size: 0.6rem !important;
-                }
-                & img{
-                    width: 40px !important; 
-                }
-        }
-
     }
     footer{
         & .pieTexto{
@@ -82,20 +98,30 @@
 @media(max-width:575px){
     /*en cabanas.html Visualiza Barra de Navegacion para dispositivos pequeños*/
     .menu_cabanias{
+        --bs-gutter-x: 1.5rem;
+        
         & .icon_cabania{
             display:block;
-            width: 35px !important;
+            width: 32px !important;
         }
             
     }
 }
 @media(min-width:576px){
-     /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
+    /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
     .menu_cabanias{
-        background-color:$body_color ;
+        background-color:map-get($paleta_colores, color_cuerpo) ;
         & .icon_cabania{
             display:none;
         }
+        & li{
+            background-color: map-get($paleta_colores, color_cuerpo);
+            & .nav-link{
+                background-color: map-get($paleta_colores, color_cuerpo);
+                color:map-get($paleta_colores, color_cuerpo);
+            }
+        }
+
             
     }
 }
@@ -157,65 +183,9 @@
                 font-size: 1.1rem;
             }
         }
-    }
-    /*juste de cards en cabanas.hml*/
-    .contenedor_card{
-        margin-top: 10px;
-        border-radius: 5px !important;
-        @for $i from 1 through 6{   
-            @if $i==1{    
-                & .foto_cab#{$i}{
-                justify-content: end !important;
-                }
-                & .texto_cab#{$i}{
-                justify-content: start !important;
-                } 
-            }    
-            @if $i==2{    
-                & .foto_cab#{$i}{
-                justify-content: start !important;
-                }
-                & .texto_cab#{$i}{
-                justify-content: end !important;
-                } 
-            } 
-            @if $i==3{    
-                & .foto_cab#{$i}{
-                justify-content: end !important;
-                }
-                & .texto_cab#{$i}{
-                justify-content: start !important;
-                } 
-            }    
-            @if $i==4{    
-                & .foto_cab#{$i}{
-                justify-content: start !important;
-                }
-                & .texto_cab#{$i}{
-                justify-content: end !important;
-                } 
-            } 
-            @if $i==5{    
-                & .foto_cab#{$i}{
-                justify-content: end !important;
-                }
-                & .texto_cab#{$i}{
-                justify-content: start !important;
-                } 
-            }    
-            @if $i==6{    
-                & .foto_cab#{$i}{
-                justify-content: start !important;
-                }
-                & .texto_cab#{$i}{
-                justify-content: end !important;
-                } 
-            }          
-        }
-        
-    }
-  
+    } 
 }
+
 @media(min-width: 992px){
     /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
     header{
@@ -246,6 +216,16 @@
             padding: 5px;
             }
         }
+        /*Ajusta la ubicacion del ToolTip para dispositivos grandes*/
+        @for $i from 1 through 11{   
+            .servicios_iconos{    
+                & .icono#{$i}:hover{
+                    & .txt_icono#{$i}{
+                        top:225px;
+                   }
+                } 
+            }
+        }
 }
 
 
@@ -269,17 +249,9 @@
    /*Ajuste en servicios.html - tamaño de iconos*/
    .servicios_iconos{
     &__img{
-        width:45px;
+        width:40px;
         padding: 5px;
     }
 }
 }
-@media(min-width: 475px) and (max-width:575px){
-     /*Ajuste en servicios.html - tamaño de iconos*/
-     .servicios_iconos{
-        &__img{
-            width: 45px !important;
-            padding: 5px;
-        }
-    }
-}
+

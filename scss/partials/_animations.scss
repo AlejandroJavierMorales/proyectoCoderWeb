@@ -33,45 +33,6 @@ main{
     }
 }
 
-/*ToolTip para iconos de servicios*/
-main{
-  & .servicios_iconos{
-    & .tooltip{
-      //tooltip contenedor
-      &-container {
-        position:absolute;
-        cursor: pointer;
-        //ocultar el tooltip
-        .tooltip-one {
-            display: none;
-        }
-      &-one {
-        padding: 10px 32px;
-        background: #fff;
-        position: relative;
-        min-width: 150px;
-        max-width: 180px;
-        border-radius: 5px;
-        text-align: center;
-        filter: drop-shadow(0 3px 5px #ccc);
-        line-height: 1.5;
-        &:after {
-          content: "";
-          position: absolute;
-          bottom: -9px;
-          left: 50%;
-          margin-left: -9px;
-          width: 18px;
-          height: 18px;
-          background: white;
-          transform: rotate(45deg);
-          }
-        }
-      } 
-    }
-  }
-}
-
   /*Overlay imagenes index.html*/
   .card_texto_lista{
     & .img_overlay {
@@ -106,7 +67,7 @@ main{
   .menu_cabanias{
     & .icon_cabania{
       &:hover{
-        width: 38px !important;
+        width: 30px !important;
       }
         
     }

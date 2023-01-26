@@ -1,3 +1,9 @@
+/*Elimina gutters de bootstrap*/
+.row{
+    --bs-gutter-x: 0rem;
+    scrollbar-gutter: none;
+}
+
 /*Titulos de Pagina - H1*/
 main{
     & .titulo_main{
@@ -10,11 +16,14 @@ main{
 }
 /*Personalizacion index.html*/
 main {
+    & .gutter_titulo_main{
+        --bs-gutter-x: 1.5rem;
+    }
     & #titulo_inicio{
         @extend .titulo_main;
         padding: 3px;
         width: 100%; 
-        background-color:$body_font_color !important;
+        background-color:map-get($paleta_colores, color_fuente_cuerpo) !important;
         color:$card_color;
     }
     & #txt_tituloSecundario{
@@ -22,7 +31,7 @@ main {
         padding: 3px;
         font-size: 1rem;
         width: 100%; 
-        background-color:$body_font_color;
+        background-color:map-get($paleta_colores, color_fuente_cuerpo);
         color:$card_color;
     }
     & .titulo_main{
@@ -33,17 +42,17 @@ main {
         &  .h2_titulo_inicio{
                 @extend .titulo_main;
                 font-size: 0.7rem;
-                color: $card_color;
+                color: map-get($paleta_colores, color_tarjeta);
                 font-weight: 600;
         }
     } 
     & .card_texto_pres{
         font-size: 1.3rem;
         border-style: none;
-        background-color: $body_color;
+        background-color:map-get($paleta_colores, color_cuerpo);
         &:hover{
-            background-color:$body_color;
-            color:$body_font_color;
+            background-color:map-get($paleta_colores, color_cuerpo);
+            color:map-get($paleta_colores, color_fuente_cuerpo);
         }
         & #txt_detalle{
             font-size: 1rem;
@@ -69,8 +78,7 @@ main {
     }
 }
 /* Personalizacion cabanas.html */
-main{
-    
+main{ 
     & #titulo_cabanas{
         @extend .titulo_main;
         position: relative;
@@ -78,14 +86,14 @@ main{
         padding: 5px;
         font-size: 1.3rem;
         width: 100%; 
-        background-color:$body_font_color;
+        background-color:map-get($paleta_colores, color_fuente_cuerpo);
         color:$card_color;
     }
 }
 .row_boton_arriba{
     & #link_arriba{
         text-decoration: none;
-        color: white;   
+        color: map-get($paleta_colores, color_fuente_invertido);   
     }  
 }
 
@@ -97,8 +105,8 @@ main{
         padding: 5px;
         font-size: 1.3rem;
         width: 100%; 
-        background-color:$body_font_color;
-        color:$card_color;
+        background-color:map-get($paleta_colores, color_fuente_cuerpo);
+        color:map-get($paleta_colores, color_tarjeta);
     }
     & section{
         & div{
@@ -133,12 +141,16 @@ main{
         padding: 5px;
         font-size: 1.3rem;
         width: 100%; 
-        background-color:$body_font_color;
+        background-color:map-get($paleta_colores, color_fuente_cuerpo);
         color:$card_color;
     }
-    & #servicios_iconos{
+    & .servicios_iconos{
         margin-top: 125px !important;
-        background-color:$card_color;
+        background-color:map-get($paleta_colores, color_tarjeta);
+        &__img{
+            width:37px;
+            padding: 1px;
+        }
     }
     & #row_servicios{ 
         & .card{
@@ -146,15 +158,7 @@ main{
            height: 700px !important;
         }
     }
-
 }
-/*Ajuste en servicios.html - tamaño de iconos*/
-.servicios_iconos{
-    &__img{
-        width:37px;
-        padding: 1px;
-    }
-}  
 
 /*Ajuste iconos redes sociales en footer*/
 footer, article{
@@ -163,17 +167,159 @@ footer, article{
     }
 }
 
-.carousel-control-next, .carousel-control-prev {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 5%;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    background: 0 0;
+    @for $i from 1 through 11{   
+        .txt_icono#{$i}{
+                display: none;
+               font-size: 5px;
+            }
+        }
+
+/*ToolTip en Iconos servicios.hml*/
+.servicios_iconos{
+    @for $i from 1 through 11{   
+        @if $i==1{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: flex;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==2{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==3{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==4{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==5{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==6{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==7{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==8{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==9{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==10{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+        @if $i==11{    
+            & .icono#{$i}:hover{
+                & .txt_icono#{$i}{
+                    display: block;
+                    padding: 4px;
+                    background-color:map-get($paleta_colores, color_pie);
+                    color:map-get($paleta_colores, color_fuente_invertido);
+                    position:absolute;
+                    top:210px;
+                    right:20px;
+                    font-size: 0.8rem !important;
+               }
+            } 
+        }
+    }
 }

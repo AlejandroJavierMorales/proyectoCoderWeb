@@ -54,8 +54,8 @@ section .cardIndex {
 .nav {
   margin-top: 120px;
   background-color: #ab9680;
-  --bs-nav-link-color: $body_font_color;
-  --bs-nav-link-hover-color: $color_fuente; }
+  --bs-nav-link-color: map-get($paleta_colores, color_fuente_cuerpo);
+  --bs-nav-link-hover-color: map-get($paleta_colores, color_fuente_invertido); }
   .nav-item {
     padding: 5px; }
   .nav-link {
@@ -146,33 +146,6 @@ main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo
   animation-name: escalar;
   animation-duration: 1.5s; }
 
-/*ToolTip para iconos de servicios*/
-main .servicios_iconos .tooltip-container {
-  position: absolute;
-  cursor: pointer; }
-  main .servicios_iconos .tooltip-container .tooltip-one {
-    display: none; }
-  main .servicios_iconos .tooltip-container-one {
-    padding: 10px 32px;
-    background: #fff;
-    position: relative;
-    min-width: 150px;
-    max-width: 180px;
-    border-radius: 5px;
-    text-align: center;
-    filter: drop-shadow(0 3px 5px #ccc);
-    line-height: 1.5; }
-    main .servicios_iconos .tooltip-container-one:after {
-      content: "";
-      position: absolute;
-      bottom: -9px;
-      left: 50%;
-      margin-left: -9px;
-      width: 18px;
-      height: 18px;
-      background: white;
-      transform: rotate(45deg); }
-
 /*Overlay imagenes index.html*/
 .card_texto_lista .img_overlay {
   position: relative; }
@@ -198,7 +171,7 @@ main .servicios_iconos .tooltip-container {
 
 /*Animación Iconos Barra Cabanas.html*/
 .menu_cabanias .icon_cabania:hover {
-  width: 38px !important; }
+  width: 30px !important; }
 
 /*Animación Logo de Whatsapp Hover*/
 main .logoWhatsApp:hover {
@@ -212,6 +185,11 @@ main .logoWhatsApp:hover {
 .logoFace a img:hover {
   width: 55px !important; }
 
+/*Elimina gutters de bootstrap*/
+.row {
+  --bs-gutter-x: 0rem;
+  scrollbar-gutter: none; }
+
 /*Titulos de Pagina - H1*/
 main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas {
   text-align: center;
@@ -220,6 +198,9 @@ main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo
   font-weight: 700; }
 
 /*Personalizacion index.html*/
+main .gutter_titulo_main {
+  --bs-gutter-x: 1.5rem; }
+
 main #titulo_inicio {
   padding: 3px;
   width: 100%;
@@ -267,7 +248,7 @@ main #titulo_cabanas {
 
 .row_boton_arriba #link_arriba {
   text-decoration: none;
-  color: white; }
+  color: #faf1f1; }
 
 /*ajustes en ubicacion.html*/
 main #titulo_ubicacion {
@@ -305,36 +286,165 @@ main #titulo_servicios {
   background-color: #69503c;
   color: #c9beb0; }
 
-main #servicios_iconos {
+main .servicios_iconos {
   margin-top: 125px !important;
   background-color: #c9beb0; }
+  main .servicios_iconos__img {
+    width: 37px;
+    padding: 1px; }
 
 main #row_servicios .card {
   margin-top: 50px !important;
   height: 700px !important; }
 
-/*Ajuste en servicios.html - tamaño de iconos*/
-.servicios_iconos__img {
-  width: 37px;
-  padding: 1px; }
-
 /*Ajuste iconos redes sociales en footer*/
 footer #logosRedes img, article #logosRedes img {
   width: 65px; }
 
-.carousel-control-next, .carousel-control-prev {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
+.txt_icono1 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono2 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono3 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono4 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono5 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono6 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono7 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono8 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono9 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono10 {
+  display: none;
+  font-size: 5px; }
+
+.txt_icono11 {
+  display: none;
+  font-size: 5px; }
+
+/*ToolTip en Iconos servicios.hml*/
+.servicios_iconos .icono1:hover .txt_icono1 {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 5%;
-  padding: 0;
-  color: #fff;
-  text-align: center;
-  background: 0 0; }
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono2:hover .txt_icono2 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono3:hover .txt_icono3 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono4:hover .txt_icono4 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono5:hover .txt_icono5 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono6:hover .txt_icono6 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono7:hover .txt_icono7 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono8:hover .txt_icono8 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono9:hover .txt_icono9 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono10:hover .txt_icono10 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  font-size: 0.8rem !important; }
+
+.servicios_iconos .icono11:hover .txt_icono11 {
+  display: block;
+  padding: 4px;
+  background-color: #ab9680;
+  color: #faf1f1;
+  position: absolute;
+  top: 210px;
+  right: 20px;
+  font-size: 0.8rem !important; }
 
 /*ajuste breack points*/
 @media (max-width: 319px) {
@@ -344,7 +454,17 @@ footer #logosRedes img, article #logosRedes img {
     .card_texto_lista .img_overlay:hover img {
       opacity: 1; }
     .card_texto_lista .img_overlay:hover .overlay {
-      opacity: 0; } }
+      opacity: 0; }
+  /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
+  .menu_cabanias {
+    background-color: #c7b69f; }
+    .menu_cabanias .icon_cabania {
+      display: none !important; }
+    .menu_cabanias li {
+      background-color: #c7b69f; }
+      .menu_cabanias li .nav-link {
+        background-color: #c7b69f;
+        color: #c7b69f; } }
 
 @media (max-width: 375px) {
   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
@@ -358,16 +478,18 @@ footer #logosRedes img, article #logosRedes img {
     font-size: 10px; }
   /*Ajuste en servicios.html - tamaño de iconos*/
   .servicios_iconos__img {
-    width: 29px !important;
+    width: 26px !important;
+    padding: 2px; } }
+
+@media (min-width: 376px) and (max-width: 575px) {
+  /*Ajuste en servicios.html - tamaño de iconos*/
+  .servicios_iconos__img {
+    width: 30px !important;
     padding: 2px; } }
 
 @media (max-width: 475px) {
   main .titulo_main .h1_titulo_inicio, main #titulo_inicio .h1_titulo_inicio, main #txt_tituloSecundario .h1_titulo_inicio, main #titulo_cabanas .h1_titulo_inicio {
     font-size: 1rem; }
-  main .actividades__icons__txt {
-    font-size: 0.6rem !important; }
-  main .actividades__icons img {
-    width: 40px !important; }
   footer .pieTexto {
     font-size: 0.8rem;
     z-index: 2; }
@@ -379,16 +501,23 @@ footer #logosRedes img, article #logosRedes img {
 
 @media (max-width: 575px) {
   /*en cabanas.html Visualiza Barra de Navegacion para dispositivos pequeños*/
-  .menu_cabanias .icon_cabania {
-    display: block;
-    width: 35px !important; } }
+  .menu_cabanias {
+    --bs-gutter-x: 1.5rem; }
+    .menu_cabanias .icon_cabania {
+      display: block;
+      width: 32px !important; } }
 
 @media (min-width: 576px) {
   /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
   .menu_cabanias {
     background-color: #c7b69f; }
     .menu_cabanias .icon_cabania {
-      display: none; } }
+      display: none; }
+    .menu_cabanias li {
+      background-color: #c7b69f; }
+      .menu_cabanias li .nav-link {
+        background-color: #c7b69f;
+        color: #c7b69f; } }
 
 @media (max-width: 768px) {
   /*Ajustes en ubicacion.html*/
@@ -423,35 +552,7 @@ footer #logosRedes img, article #logosRedes img {
   .nav-link {
     font-size: 1rem; }
     .nav-link:hover {
-      font-size: 1.1rem; }
-  /*juste de cards en cabanas.hml*/
-  .contenedor_card {
-    margin-top: 10px;
-    border-radius: 5px !important; }
-    .contenedor_card .foto_cab1 {
-      justify-content: end !important; }
-    .contenedor_card .texto_cab1 {
-      justify-content: start !important; }
-    .contenedor_card .foto_cab2 {
-      justify-content: start !important; }
-    .contenedor_card .texto_cab2 {
-      justify-content: end !important; }
-    .contenedor_card .foto_cab3 {
-      justify-content: end !important; }
-    .contenedor_card .texto_cab3 {
-      justify-content: start !important; }
-    .contenedor_card .foto_cab4 {
-      justify-content: start !important; }
-    .contenedor_card .texto_cab4 {
-      justify-content: end !important; }
-    .contenedor_card .foto_cab5 {
-      justify-content: end !important; }
-    .contenedor_card .texto_cab5 {
-      justify-content: start !important; }
-    .contenedor_card .foto_cab6 {
-      justify-content: start !important; }
-    .contenedor_card .texto_cab6 {
-      justify-content: end !important; } }
+      font-size: 1.1rem; } }
 
 @media (min-width: 992px) {
   /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
@@ -469,7 +570,30 @@ footer #logosRedes img, article #logosRedes img {
   /*Ajuste en servicios.html - tamaño de iconos*/
   .servicios_iconos__img {
     width: 50px !important;
-    padding: 5px; } }
+    padding: 5px; }
+  /*Ajusta la ubicacion del ToolTip para dispositivos grandes*/
+  .servicios_iconos .icono1:hover .txt_icono1 {
+    top: 225px; }
+  .servicios_iconos .icono2:hover .txt_icono2 {
+    top: 225px; }
+  .servicios_iconos .icono3:hover .txt_icono3 {
+    top: 225px; }
+  .servicios_iconos .icono4:hover .txt_icono4 {
+    top: 225px; }
+  .servicios_iconos .icono5:hover .txt_icono5 {
+    top: 225px; }
+  .servicios_iconos .icono6:hover .txt_icono6 {
+    top: 225px; }
+  .servicios_iconos .icono7:hover .txt_icono7 {
+    top: 225px; }
+  .servicios_iconos .icono8:hover .txt_icono8 {
+    top: 225px; }
+  .servicios_iconos .icono9:hover .txt_icono9 {
+    top: 225px; }
+  .servicios_iconos .icono10:hover .txt_icono10 {
+    top: 225px; }
+  .servicios_iconos .icono11:hover .txt_icono11 {
+    top: 225px; } }
 
 @media (min-width: 576px) and (max-width: 997px) {
   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
@@ -483,11 +607,5 @@ footer #logosRedes img, article #logosRedes img {
     font-size: 11px; }
   /*Ajuste en servicios.html - tamaño de iconos*/
   .servicios_iconos__img {
-    width: 45px;
-    padding: 5px; } }
-
-@media (min-width: 475px) and (max-width: 575px) {
-  /*Ajuste en servicios.html - tamaño de iconos*/
-  .servicios_iconos__img {
-    width: 45px !important;
+    width: 40px;
     padding: 5px; } }
