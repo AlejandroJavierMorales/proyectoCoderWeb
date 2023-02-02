@@ -196,6 +196,9 @@
     /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
     .card_texto_lista{
         & .img_overlay {
+            & .item2{
+                width: 100% !important;
+            }
         & .overlay {
             top: 40%;
             & p {

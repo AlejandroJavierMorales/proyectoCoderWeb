@@ -559,6 +559,8 @@ footer #logosRedes img, article #logosRedes img {
   header #logo_header {
     width: 390px !important; }
   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
+  .card_texto_lista .img_overlay .item2, main .card_texto_lista .img_overlay .item3, main .card_texto_lista .img_overlay .item4, main .card_texto_lista .img_overlay .item5, main .card_texto_lista .img_overlay .item6 {
+    width: 100% !important; }
   .card_texto_lista .img_overlay .overlay {
     top: 40%; }
     .card_texto_lista .img_overlay .overlay p {

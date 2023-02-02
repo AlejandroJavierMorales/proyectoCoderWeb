@@ -189,8 +189,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==2{    
+        }@else if $i==2{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -202,8 +201,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==3{    
+        }@else if $i==3{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -215,8 +213,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==4{    
+        }@else if $i==4{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -228,8 +225,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==5{    
+        }@else if $i==5{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -241,8 +237,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==6{    
+        }@else if $i==6{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -254,8 +249,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==7{    
+        }@else if $i==7{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -267,8 +261,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==8{    
+        }@else if $i==8{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -280,8 +273,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==9{    
+        }@else if $i==9{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -293,8 +285,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==10{    
+        }@else if $i==10{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -306,8 +297,7 @@ footer, article{
                     font-size: 0.8rem !important;
                }
             } 
-        }
-        @if $i==11{    
+        }@else if $i==11{    
             & .icono#{$i}:hover{
                 & .txt_icono#{$i}{
                     display: block;
@@ -321,5 +311,6 @@ footer, article{
                }
             } 
         }
+        
     }
 }
