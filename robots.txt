@@ -1,3 +1,20 @@
-User-agent: *
-Allow: /
+User-agent: Googlebot
+Disallow: /cabana_uno.html
+Disallow: /cabana_dos.html
+Disallow: /cabana_tres.html
+Disallow: /cabana_cuatro.html
+Disallow: /cabana_loft.html
+Disallow: /servicios.html
+Disallow: /entorno.html
+Disallow: /sala_de_juegos.html
 
+User-agent: *
+Allow:  /index.html
+Allow:	/pages/servicios.html
+Allow:	/pages/cabanas.html
+Allow:	/pages/galeria.html
+Allow:	/pages/ubicacion.html
+Allow:	/pages/contacto.html
+Allow:	/blog/index.html
+
+Sitemap: https://www.cabanasecosdelvalle.com.ar/sitemap.xml

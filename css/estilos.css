@@ -1,6 +1,4 @@
 @charset "UTF-8";
-/*Google Font*/
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap");
 /*Partials*/
 /*Variables*/
 /*colores de fondo y fuente - ver mixins.scss*/
@@ -52,7 +50,7 @@ section .cardIndex {
 
 /*Barra de Navegacion Gral *** Ver Mixin ****/
 .nav {
-  margin-top: 120px;
+  margin-top: 120px !important;
   background-color: #ab9680;
   --bs-nav-link-color: map-get($paleta_colores, color_fuente_cuerpo);
   --bs-nav-link-hover-color: map-get($paleta_colores, color_fuente_invertido); }
@@ -102,7 +100,8 @@ section .cardIndex {
     width: 8rem;
     border-color: #ab9680 !important; }
   .btn:hover {
-    color: #69503c; }
+    color: #faf1f1;
+    background-color: #c7b69f !important; }
 
 /*ajustes en contacto.html*/
 main #formulario_contacto {
@@ -120,6 +119,11 @@ main #formulario_contacto {
 a .logoWhatsApp {
   z-index: 2;
   bottom: 150px !important; }
+
+a .logoGaleria {
+  z-index: 1;
+  bottom: 150px !important;
+  width: 65px !important; }
 
 /*keyframes animaciones logo_header y titulo principal para tods las paginas .html*/
 @keyframes rotar {
@@ -178,6 +182,9 @@ main .logoWhatsApp:hover {
   width: 70px !important;
   background-image: "./assets/images/whatsapp_.png"; }
 
+main .logoGaleria:hover {
+  width: 80px !important; }
+
 /*Animacion de Logos de Redes Sociales*/
 .logoInst a img:hover {
   width: 55px !important; }
@@ -190,6 +197,10 @@ main .logoWhatsApp:hover {
   --bs-gutter-x: 0rem;
   scrollbar-gutter: none; }
 
+/*Logo Ecos del Valle en Cada Header*/
+header #logo_header {
+  width: 350px !important; }
+
 /*Titulos de Pagina - H1*/
 main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo_main .h1_titulo_inicio, main .titulo_main .h2_titulo_inicio, main #titulo_cabanas {
   text-align: center;
@@ -198,8 +209,27 @@ main .titulo_main, main #titulo_inicio, main #txt_tituloSecundario, main .titulo
   font-weight: 700; }
 
 /*Personalizacion index.html*/
+main h3 {
+  font-size: 20px; }
+
 main .gutter_titulo_main {
   --bs-gutter-x: 1.5rem; }
+
+main section #ruta, main section #rutaCabanas {
+  max-width: 100%;
+  height: 50px; }
+  main section #ruta nav, main section #rutaCabanas nav {
+    max-width: 85%;
+    position: relative !important;
+    left: 30px;
+    top: 5px; }
+    main section #ruta nav ol li a, main section #rutaCabanas nav ol li a {
+      color: #faf1f1 !important;
+      text-decoration: none; }
+
+main section #rutaCabanas nav {
+  height: 20px;
+  top: 120px; }
 
 main #titulo_inicio {
   padding: 3px;
@@ -228,6 +258,15 @@ main .card_texto_pres, main .card_texto_lista {
     color: #69503c; }
   main .card_texto_pres #txt_detalle, main .card_texto_lista #txt_detalle {
     font-size: 1rem; }
+  main .card_texto_pres #txt_detalle_2, main .card_texto_lista #txt_detalle_2 {
+    font-size: 1rem;
+    text-align: left; }
+    main .card_texto_pres #txt_detalle_2 a, main .card_texto_lista #txt_detalle_2 a {
+      text-decoration: none;
+      color: #69503c;
+      font-weight: 600; }
+      main .card_texto_pres #txt_detalle_2 a:hover, main .card_texto_lista #txt_detalle_2 a:hover {
+        font-size: 1.1rem; }
 
 main .card_texto_lista .item1, main .card_texto_lista .item2, main .card_texto_lista .item3, main .card_texto_lista .item4, main .card_texto_lista .item5, main .card_texto_lista .item6 {
   padding: 2px;
@@ -296,6 +335,23 @@ main .servicios_iconos {
 main #row_servicios .card {
   margin-top: 50px !important;
   height: 700px !important; }
+
+/*ajustes en galeria.html*/
+main #titulo_galeria {
+  position: relative;
+  top: 128px !important;
+  padding: 5px;
+  font-size: 1.3rem;
+  width: 100%;
+  background-color: #69503c;
+  color: #c9beb0; }
+
+main #row_galeria {
+  position: relative;
+  top: 70px; }
+  main #row_galeria .card {
+    margin-top: 50px !important;
+    height: 700px !important; }
 
 /*Ajuste iconos redes sociales en footer*/
 footer #logosRedes img, article #logosRedes img {
@@ -446,6 +502,11 @@ footer #logosRedes img, article #logosRedes img {
   right: 20px;
   font-size: 0.8rem !important; }
 
+.card-galeria {
+  max-height: 600px !important;
+  overflow: hidden;
+  z-index: 0; }
+
 /*ajuste breack points*/
 @media (max-width: 319px) {
   /* Index.html - No visualiza texto en Overlay para dispositivos de menos de 320px*/
@@ -467,6 +528,8 @@ footer #logosRedes img, article #logosRedes img {
         color: #c7b69f; } }
 
 @media (max-width: 375px) {
+  .breadcrumb-item {
+    font-size: 9px !important; }
   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
   .card_texto_lista .img_overlay .overlay {
     top: 40%; }
@@ -490,6 +553,26 @@ footer #logosRedes img, article #logosRedes img {
 @media (max-width: 475px) {
   main .titulo_main .h1_titulo_inicio, main #titulo_inicio .h1_titulo_inicio, main #txt_tituloSecundario .h1_titulo_inicio, main #titulo_cabanas .h1_titulo_inicio {
     font-size: 1rem; }
+  main .titulo_main #titulo_cabanas, main #titulo_inicio #titulo_cabanas, main #txt_tituloSecundario #titulo_cabanas, main #titulo_cabanas #titulo_cabanas, main .titulo_main #titulo_servicios, main #titulo_inicio #titulo_servicios, main #txt_tituloSecundario #titulo_servicios, main #titulo_cabanas #titulo_servicios, main .titulo_main #titulo_ubicacion, main #titulo_inicio #titulo_ubicacion, main #txt_tituloSecundario #titulo_ubicacion, main #titulo_cabanas #titulo_ubicacion {
+    margin-top: -40px !important; }
+  main .titulo_main .titulo_contacto, main #titulo_inicio .titulo_contacto, main #txt_tituloSecundario .titulo_contacto, main #titulo_cabanas .titulo_contacto {
+    margin-top: -100px !important; }
+  main .titulo_main .form, main #titulo_inicio .form, main #txt_tituloSecundario .form, main #titulo_cabanas .form {
+    margin-top: -100px !important; }
+  main .breadcrumb-item {
+    padding-top: 10px !important;
+    font-size: 9px !important;
+    padding-left: -20px !important;
+    padding-right: 2px !important; }
+  main section #rutaCabanas {
+    position: relative !important;
+    top: -20px !important;
+    left: -20px !important; }
+    main section #rutaCabanas nav {
+      top: 105px !important;
+      left: 5px !important; }
+  main .card-galeria {
+    max-height: 500px !important; }
   footer .pieTexto {
     font-size: 0.8rem;
     z-index: 2; }
@@ -500,6 +583,61 @@ footer #logosRedes img, article #logosRedes img {
     font-size: 0.8rem !important; } }
 
 @media (max-width: 575px) {
+  main .breadcrumb-item {
+    padding-top: 10px !important;
+    font-size: 10px !important;
+    padding-left: 2px !important;
+    padding-right: 2px !important; }
+  main section #rutaCabanas {
+    position: relative !important;
+    top: -20px !important; }
+    main section #rutaCabanas nav {
+      top: 120px;
+      left: 5px !important; }
+  /*BLOG*/
+  .body_blog #titulo_blog_txt {
+    font-size: 18px !important; }
+  .body_blog #subtitulo_blog {
+    font-size: 14px; }
+  .body_blog .main_blog .contenedor_cuerpo_blog {
+    padding-bottom: 70px !important;
+    width: 95% !important;
+    margin-top: 30px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .row_cuerpo_blog {
+      display: flex;
+      flex-direction: column; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .enlace {
+      font-size: 14px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog #card_blog_right {
+      font-size: 12px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .logo_B {
+      width: 30px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .logo_red {
+      width: 50px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .logo_red:hover {
+      width: 52px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .titulo_post {
+      font-size: 18px !important;
+      text-align: center; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .subTitulo_post {
+      font-size: 14px !important;
+      padding: 20px 0px 20px 0px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog a {
+      font-size: 12px !important; }
+  .body_blog footer {
+    height: 20% !important;
+    background-color: #69503c !important;
+    color: #c9beb0 !important;
+    font-size: 0.7rem; }
+  #pie_post {
+    text-align: center;
+    font-size: 12px !important; }
+  .separador {
+    display: none;
+    margin: 0px !important; }
+  .contenedor_imagenes {
+    font-size: 10px;
+    text-align: center; }
   /*en cabanas.html Visualiza Barra de Navegacion para dispositivos pequeños*/
   .menu_cabanias {
     --bs-gutter-x: 1.5rem; }
@@ -519,7 +657,23 @@ footer #logosRedes img, article #logosRedes img {
         background-color: #c7b69f;
         color: #c7b69f; } }
 
+@media (min-width: 670px) and (max-width: 767px) {
+  main .card-galeria {
+    max-height: 700px !important; } }
+
+@media (min-width: 768px) and (max-width: 1120px) {
+  main .card-galeria {
+    max-height: 500px !important; } }
+
+@media (min-width: 1500px) {
+  main .card-galeria {
+    max-height: 1400px !important; } }
+
 @media (max-width: 768px) {
+  main #carouselPrincipal {
+    margin-top: 50px; }
+  header #logo_header {
+    width: 240px !important; }
   /*Ajustes en ubicacion.html*/
   section #rowUbicacion {
     display: flex;
@@ -532,7 +686,51 @@ footer #logosRedes img, article #logosRedes img {
     section #rowUbicacion #card_texto {
       margin-top: 10px; }
   .cardIndex img {
-    width: 100% !important; } }
+    width: 100% !important; }
+  /*BLOG*/
+  .body_blog #titulo_blog_txt {
+    font-size: 20px; }
+  .body_blog #subtitulo_blog {
+    font-size: 14px !important; }
+  .body_blog .main_blog .contenedor_cuerpo_blog {
+    padding-bottom: 70px !important;
+    width: 95% !important;
+    margin-top: 30px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .row_cuerpo_blog {
+      display: flex;
+      flex-direction: column; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .enlace {
+      font-size: 12px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog #card_blog_right {
+      font-size: 12px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .logo_B {
+      width: 30px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .logo_red {
+      width: 50px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .logo_red:hover {
+      width: 52px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .titulo_post {
+      font-size: 18px !important;
+      text-align: center; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .subTitulo_post {
+      font-size: 14px !important;
+      padding: 20px 0px 20px 0px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog a {
+      font-size: 12px !important; }
+  .body_blog footer {
+    height: 20% !important;
+    background-color: #69503c !important;
+    color: #c9beb0 !important;
+    font-size: 0.7rem; }
+  #pie_post {
+    text-align: center;
+    font-size: 12px !important; }
+  .separador {
+    display: none;
+    margin: 0px !important; }
+  .contenedor_imagenes {
+    font-size: 10px;
+    text-align: center; } }
 
 @media (min-width: 768px) {
   nav .nav-item {
@@ -545,7 +743,25 @@ footer #logosRedes img, article #logosRedes img {
     position: relative;
     top: 100px !important; }
   .actividades__icons {
-    width: 85%; } }
+    width: 85%; }
+  /*BLOG*/
+  .body_blog .main_blog .contenedor_cuerpo_blog .row_cuerpo_blog {
+    display: flex;
+    flex-direction: row; }
+  .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item1, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item2, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item2, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item3, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item3, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item4, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item4, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item5, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item5, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item6, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item6, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item2, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item3, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item3, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item4, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item4, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item5, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item5, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item6, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item6, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item3, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item4, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item4, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item5, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item5, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item6, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item6, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item4, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item5, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item5, .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link main .card_texto_lista .item6, main .card_texto_lista .body_blog .main_blog .contenedor_cuerpo_blog .cabacera_iconos_link .item6 {
+      width: 100% !important;
+      text-align: center; }
+  .body_blog .main_blog .contenedor_cuerpo_blog .logo_B {
+    width: 40px; }
+  .body_blog .main_blog .contenedor_cuerpo_blog .logo_red {
+    width: 55px !important; }
+  .body_blog .main_blog .contenedor_cuerpo_blog .logo_red:hover {
+    width: 57px !important; } }
 
 @media (min-width: 888px) {
   /*Barra de Navegacion Gral -- Ajuste de Tamaño de Fuente*/
@@ -555,9 +771,6 @@ footer #logosRedes img, article #logosRedes img {
       font-size: 1.1rem; } }
 
 @media (min-width: 992px) {
-  /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
-  header #logo_header {
-    width: 390px !important; }
   /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
   .card_texto_lista .img_overlay .item2, main .card_texto_lista .img_overlay .item3, main .card_texto_lista .img_overlay .item4, main .card_texto_lista .img_overlay .item5, main .card_texto_lista .img_overlay .item6 {
     width: 100% !important; }
@@ -611,3 +824,77 @@ footer #logosRedes img, article #logosRedes img {
   .servicios_iconos__img {
     width: 40px;
     padding: 5px; } }
+
+header #row_blog_1 {
+  background-color: #69503c;
+  color: #c9beb0; }
+  header #row_blog_1 h1 {
+    font-size: 2.6rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic; }
+  header #row_blog_1 h2 {
+    font-size: 1.3rem; }
+  header #row_blog_1 #logo_header_blog {
+    width: 100%; }
+
+.body_blog {
+  background-image: url(/assets/images/index/el_rio.jpg); }
+  .body_blog .main_blog .contenedor_cuerpo_blog {
+    padding-bottom: 100px;
+    width: 85%;
+    margin-top: 30px !important; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .card:hover {
+      background-color: #c9beb0;
+      color: #69503c; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .titulo_post {
+      font-size: 1.5rem; }
+    .body_blog .main_blog .contenedor_cuerpo_blog .subTitulo_post {
+      font-size: 1.2rem;
+      padding: 20px 0px 20px 0px; }
+    .body_blog .main_blog .contenedor_cuerpo_blog a {
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #69503c; }
+    .body_blog .main_blog .contenedor_cuerpo_blog a:hover {
+      color: #faf1f1; }
+  .body_blog footer {
+    height: 20% !important;
+    background-color: #69503c !important;
+    color: #c9beb0 !important; }
+
+#face {
+  width: 60px !important; }
+
+#inst {
+  width: 60px !important; }
+
+#face:hover {
+  width: 65px !important; }
+
+#inst:hover {
+  width: 65px !important; }
+
+#pie_post {
+  text-align: center;
+  border-radius: 6px !important;
+  padding: 5px !important;
+  background-color: #ab9680 !important;
+  color: #c9beb0 !important;
+  font-size: 1.2rem; }
+  #pie_post .txt_contacto {
+    text-align: left !important; }
+
+.separador {
+  background-color: #69503c !important;
+  height: 1px;
+  margin: 5px;
+  color: #c9beb0 !important;
+  margin-top: 30px; }
+
+#titulo_links {
+  margin-top: 20px; }
+
+.contenedor_imagenes {
+  font-size: 0.7rem;
+  text-align: center; }

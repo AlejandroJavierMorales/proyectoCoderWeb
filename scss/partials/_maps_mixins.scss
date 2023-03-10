@@ -27,7 +27,7 @@ $paleta_colores:(
     
 }
 @mixin barra_de_navegacion{
-        margin-top: 120px;
+        margin-top: 120px !important;
         background-color:map-get($paleta_colores, color_pie);
         --bs-nav-link-color: map-get($paleta_colores, color_fuente_cuerpo);
         --bs-nav-link-hover-color: map-get($paleta_colores, color_fuente_invertido);
@@ -60,7 +60,8 @@ $paleta_colores:(
                 border-color: map-get($paleta_colores, color_pie) !important;
             }
             &:hover{
-                color:map-get($paleta_colores, color_fuente_cuerpo);
+                color:map-get($paleta_colores, color_fuente_invertido);
+                background-color:map-get($paleta_colores, color_cuerpo) !important;
             }
 
     }

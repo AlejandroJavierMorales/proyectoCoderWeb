@@ -81,6 +81,11 @@ main{
         background-image: "./assets/images/whatsapp_.png";
       }
     }
+    & .logoGaleria{
+      &:hover{
+        width: 80px !important;
+      }
+    }
 
   }
   /*Animacion de Logos de Redes Sociales*/

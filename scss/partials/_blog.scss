@@ -1,0 +1,97 @@
+
+header{
+    & #row_blog_1{
+        background-color:map-get($paleta_colores, color_fuente_cuerpo);
+        color:map-get($paleta_colores, color_tarjeta);
+        & h1{
+            font-size:2.6rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-style: italic;
+        }
+        & h2{
+            font-size: 1.3rem;
+        }
+    & #logo_header_blog{
+        width: 100%
+    }
+    }
+}
+
+.body_blog{
+    background-image: url(/assets/images/index/el_rio.jpg);
+
+& .main_blog{
+
+    & .contenedor_cuerpo_blog{
+        padding-bottom: 100px;
+        width: 85%;
+        margin-top: 30px !important;
+        & .card:hover{
+            background-color: map-get($paleta_colores, color_tarjeta);
+            color:map-get($paleta_colores, color_fuente_cuerpo);
+        }
+        & .titulo_post{
+            font-size: 1.5rem;
+        }
+        & .subTitulo_post{
+            font-size: 1.2rem;
+            padding:20px 0px 20px 0px;
+        }
+        & a{
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 600;
+            color:map-get($paleta_colores, color_fuente_cuerpo);
+        }
+        & a:hover{
+            color:map-get($paleta_colores, color_fuente_invertido);
+        }
+        
+    }
+}
+& footer{
+    height: 20% !important;
+    background-color: map-get($paleta_colores, color_fuente_cuerpo) !important;
+    color: map-get($paleta_colores, color_tarjeta) !important;
+}
+}
+#face{
+        width: 60px !important;
+    }
+    
+#inst{
+        width: 60px !important;
+}
+#face:hover {
+    width: 65px !important;
+}
+#inst:hover {
+    width: 65px !important;
+}
+#pie_post{
+    text-align: center;
+    border-radius: 6px !important;
+    padding: 5px !important;
+    background-color: map-get($paleta_colores, color_pie) !important;
+    color:map-get($paleta_colores, color_tarjeta) !important;
+    font-size: 1.2rem;
+    & .txt_contacto{
+        text-align: left !important;
+    }
+}
+.separador{
+    
+    background-color:map-get($paleta_colores, color_fuente_cuerpo) !important;
+    height: 1px;
+    margin: 5px;
+    color:map-get($paleta_colores, color_tarjeta) !important;
+    margin-top: 30px;
+    
+}
+#titulo_links{
+    margin-top: 20px;
+}
+.contenedor_imagenes{
+    font-size: 0.7rem;
+    text-align: center;
+}

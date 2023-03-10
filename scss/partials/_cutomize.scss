@@ -1,7 +1,15 @@
+
 /*Elimina gutters de bootstrap*/
 .row{
     --bs-gutter-x: 0rem;
     scrollbar-gutter: none;
+}
+
+/*Logo Ecos del Valle en Cada Header*/
+header{
+    & #logo_header{
+        width: 350px !important;
+    }
 }
 
 /*Titulos de Pagina - H1*/
@@ -11,20 +19,50 @@ main{
         font-family: 'Montserrat', sans-serif;
         font-size: 1.3rem;
         font-weight: 700;
+     
     }
 
 }
 /*Personalizacion index.html*/
 main {
+    & h3{
+        font-size: 20px;
+    }
     & .gutter_titulo_main{
         --bs-gutter-x: 1.5rem;
+    }
+    & section{
+        & #ruta, #rutaCabanas{ 
+            max-width: 100%;
+            height: 50px;
+            & nav{
+                max-width: 85%;
+                position: relative !important;
+                left:30px;
+                top:5px;
+                & ol{
+                    & li{
+                        & a{
+                            color:map-get($paleta_colores, color_fuente_invertido) !important;
+                            text-decoration: none;
+                        }
+                    }
+                } 
+            }
+        }
+        & #rutaCabanas{
+            & nav{
+                height: 20px;
+                top:120px;
+            }
+        }
     }
     & #titulo_inicio{
         @extend .titulo_main;
         padding: 3px;
         width: 100%; 
         background-color:map-get($paleta_colores, color_fuente_cuerpo) !important;
-        color:$card_color;
+        color:map-get($paleta_colores, color_tarjeta);
     }
     & #txt_tituloSecundario{
         @extend .titulo_main;
@@ -57,6 +95,18 @@ main {
         & #txt_detalle{
             font-size: 1rem;
         } 
+        & #txt_detalle_2{
+            font-size: 1rem;
+            text-align: left;
+            & a{
+                text-decoration:none;
+                color:map-get($paleta_colores, color_fuente_cuerpo);
+                font-weight: 600;
+                &:hover{
+                    font-size: 1.1rem;
+                }
+            }
+        }
     }
     & .card_texto_lista{
             @extend .card_texto_pres;
@@ -159,6 +209,29 @@ main{
         }
     }
 }
+
+/*ajustes en galeria.html*/
+main{
+    & #titulo_galeria{
+        position: relative;
+        top: 128px !important;
+        padding: 5px;
+        font-size: 1.3rem;
+        width: 100%; 
+        background-color:map-get($paleta_colores, color_fuente_cuerpo);
+        color:$card_color;
+    }
+    & #row_galeria{
+        position: relative;
+        top:70px; 
+        & .card{
+           margin-top: 50px !important;
+           height: 700px !important;
+        }
+    }
+}
+
+
 
 /*Ajuste iconos redes sociales en footer*/
 footer, article{
@@ -313,4 +386,10 @@ footer, article{
         }
         
     }
+}
+
+.card-galeria{
+    max-height: 600px !important;
+    overflow: hidden;
+    z-index: 0;
 }

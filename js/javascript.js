@@ -22,6 +22,4 @@ function validarFormulario(evento){
     } 
     this.submit();
 }
-   
-   
-  
+

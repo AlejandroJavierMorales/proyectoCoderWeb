@@ -70,6 +70,13 @@ a{
         bottom: 150px !important; 
     }
 }
+a{
+    & .logoGaleria {
+        z-index: 1;
+        bottom: 150px !important;
+        width: 65px !important; 
+    }
+}
 
 
 

@@ -32,6 +32,9 @@
 }
 
 @media(max-width: 375px){
+    .breadcrumb-item {
+        font-size: 9px !important;
+      }
     /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
     .card_texto_lista{
         & .img_overlay {
@@ -74,6 +77,34 @@
             & .h1_titulo_inicio{
                 font-size: 1rem;
             }
+            & #titulo_cabanas, #titulo_servicios, #titulo_ubicacion{
+                margin-top: -40px !important;
+            }
+            &  .titulo_contacto{
+                margin-top: -100px !important;
+            }
+            & .form{
+                margin-top: -100px !important;
+            }
+        }
+        &  .breadcrumb-item {
+            padding-top: 10px !important;
+            font-size: 9px !important;
+            padding-left: -20px !important;
+            padding-right: 2px !important;
+          }
+        & section #rutaCabanas{
+            position: relative !important;
+            top:-20px !important;
+            left:-20px !important;
+            & nav{
+                top:105px !important;
+                left:5px !important;
+            }
+        }
+        //ajuste de tarjetas de Galerias de Imagenes
+        & .card-galeria{
+            max-height: 500px !important;
         }
     }
     footer{
@@ -92,20 +123,105 @@
         &__txt{
             font-size: 0.8rem !important;
         }
-    }
-    
+    } 
 }
+
 @media(max-width:575px){
+    
+    main{
+        &  .breadcrumb-item {
+            padding-top: 10px !important;
+            font-size: 10px !important;
+            padding-left: 2px !important;
+            padding-right: 2px !important;
+          }
+        & section #rutaCabanas{
+            position: relative !important;
+            top:-20px !important;
+            & nav{
+                top:120px;
+                left:5px !important;
+            }
+        }
+
+    }
+    /*BLOG*/
+.body_blog{
+    & #titulo_blog_txt{
+        font-size: 18px !important;
+    }
+    & #subtitulo_blog{
+        font-size: 14px;
+    }
+    & .main_blog{
+      & .contenedor_cuerpo_blog{
+          padding-bottom: 70px !important;
+          width: 95% !important;
+          margin-top: 30px !important;
+          & .row_cuerpo_blog{
+              display: flex;
+              flex-direction: column;
+          }
+          & .enlace{
+            font-size: 14px !important;
+          }
+          & #card_blog_right{
+            font-size: 12px;
+          }
+          & .logo_B{
+            width: 30px;
+          }
+          & .logo_red{
+            width: 50px !important;
+          }
+          & .logo_red:hover{
+            width: 52px !important;
+          }
+          & .titulo_post{
+              font-size: 18px !important;
+              text-align: center;
+          }
+          & .subTitulo_post{
+              font-size: 14px !important;
+              padding:20px 0px 20px 0px;
+          }
+          & a{
+              font-size: 12px !important;
+          }
+      }
+  }
+  & footer{
+      height: 20% !important;
+      background-color: map-get($paleta_colores, color_fuente_cuerpo) !important;
+      color: map-get($paleta_colores, color_tarjeta) !important;
+      font-size: 0.7rem;
+  }
+  }
+ 
+  #pie_post{
+      text-align: center;
+      font-size: 12px !important;
+  }
+  .separador{
+      display: none;
+      margin: 0px !important;
+      
+  }
+  .contenedor_imagenes{
+      font-size: 10px;
+      text-align: center;
+  }
+
     /*en cabanas.html Visualiza Barra de Navegacion para dispositivos pequeños*/
     .menu_cabanias{
         --bs-gutter-x: 1.5rem;
-        
         & .icon_cabania{
             display:block;
             width: 32px !important;
         }
             
     }
+    
 }
 @media(min-width:576px){
     /*en cabanas.html Oculta Barra de Navegacion para dispositivos de mas de 575px*/
@@ -125,7 +241,39 @@
             
     }
 }
+@media(min-width: 670px) and (max-width:767px){
+    main{  //ajuste de tarjetas de Galerias de Imagenes
+        & .card-galeria{
+            max-height: 700px !important;
+        }
+    }
+}
+@media(min-width: 768px) and (max-width:1120px){
+    main{  //ajuste de tarjetas de Galerias de Imagenes
+        & .card-galeria{
+            max-height: 500px !important;
+        }
+    }
+}
+@media(min-width: 1500px){
+    main{  //ajuste de tarjetas de Galerias de Imagenes
+        & .card-galeria{
+            max-height: 1400px !important;
+        }
+    }
+}
+
 @media(max-width: 768px){
+    main{
+        & #carouselPrincipal{
+            margin-top: 50px;
+    }
+    }
+    header{
+        & #logo_header{
+            width: 240px !important;
+        }
+    }
     /*Ajustes en ubicacion.html*/
    section{
         & #rowUbicacion{
@@ -147,6 +295,74 @@
         width: 100% !important;
         }
     }
+    /*BLOG*/
+    .body_blog{
+        & #titulo_blog_txt{
+            font-size: 20px;
+        }
+        & #subtitulo_blog{
+            font-size: 14px !important;
+        }
+        & .main_blog{
+          & .contenedor_cuerpo_blog{
+              padding-bottom: 70px !important;
+              width: 95% !important;
+              margin-top: 30px !important;
+              & .row_cuerpo_blog{
+                  display: flex;
+                  flex-direction: column;
+              }
+              & .enlace{
+                font-size: 12px !important;
+
+              }
+              & #card_blog_right{
+                font-size: 12px;
+              }
+              & .logo_B{
+                width: 30px;
+              }
+              & .logo_red{
+                width: 50px !important;
+              }
+              & .logo_red:hover{
+                width: 52px !important;
+              }
+              & .titulo_post{
+                  font-size: 18px !important;
+                  text-align: center;
+              }
+              & .subTitulo_post{
+                  font-size: 14px !important;
+                  padding:20px 0px 20px 0px;
+              }
+              & a{
+                  font-size: 12px !important;
+              }
+          }
+      }
+      & footer{
+          height: 20% !important;
+          background-color: map-get($paleta_colores, color_fuente_cuerpo) !important;
+          color: map-get($paleta_colores, color_tarjeta) !important;
+          font-size: 0.7rem;
+      }
+      }
+     
+      #pie_post{
+          text-align: center;
+          font-size: 12px !important;
+      }
+      .separador{
+          display: none;
+          margin: 0px !important;
+          
+      }
+      .contenedor_imagenes{
+          font-size: 10px;
+          text-align: center;
+      }
+
 }
 
 @media(min-width: 768px){
@@ -173,6 +389,37 @@
             width: 85%;
         }
     }
+        /*BLOG*/
+    .body_blog{
+        & .main_blog{
+        & .contenedor_cuerpo_blog{
+            & .row_cuerpo_blog{
+                display: flex;
+                flex-direction: row;
+            }
+            & .cabacera_iconos_link{
+                display: flex;
+                flex-direction: column;
+                align-items:center;
+                justify-content:flex-start;
+                & .item1, .item2, .item3, .item4{
+                    width: 100% !important;
+                    text-align: center;
+                }
+            }
+            & .logo_B{
+                width: 40px;
+              }
+              & .logo_red{
+                width: 55px !important;
+              }
+              & .logo_red:hover{
+                width: 57px !important;
+              }
+        }
+    }
+}
+
 }
 @media(min-width: 888px){
     /*Barra de Navegacion Gral -- Ajuste de Tamaño de Fuente*/
@@ -187,12 +434,6 @@
 }
 
 @media(min-width: 992px){
-    /*aumenta e tamaño del logo a partir de los 992px de pantalla*/
-    header{
-        & #logo_header{
-            width: 390px !important;
-        }
-    }
     /*Overlay imagenes index.html - ajuste de tamaño de fuente*/
     .card_texto_lista{
         & .img_overlay {
