@@ -64,6 +64,13 @@ main {
         background-color:map-get($paleta_colores, color_fuente_cuerpo) !important;
         color:map-get($paleta_colores, color_tarjeta);
     }
+    & #titulo_info_reartes{
+        @extend .titulo_main;
+        padding: 3px;
+        width: 100%; 
+        background-color:map-get($paleta_colores, color_fuente_cuerpo) !important;
+        color:map-get($paleta_colores, color_tarjeta);
+    }
     & #txt_tituloSecundario{
         @extend .titulo_main;
         padding: 3px;
@@ -83,6 +90,12 @@ main {
                 color: map-get($paleta_colores, color_tarjeta);
                 font-weight: 600;
         }
+        &  .h2_titulo_info_reartes{
+            @extend .titulo_main;
+            font-size: 1rem;
+            color: map-get($paleta_colores, color_tarjeta);
+            font-weight: 600;
+    }
     } 
     & .card_texto_pres{
         font-size: 1.3rem;
